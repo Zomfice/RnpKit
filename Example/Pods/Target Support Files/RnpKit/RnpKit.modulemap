@@ -1,0 +1,6 @@
+framework module RnpKit {
+  umbrella header "RnpKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

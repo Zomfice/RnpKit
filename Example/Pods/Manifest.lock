@@ -1,0 +1,16 @@
+PODS:
+  - RnpKit (0.1.0)
+
+DEPENDENCIES:
+  - RnpKit (from `../`)
+
+EXTERNAL SOURCES:
+  RnpKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RnpKit: 9d0ee2ee2484bdc4684881dc3a20cab49b85c4e6
+
+PODFILE CHECKSUM: 790318de3d72b894d268f04914846dfbda6032dc
+
+COCOAPODS: 1.7.5
