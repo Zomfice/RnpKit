@@ -7,26 +7,123 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		047819587EBF14DEDEDABE4BD3781F64 /* UIView+RnpCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = CE14E8914098CF9C9BE32E929D589651 /* UIView+RnpCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05A040F35BF1C88F869404E1A940B493 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = DF48D82622C6D1FFAC5752C7BB004472 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05EA1447EEA0EB669F8DEE73964A7C60 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F20A7188ABF123273A3C22C4340688AC /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0967598607D521318F69D7D39D517B20 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 071ABA9DA4A53122DD0382E7C7F6CBEB /* ViewController+MASAdditions.m */; };
+		098630ECDB64ED7B89F5F687C82B4AC3 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BB2E40FA7314FFFF244B2FD839A658 /* NSArray+MASAdditions.m */; };
+		0AF1AD35706D90B1A91F291B899EF8C0 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CD1AD2192C246BE568B6CFBA7EB9C68 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B6916B401052B246ACB07E0CC8850CB /* RnpUITextFieldChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BD064346CDC4FD1149E1F9208718A1 /* RnpUITextFieldChain.m */; };
+		0BBA285BAC53DC1E63933B37F567B245 /* RnpUIImageViewChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 286D730BD819C21961BDE571C64677DE /* RnpUIImageViewChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C04CDDEE6176F93AC6ABDE948B5E749 /* DnpUIProgressViewChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC04A0E426FE93069B73BB7E2BCA887 /* DnpUIProgressViewChain.m */; };
+		11DA7C68AD572B605DBEDA450C6BDF63 /* UIView+RnpChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C200F170919F6AC4DBE2670C6A7BDD6 /* UIView+RnpChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12151D62C74AFD0B7A2C874260D384DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28147EF640D73DD5BE8B797CFD199606 /* Foundation.framework */; };
+		126DA964C1D5AEDD6E7DB32CE4D4CC47 /* RnpBaseScrollViewChain.h in Headers */ = {isa = PBXBuildFile; fileRef = F9D56C6B9336DD1B803FB1FAFB77FDB1 /* RnpBaseScrollViewChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		141912CC59D80AA6F3CED32905A1C185 /* Pods-RnpKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21425AA264C43858F1A3626954E21D8B /* Pods-RnpKit_Tests-dummy.m */; };
-		5E19B3C82ADF33352FD48E2CBFB71160 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DD96025392EDF729911CC3843E7625 /* MyView.m */; };
-		65860F4F1A69A3447FE37D568389540D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		6B9441F65B4B6F8CE8C298D42445A182 /* MyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1238CD5971158A95A9F5359CBAA17448 /* MyView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		755BA17044BA675F991226F7C462604B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		916D242F22832EAEC6FC066605E0A927 /* Pods-RnpKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59B94C605C056F41C378AAB4F07DE20D /* Pods-RnpKit_Example-dummy.m */; };
-		9707BE7B23CA0C2CCC16511582D24808 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		A99E8E6FDBCDB57748099BC739076D4E /* RnpKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE8B9661315B62D31B1593A7FE9110B /* RnpKit-dummy.m */; };
+		15290AD0E91680F9E7E33B50DDB77D2B /* DnpUIPickerViewChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7607767756DA1623157EE9CE12F1716D /* DnpUIPickerViewChain.m */; };
+		1556C470B623FC4A0BC93D4E2E1EDC21 /* RnpKitHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E0B97F5318C082AC3A37F317AE24F2CB /* RnpKitHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1972E85F0FCD0F3EAF28ED7CD036286E /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E476E5DC364B11085C84F8770A12FD3B /* Masonry-dummy.m */; };
+		1A9E84751254E2C8D0BE96E7EE89A429 /* DnpUISwitchChain.m in Sources */ = {isa = PBXBuildFile; fileRef = A76239630D654AF197C4B8259F375DB3 /* DnpUISwitchChain.m */; };
+		1F23F00A3AD968B77E26FEA7FE46E14D /* RnpWKWebViewChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B3AA61C17143B979823EF4A5629750B /* RnpWKWebViewChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		273CCC511555B49BFDD32E4B82987383 /* RnpBaseScrollViewChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD0303E6BA288EE4BC0225682137819 /* RnpBaseScrollViewChain.m */; };
+		280D36330BAC5715615FF4A8B42D60D6 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 86DFFE3C8ABE515058DCF105EB608F37 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		297A3627CF2F032CBFDC61D1A3786E63 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB7B80D58CFA003C25B538A405A341D /* MASViewAttribute.m */; };
+		33B26ACB3CCE4F99E0BD0750A1B6E47C /* DnpUISwitchChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 44FAC0505F6EC71EA18B036D6DD6C952 /* DnpUISwitchChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		346080C0D1CA23399ADD739D722D7CEF /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = F05C6EDBC8E4591F89BD9F1E17FBFC97 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34937C8DD71532F7F9C9DB3800C2B6CB /* RnpUICollectionViewChain.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0CC01CF53ABADCE39C82CCBE21DD7C /* RnpUICollectionViewChain.m */; };
+		3A13E89CEADB9E0016683E8579646A71 /* Pods-RnpKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59B94C605C056F41C378AAB4F07DE20D /* Pods-RnpKit_Example-dummy.m */; };
+		3DA5F1D8E51CDD102A871C2F37770C7B /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F5718E89E4E5165AA49B980D89CBCF8 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45590EB0C7043412090AE8C8A9673E7B /* RnpUITableViewCellChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 81041D2CE04D459C786019124781ACDC /* RnpUITableViewCellChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47147DA8AEE69C7E1460A0D3A7E3D423 /* RnpUISegmentedControlChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 1189DBB8EFC69624C3C8747016B7189F /* RnpUISegmentedControlChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B0981F9AC628CF5100C50FF4A163A4A /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 896A4BCB5B3DBC78E1CF6EBF5AC2862F /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B8AC374DF7117122D11A33B3781DA14 /* RnpUIScrollViewChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CCF29356508242807262EED92436433 /* RnpUIScrollViewChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CD4329FB8D44B1DEB141A467A7579A5 /* RnpUILabelChain.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B70A7D423EED420651679684697079 /* RnpUILabelChain.m */; };
+		50FA308C56C70293B6F3D6811F13CDAD /* RnpUIControlChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9A1F0560B670C9AE8D460A3A000C50 /* RnpUIControlChain.m */; };
+		65860F4F1A69A3447FE37D568389540D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28147EF640D73DD5BE8B797CFD199606 /* Foundation.framework */; };
+		65F7A6034EB48EE68F0550A017EE03BE /* RnpKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1B1C325CD1D8301A00118CE817C989 /* RnpKit-dummy.m */; };
+		66A7B64F239E0C7F659770FAB482B462 /* RnpUICollectionViewChain.h in Headers */ = {isa = PBXBuildFile; fileRef = ACBA4479FBE9BC09B0E4D7B88C50C661 /* RnpUICollectionViewChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69D68274022FFCB14EEBD210FF05C1FA /* RnpUIButtonChain.m in Sources */ = {isa = PBXBuildFile; fileRef = A430D1BCF8BF224871CB1F26CAD094C9 /* RnpUIButtonChain.m */; };
+		6A6AD3A5BBDBFD0B4AF936BD518EC0B1 /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D4CA7B92265A15B80B1666634FF46C0 /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CD4F6A877BAC4B8A25FA29E941374F1 /* RnpChainDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = E9F3DB02F34E7E18BC5CB64484AC0357 /* RnpChainDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71184DB7E97113C80BD24D4E3DA76D34 /* RnpUIViewChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C06F5BD94DD0C68B47551615E904A9A /* RnpUIViewChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		775076D498B72900F5B236F068C3BC3A /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B28864E3F11E1DDE7AEF55AFFD8B0FE /* Masonry.framework */; };
+		78B2727EE5D693F58D019DB098005101 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D9333B00F315696855ADE85C3E6D15 /* MASConstraintMaker.m */; };
+		7AF7ADB4BA88A3A1BDE48135A07EE825 /* RnpUITextViewChain.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC81F880E6BA2AF022F4146E894614B /* RnpUITextViewChain.m */; };
+		7BFF65958F014760B6AC4742824892EB /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B377289AFAE7DF9945B981F14B4AF95C /* MASCompositeConstraint.m */; };
+		7D68884E3F15497CFCC31DED80D2375E /* RnpUITableViewCellChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D62F8BEC4A38B45F1DE5F5C99F1116 /* RnpUITableViewCellChain.m */; };
+		7F55954E85474DC40044EE9EA276EE4B /* RnpUIViewChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B5F85940BCDBC889BA65F0A71670BD /* RnpUIViewChain.m */; };
+		801FEFE831F34DBBD9918C7E6166953A /* RnpUIControlChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CE28BE04EF3CE573DEB91A8C4822E8E /* RnpUIControlChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80D075D8F6F9FAB2B23B6562313C0429 /* DnpUIProgressViewChain.h in Headers */ = {isa = PBXBuildFile; fileRef = C52D07A67A033760E12CB81DC8F6BBE1 /* DnpUIProgressViewChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		852A65A6B75357A55A98A1AE0D4E57EE /* UIView+RnpCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FEAF429FE7E3493D0F2B88A4484CED /* UIView+RnpCategory.m */; };
+		8539B851E01A58467BE49CA3FA77223C /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FADB5EBFADA2A419371CF5E6C927F1E /* MASLayoutConstraint.m */; };
+		8B92011C9373001132C8148BFC8F50B3 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E780607D798BC01DDE3031621C51501 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D44B14AA4FBAED72A461D0802204948 /* RnpBaseViewChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B1976161A941E65B938705B0C3D547A /* RnpBaseViewChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D4D1F6E4709EBB13974E95DC1059DDC /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 115A4EA8F789344C790FEA5CDC507FB7 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D65CE579E516BDD5FB36CAA21D693F6 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E5709CED54C3B8DC4B50B19520F6771 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F2F7A9FFD78CB7AA91E64A793F1E9B9 /* RnpUIDatePickerChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C5CC95528CF8AE7F99D64ADC829C358 /* RnpUIDatePickerChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9229CC579CAA85333AF80AE5D0770E10 /* RnpUITableViewChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 865911E91B3B44DE381D8D9EE01BB2A0 /* RnpUITableViewChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		941955A19C40899D275604E6E9C21A6D /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 130F3B92BAB28630295F57E8AAC12EA1 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94B9EC3A6F0699871277BB913802FBC8 /* RnpUITextViewChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E53FC14A94B9A44213EA73193EE8F41 /* RnpUITextViewChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D546E1168C04B0B2EAE005D9275D18B /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = D100F47F5FECCA555C616F7D93D7CB4B /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DD4623FE9F0F59C4C4060DCD3C8DBB0 /* RnpUIButtonChain.h in Headers */ = {isa = PBXBuildFile; fileRef = C12ADAE5BE88872B541D16AA5ED7FC74 /* RnpUIButtonChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1E3CAC9CCF86D3030327F1538ED6E4E /* RnpKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 871EFA7A901DEF816DA4E97BCD3C0687 /* RnpKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A35FBEEC7D088AEC05297E8292A32C77 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7A0F064F168E6660B03C9639A19329 /* View+MASAdditions.m */; };
+		A3CC9DFF34111F7815273272B1999BF4 /* RnpUITextFieldChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 84810A0287482975D6E3C662D9683467 /* RnpUITextFieldChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4B1EEDEE7410538C9BCEE1D4B69128C /* UIView+RnpChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 039D30022B4037879CE9724C5018CBE8 /* UIView+RnpChain.m */; };
+		A4FAB137922F3A6D1672FD809C9D0C00 /* RnpUICollectionViewCellChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 938D7E1A81939CE160F7225F4CDA9557 /* RnpUICollectionViewCellChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A656E832527F0145929A76639FF628BC /* RnpBaseControlChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E179D739CF38EDE978DC40AE062CBBC /* RnpBaseControlChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F0DE25BBA803C33C04DCCE34B1180E /* RnpUIScrollViewChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2F281388D2449614BE87E05FEF68AD /* RnpUIScrollViewChain.m */; };
+		B6645B93F7AD1E8B1ECBDC6E0D576456 /* RnpUIActivityIndicatorViewChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA809062B7523A9A9356932DB3C4F19 /* RnpUIActivityIndicatorViewChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7D645EC004610E8A581E532D28771EC /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A17EAC4713F6B85A6124DB11F111B072 /* MASViewConstraint.m */; };
+		BAE62D35B5E7DA144EA16D70AF4B1394 /* RnpBaseControlChain.m in Sources */ = {isa = PBXBuildFile; fileRef = AD487F54D2AD3DC7E49350FF1ADCCD40 /* RnpBaseControlChain.m */; };
 		C06E104D2747B0248BB1D012A30BAB95 /* Pods-RnpKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B6762ACA7F20E7E8B1228DA638CFA75 /* Pods-RnpKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE0BB01FEC564B9CA01CD43B72F64AA8 /* Pods-RnpKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B26368FF2E7C7076EB9A67D040ECC4 /* Pods-RnpKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFA55C7C6CCED695FEC386161618D88B /* RnpKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E67CF2985D1A3EBB5B56CF18B02D1DB2 /* RnpKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0861ADB4C5FA30F4F9E051F7638A264 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 62890C896C598E9650B511A4A9BA249A /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		C3616DA8F76B81B7D30E21F8798DDB02 /* RnpUILabelChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 66AC713C69C3C7ECFEC6C1774FD90D31 /* RnpUILabelChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C572FD3458B2582358429F00506DD936 /* RnpWKWebViewChain.m in Sources */ = {isa = PBXBuildFile; fileRef = FC684FAF75B756DCAB3190B0400A5453 /* RnpWKWebViewChain.m */; };
+		CB135FC1733CEBED30488F57431092F0 /* RnpBaseViewChain+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = A36F3B0F0DA161E7083C02EE5A52D12C /* RnpBaseViewChain+Layout.m */; };
+		CE93C54413259B4AC3683B6EB874D466 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF909907D9794E4C781DAC1693A7018 /* UIKit.framework */; };
+		D02AD12D144C65C64DACCE30FA095E96 /* RnpUIDatePickerChain.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EB8F514E9DCA29F6E33B8B466DA756 /* RnpUIDatePickerChain.m */; };
+		D118A21BE1A55717649F3D7405EFA455 /* RnpUISegmentedControlChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 5193C0896FA95A026DEFCBEEA02C5FF5 /* RnpUISegmentedControlChain.m */; };
+		D42EB1DA47748FA6C8EE1A24A6BA15F7 /* DnpUISliderChain.m in Sources */ = {isa = PBXBuildFile; fileRef = E32B9B40B2C0A2D2D21EB49BD46BFD14 /* DnpUISliderChain.m */; };
+		DC12671DACDED02C6D3BD9588FF81039 /* DnpUIPickerViewChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 97E428D5EC48FC6C328599E8B9A43652 /* DnpUIPickerViewChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCAE0D89660927EC6D821AD632D8D887 /* RnpUICollectionViewCellChain.m in Sources */ = {isa = PBXBuildFile; fileRef = FA65366841DCC604376004E983E61D22 /* RnpUICollectionViewCellChain.m */; };
+		E009ABE0253425BB96F2FD4D663C8C8C /* RnpBaseViewChain+Layout.h in Headers */ = {isa = PBXBuildFile; fileRef = 70492ECD069FD2773F65DCC4FDD99E57 /* RnpBaseViewChain+Layout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E05620797868448E3962C0D15206B570 /* RnpUIActivityIndicatorViewChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 651C1C8341EBF82409948E4C299016BF /* RnpUIActivityIndicatorViewChain.m */; };
+		E15CACFD2BFE3B02D6CA21CC5F0506D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28147EF640D73DD5BE8B797CFD199606 /* Foundation.framework */; };
+		E51F496BDC6ACADE04FDA059C6CB2342 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28147EF640D73DD5BE8B797CFD199606 /* Foundation.framework */; };
+		E7CA20228B3583F41927813EE904CAD3 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C783239D12541FA278CBEBA15780CE4 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8DD5D1D406150E1C80AD015271B6848 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1BF5683BFFCF57BA0C385B36CC0BE2 /* MASConstraint.m */; };
+		EAE8B0895956885A752B173683A0D889 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = B47E0CCE07C313DF7CE5A32C063379DF /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB53514337DF4A3A96E6B069B5D2D882 /* Pods-RnpKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B26368FF2E7C7076EB9A67D040ECC4 /* Pods-RnpKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE5651E77C57EC6C7D70CD981F1AEA49 /* RnpKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87AB27CCCD6779DD74CED1A7A1F6237A /* RnpKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFAADF7DA256E71380FEFFEAAF405678 /* RnpUIImageViewChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C214632D46B5B45778ECE049743528 /* RnpUIImageViewChain.m */; };
+		F3AD9F721F9AF2C41E35366D24A1E781 /* RnpUITableViewChain.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE09995B5E51F5A1507565C474392C0 /* RnpUITableViewChain.m */; };
+		F4A0C4200D73FCCF71899BAF239D8E66 /* RnpBaseViewChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A2CC98DA57D88EDF0A3AD35D860F90 /* RnpBaseViewChain.m */; };
+		FAFBFA90F7BC3E7CF50F8A5CF0A8B264 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BCF93F338546FCB058B68A5B6F26B32 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC043DCEB02BE68C9296358080B127A0 /* DnpUISliderChain.h in Headers */ = {isa = PBXBuildFile; fileRef = C48E7F4BD4CA7913E4811ABC8D12B394 /* DnpUISliderChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		337657F820DF734ED0A023E14EADC179 /* PBXContainerItemProxy */ = {
+		38E03F45F1D15C9C9ABA9BD5EE8676A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
+		};
+		3B30EA708A081459C19616373CFB0496 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5037E74BBF0BA8773E6108792B6B4CFD;
 			remoteInfo = RnpKit;
+		};
+		4CE6ED96816AB2BA452CAA6AD4602E29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
 		};
 		F88D8F8BB7CC4F85469AF73242F15E6B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -38,55 +135,144 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1238CD5971158A95A9F5359CBAA17448 /* MyView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MyView.h; path = RnpKit/Classes/MyView.h; sourceTree = "<group>"; };
+		002BF3DDD89C177475702379D618BDA2 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
+		025EB543E67AF6218FBFEFBEC406E598 /* Masonry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Masonry-Info.plist"; sourceTree = "<group>"; };
+		039D30022B4037879CE9724C5018CBE8 /* UIView+RnpChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RnpChain.m"; path = "RnpKit/Classes/View/UIView+RnpChain.m"; sourceTree = "<group>"; };
+		071ABA9DA4A53122DD0382E7C7F6CBEB /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		0F5718E89E4E5165AA49B980D89CBCF8 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		102FEBBF28D3DBE1D593CF9B40167082 /* RnpKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RnpKit.modulemap; sourceTree = "<group>"; };
+		115A4EA8F789344C790FEA5CDC507FB7 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		1189DBB8EFC69624C3C8747016B7189F /* RnpUISegmentedControlChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpUISegmentedControlChain.h; path = RnpKit/Classes/View/RnpUISegmentedControlChain.h; sourceTree = "<group>"; };
+		130F3B92BAB28630295F57E8AAC12EA1 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
 		13ABEE6E899A68D50D395FAF8C3F6D30 /* Pods-RnpKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RnpKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		16B26368FF2E7C7076EB9A67D040ECC4 /* Pods-RnpKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RnpKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		16BD064346CDC4FD1149E1F9208718A1 /* RnpUITextFieldChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpUITextFieldChain.m; path = RnpKit/Classes/View/RnpUITextFieldChain.m; sourceTree = "<group>"; };
 		176A9ACAF23D9A6DBFB760BDED919C15 /* Pods-RnpKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RnpKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1A3780173DAB3B06327FD61F4A6037C9 /* Pods-RnpKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RnpKit_Tests.modulemap"; sourceTree = "<group>"; };
 		1DA81238143AEA5985AD20F61A0FBB58 /* Pods-RnpKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RnpKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		1DE8B9661315B62D31B1593A7FE9110B /* RnpKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RnpKit-dummy.m"; sourceTree = "<group>"; };
+		1E780607D798BC01DDE3031621C51501 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		1F1BF5683BFFCF57BA0C385B36CC0BE2 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
 		1FB8B6DF29CE8FF8AA90936EAA8A21BF /* Pods-RnpKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RnpKit_Example.modulemap"; sourceTree = "<group>"; };
+		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21425AA264C43858F1A3626954E21D8B /* Pods-RnpKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RnpKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		23B5F85940BCDBC889BA65F0A71670BD /* RnpUIViewChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpUIViewChain.m; path = RnpKit/Classes/View/RnpUIViewChain.m; sourceTree = "<group>"; };
+		28147EF640D73DD5BE8B797CFD199606 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		286D730BD819C21961BDE571C64677DE /* RnpUIImageViewChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpUIImageViewChain.h; path = RnpKit/Classes/View/RnpUIImageViewChain.h; sourceTree = "<group>"; };
 		2B6762ACA7F20E7E8B1228DA638CFA75 /* Pods-RnpKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RnpKit_Tests-umbrella.h"; sourceTree = "<group>"; };
-		30DA400271B1121743F55E5EA2217438 /* RnpKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RnpKit.modulemap; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3A8AAF7F1630864161269E83242886D8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		2C06F5BD94DD0C68B47551615E904A9A /* RnpUIViewChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpUIViewChain.h; path = RnpKit/Classes/View/RnpUIViewChain.h; sourceTree = "<group>"; };
+		2CC04A0E426FE93069B73BB7E2BCA887 /* DnpUIProgressViewChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DnpUIProgressViewChain.m; path = RnpKit/Classes/View/DnpUIProgressViewChain.m; sourceTree = "<group>"; };
+		2CCF29356508242807262EED92436433 /* RnpUIScrollViewChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpUIScrollViewChain.h; path = RnpKit/Classes/View/RnpUIScrollViewChain.h; sourceTree = "<group>"; };
+		2F88D665728C890EA663369AB4E5A8DD /* RnpKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RnpKit.xcconfig; sourceTree = "<group>"; };
+		35A5E46D1CA96F1696D99E9C73F46588 /* RnpKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = RnpKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		368CBCEC72F0D378AE28159D9A2884A1 /* RnpKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RnpKit-prefix.pch"; sourceTree = "<group>"; };
+		36D9333B00F315696855ADE85C3E6D15 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		3BCF93F338546FCB058B68A5B6F26B32 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		42E4E37BCA0430C2EB2E688F8EBBAB62 /* RnpKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RnpKit-Info.plist"; sourceTree = "<group>"; };
 		4344C6F9A745B6DF47C6CCD943D7D8EF /* RnpKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RnpKit.framework; path = RnpKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44FAC0505F6EC71EA18B036D6DD6C952 /* DnpUISwitchChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DnpUISwitchChain.h; path = RnpKit/Classes/View/DnpUISwitchChain.h; sourceTree = "<group>"; };
+		45C214632D46B5B45778ECE049743528 /* RnpUIImageViewChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpUIImageViewChain.m; path = RnpKit/Classes/View/RnpUIImageViewChain.m; sourceTree = "<group>"; };
 		4C9561C8C5F4774557810AC73B3D8AD2 /* Pods-RnpKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RnpKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4D2F281388D2449614BE87E05FEF68AD /* RnpUIScrollViewChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpUIScrollViewChain.m; path = RnpKit/Classes/View/RnpUIScrollViewChain.m; sourceTree = "<group>"; };
+		4E53FC14A94B9A44213EA73193EE8F41 /* RnpUITextViewChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpUITextViewChain.h; path = RnpKit/Classes/View/RnpUITextViewChain.h; sourceTree = "<group>"; };
+		4E5709CED54C3B8DC4B50B19520F6771 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		5193C0896FA95A026DEFCBEEA02C5FF5 /* RnpUISegmentedControlChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpUISegmentedControlChain.m; path = RnpKit/Classes/View/RnpUISegmentedControlChain.m; sourceTree = "<group>"; };
 		55ADA9B339957C46F3507EC61A7DA53C /* Pods-RnpKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RnpKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		59B94C605C056F41C378AAB4F07DE20D /* Pods-RnpKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RnpKit_Example-dummy.m"; sourceTree = "<group>"; };
-		6C8C3CAB406556BF01A1A6BE54B362EC /* RnpKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = RnpKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5A9A1F0560B670C9AE8D460A3A000C50 /* RnpUIControlChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpUIControlChain.m; path = RnpKit/Classes/View/RnpUIControlChain.m; sourceTree = "<group>"; };
+		5DA809062B7523A9A9356932DB3C4F19 /* RnpUIActivityIndicatorViewChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpUIActivityIndicatorViewChain.h; path = RnpKit/Classes/View/RnpUIActivityIndicatorViewChain.h; sourceTree = "<group>"; };
+		5FADB5EBFADA2A419371CF5E6C927F1E /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		62890C896C598E9650B511A4A9BA249A /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		63A2CC98DA57D88EDF0A3AD35D860F90 /* RnpBaseViewChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpBaseViewChain.m; path = RnpKit/Classes/View/RnpBaseViewChain.m; sourceTree = "<group>"; };
+		651C1C8341EBF82409948E4C299016BF /* RnpUIActivityIndicatorViewChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpUIActivityIndicatorViewChain.m; path = RnpKit/Classes/View/RnpUIActivityIndicatorViewChain.m; sourceTree = "<group>"; };
+		66AC713C69C3C7ECFEC6C1774FD90D31 /* RnpUILabelChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpUILabelChain.h; path = RnpKit/Classes/View/RnpUILabelChain.h; sourceTree = "<group>"; };
+		6B28864E3F11E1DDE7AEF55AFFD8B0FE /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C200F170919F6AC4DBE2670C6A7BDD6 /* UIView+RnpChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RnpChain.h"; path = "RnpKit/Classes/View/UIView+RnpChain.h"; sourceTree = "<group>"; };
+		6CE28BE04EF3CE573DEB91A8C4822E8E /* RnpUIControlChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpUIControlChain.h; path = RnpKit/Classes/View/RnpUIControlChain.h; sourceTree = "<group>"; };
+		70492ECD069FD2773F65DCC4FDD99E57 /* RnpBaseViewChain+Layout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RnpBaseViewChain+Layout.h"; path = "RnpKit/Classes/Layout/RnpBaseViewChain+Layout.h"; sourceTree = "<group>"; };
 		741C0365B5EAF1EE7CDD87A6D634EC3B /* Pods_RnpKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RnpKit_Tests.framework; path = "Pods-RnpKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7607767756DA1623157EE9CE12F1716D /* DnpUIPickerViewChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DnpUIPickerViewChain.m; path = RnpKit/Classes/View/DnpUIPickerViewChain.m; sourceTree = "<group>"; };
 		77C2F1D421F388115BB269ECF95C91C0 /* Pods-RnpKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RnpKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7B1976161A941E65B938705B0C3D547A /* RnpBaseViewChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpBaseViewChain.h; path = RnpKit/Classes/View/RnpBaseViewChain.h; sourceTree = "<group>"; };
+		7B3AA61C17143B979823EF4A5629750B /* RnpWKWebViewChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpWKWebViewChain.h; path = RnpKit/Classes/View/RnpWKWebViewChain.h; sourceTree = "<group>"; };
+		81041D2CE04D459C786019124781ACDC /* RnpUITableViewCellChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpUITableViewCellChain.h; path = RnpKit/Classes/View/RnpUITableViewCellChain.h; sourceTree = "<group>"; };
+		84810A0287482975D6E3C662D9683467 /* RnpUITextFieldChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpUITextFieldChain.h; path = RnpKit/Classes/View/RnpUITextFieldChain.h; sourceTree = "<group>"; };
+		865911E91B3B44DE381D8D9EE01BB2A0 /* RnpUITableViewChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpUITableViewChain.h; path = RnpKit/Classes/View/RnpUITableViewChain.h; sourceTree = "<group>"; };
+		86DFFE3C8ABE515058DCF105EB608F37 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		870570EFE09B8657023DC7C42C33BE4B /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Masonry.modulemap; sourceTree = "<group>"; };
+		871EFA7A901DEF816DA4E97BCD3C0687 /* RnpKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpKit.h; path = RnpKit/RnpKit.h; sourceTree = "<group>"; };
+		87AB27CCCD6779DD74CED1A7A1F6237A /* RnpKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RnpKit-umbrella.h"; sourceTree = "<group>"; };
+		87D62F8BEC4A38B45F1DE5F5C99F1116 /* RnpUITableViewCellChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpUITableViewCellChain.m; path = RnpKit/Classes/View/RnpUITableViewCellChain.m; sourceTree = "<group>"; };
+		896A4BCB5B3DBC78E1CF6EBF5AC2862F /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		8C5CC95528CF8AE7F99D64ADC829C358 /* RnpUIDatePickerChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpUIDatePickerChain.h; path = RnpKit/Classes/View/RnpUIDatePickerChain.h; sourceTree = "<group>"; };
+		8D4CA7B92265A15B80B1666634FF46C0 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
+		938D7E1A81939CE160F7225F4CDA9557 /* RnpUICollectionViewCellChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpUICollectionViewCellChain.h; path = RnpKit/Classes/View/RnpUICollectionViewCellChain.h; sourceTree = "<group>"; };
 		93F4F86B25884F7D83B8B8A50B572A58 /* Pods-RnpKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RnpKit_Example-Info.plist"; sourceTree = "<group>"; };
-		966CBCBCD51EFE39C28B70C6ADA1786C /* RnpKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RnpKit-Info.plist"; sourceTree = "<group>"; };
+		97E428D5EC48FC6C328599E8B9A43652 /* DnpUIPickerViewChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DnpUIPickerViewChain.h; path = RnpKit/Classes/View/DnpUIPickerViewChain.h; sourceTree = "<group>"; };
 		991C6F6A1980A437DB114037F9CE571A /* Pods-RnpKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RnpKit_Tests-Info.plist"; sourceTree = "<group>"; };
+		9C783239D12541FA278CBEBA15780CE4 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		9CD1AD2192C246BE568B6CFBA7EB9C68 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E179D739CF38EDE978DC40AE062CBBC /* RnpBaseControlChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpBaseControlChain.h; path = RnpKit/Classes/View/RnpBaseControlChain.h; sourceTree = "<group>"; };
+		9FD0303E6BA288EE4BC0225682137819 /* RnpBaseScrollViewChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpBaseScrollViewChain.m; path = RnpKit/Classes/View/RnpBaseScrollViewChain.m; sourceTree = "<group>"; };
+		A17EAC4713F6B85A6124DB11F111B072 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		A36F3B0F0DA161E7083C02EE5A52D12C /* RnpBaseViewChain+Layout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RnpBaseViewChain+Layout.m"; path = "RnpKit/Classes/Layout/RnpBaseViewChain+Layout.m"; sourceTree = "<group>"; };
+		A430D1BCF8BF224871CB1F26CAD094C9 /* RnpUIButtonChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpUIButtonChain.m; path = RnpKit/Classes/View/RnpUIButtonChain.m; sourceTree = "<group>"; };
+		A5EB8F514E9DCA29F6E33B8B466DA756 /* RnpUIDatePickerChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpUIDatePickerChain.m; path = RnpKit/Classes/View/RnpUIDatePickerChain.m; sourceTree = "<group>"; };
+		A76239630D654AF197C4B8259F375DB3 /* DnpUISwitchChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DnpUISwitchChain.m; path = RnpKit/Classes/View/DnpUISwitchChain.m; sourceTree = "<group>"; };
 		A944B24C6764C5F73931AAE057550F6E /* Pods-RnpKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RnpKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A9756FB5D0635BB224EB448C445DD92D /* Pods_RnpKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RnpKit_Example.framework; path = "Pods-RnpKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5DD96025392EDF729911CC3843E7625 /* MyView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MyView.m; path = RnpKit/Classes/MyView.m; sourceTree = "<group>"; };
-		CB385E99D615EAADB492C0F0C3F8FB5F /* RnpKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RnpKit.xcconfig; sourceTree = "<group>"; };
+		ACB7B80D58CFA003C25B538A405A341D /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		ACBA4479FBE9BC09B0E4D7B88C50C661 /* RnpUICollectionViewChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpUICollectionViewChain.h; path = RnpKit/Classes/View/RnpUICollectionViewChain.h; sourceTree = "<group>"; };
+		AD0CC01CF53ABADCE39C82CCBE21DD7C /* RnpUICollectionViewChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpUICollectionViewChain.m; path = RnpKit/Classes/View/RnpUICollectionViewChain.m; sourceTree = "<group>"; };
+		AD487F54D2AD3DC7E49350FF1ADCCD40 /* RnpBaseControlChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpBaseControlChain.m; path = RnpKit/Classes/View/RnpBaseControlChain.m; sourceTree = "<group>"; };
+		B377289AFAE7DF9945B981F14B4AF95C /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		B47E0CCE07C313DF7CE5A32C063379DF /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		C12ADAE5BE88872B541D16AA5ED7FC74 /* RnpUIButtonChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpUIButtonChain.h; path = RnpKit/Classes/View/RnpUIButtonChain.h; sourceTree = "<group>"; };
+		C48E7F4BD4CA7913E4811ABC8D12B394 /* DnpUISliderChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DnpUISliderChain.h; path = RnpKit/Classes/View/DnpUISliderChain.h; sourceTree = "<group>"; };
+		C505C144AA141401C06136D41389EF53 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C52D07A67A033760E12CB81DC8F6BBE1 /* DnpUIProgressViewChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DnpUIProgressViewChain.h; path = RnpKit/Classes/View/DnpUIProgressViewChain.h; sourceTree = "<group>"; };
+		C6BB2E40FA7314FFFF244B2FD839A658 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		CE14E8914098CF9C9BE32E929D589651 /* UIView+RnpCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RnpCategory.h"; path = "RnpKit/Classes/View/UIView+RnpCategory.h"; sourceTree = "<group>"; };
+		D100F47F5FECCA555C616F7D93D7CB4B /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
 		D3CC1FBA719DFCE6CB71BA54D85FC29E /* Pods-RnpKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RnpKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		E67CF2985D1A3EBB5B56CF18B02D1DB2 /* RnpKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RnpKit-umbrella.h"; sourceTree = "<group>"; };
+		D7B70A7D423EED420651679684697079 /* RnpUILabelChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpUILabelChain.m; path = RnpKit/Classes/View/RnpUILabelChain.m; sourceTree = "<group>"; };
+		DD5B01B1A459189B002A442EC4367A25 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		DDC81F880E6BA2AF022F4146E894614B /* RnpUITextViewChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpUITextViewChain.m; path = RnpKit/Classes/View/RnpUITextViewChain.m; sourceTree = "<group>"; };
+		DF1B1C325CD1D8301A00118CE817C989 /* RnpKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RnpKit-dummy.m"; sourceTree = "<group>"; };
+		DF48D82622C6D1FFAC5752C7BB004472 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		DFE09995B5E51F5A1507565C474392C0 /* RnpUITableViewChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpUITableViewChain.m; path = RnpKit/Classes/View/RnpUITableViewChain.m; sourceTree = "<group>"; };
+		E0B97F5318C082AC3A37F317AE24F2CB /* RnpKitHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpKitHeader.h; path = RnpKit/Classes/View/RnpKitHeader.h; sourceTree = "<group>"; };
+		E32B9B40B2C0A2D2D21EB49BD46BFD14 /* DnpUISliderChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DnpUISliderChain.m; path = RnpKit/Classes/View/DnpUISliderChain.m; sourceTree = "<group>"; };
+		E476E5DC364B11085C84F8770A12FD3B /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		E6225045F2DF7AF603D15E0A59933930 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		E9F3DB02F34E7E18BC5CB64484AC0357 /* RnpChainDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpChainDefine.h; path = RnpKit/Classes/View/RnpChainDefine.h; sourceTree = "<group>"; };
 		EB8C2F0BF8ABB92F44023B0E1B447ACF /* Pods-RnpKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RnpKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		EC02FFF27CBEBC82B0D4E0C521287C97 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		F539937B8F4485FFA2826F2028EAB2D9 /* RnpKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RnpKit-prefix.pch"; sourceTree = "<group>"; };
+		EFF909907D9794E4C781DAC1693A7018 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F05C6EDBC8E4591F89BD9F1E17FBFC97 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		F20A7188ABF123273A3C22C4340688AC /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		F3FEAF429FE7E3493D0F2B88A4484CED /* UIView+RnpCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RnpCategory.m"; path = "RnpKit/Classes/View/UIView+RnpCategory.m"; sourceTree = "<group>"; };
+		F9D56C6B9336DD1B803FB1FAFB77FDB1 /* RnpBaseScrollViewChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpBaseScrollViewChain.h; path = RnpKit/Classes/View/RnpBaseScrollViewChain.h; sourceTree = "<group>"; };
+		FA65366841DCC604376004E983E61D22 /* RnpUICollectionViewCellChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpUICollectionViewCellChain.m; path = RnpKit/Classes/View/RnpUICollectionViewCellChain.m; sourceTree = "<group>"; };
+		FC684FAF75B756DCAB3190B0400A5453 /* RnpWKWebViewChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpWKWebViewChain.m; path = RnpKit/Classes/View/RnpWKWebViewChain.m; sourceTree = "<group>"; };
+		FE7A0F064F168E6660B03C9639A19329 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		14104CB062B3C8360E2C986A5908C348 /* Frameworks */ = {
+		5E047F76604659BF1B2099B2C412AC93 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				755BA17044BA675F991226F7C462604B /* Foundation.framework in Frameworks */,
+				E51F496BDC6ACADE04FDA059C6CB2342 /* Foundation.framework in Frameworks */,
+				CE93C54413259B4AC3683B6EB874D466 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		70501495AAD0DBDE96BFECE2D78F2707 /* Frameworks */ = {
+		5F2096E732B77EB5E317E67803A11D98 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9707BE7B23CA0C2CCC16511582D24808 /* Foundation.framework in Frameworks */,
+				E15CACFD2BFE3B02D6CA21CC5F0506D2 /* Foundation.framework in Frameworks */,
+				775076D498B72900F5B236F068C3BC3A /* Masonry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,21 +284,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F01C7F925F66D9A754D8B6423DAA5180 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12151D62C74AFD0B7A2C874260D384DE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03458FDA3388E06A314FBBCDE81609DB /* Support Files */ = {
+		07A92D3927B037A5E279782D0BB2D8A1 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
-				30DA400271B1121743F55E5EA2217438 /* RnpKit.modulemap */,
-				CB385E99D615EAADB492C0F0C3F8FB5F /* RnpKit.xcconfig */,
-				1DE8B9661315B62D31B1593A7FE9110B /* RnpKit-dummy.m */,
-				966CBCBCD51EFE39C28B70C6ADA1786C /* RnpKit-Info.plist */,
-				F539937B8F4485FFA2826F2028EAB2D9 /* RnpKit-prefix.pch */,
-				E67CF2985D1A3EBB5B56CF18B02D1DB2 /* RnpKit-umbrella.h */,
+				70492ECD069FD2773F65DCC4FDD99E57 /* RnpBaseViewChain+Layout.h */,
+				A36F3B0F0DA161E7083C02EE5A52D12C /* RnpBaseViewChain+Layout.m */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/RnpKit";
+			name = Layout;
 			sourceTree = "<group>";
 		};
 		1B40A506F2810D368693385CBEF17097 /* Pods-RnpKit_Example */ = {
@@ -132,24 +321,18 @@
 			path = "Target Support Files/Pods-RnpKit_Example";
 			sourceTree = "<group>";
 		};
-		2CA53AA8F53DC6ACDB242A4948797A6A /* Products */ = {
+		2C4AEE7F9C5A7D148716ACA89ACC5EB9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A9756FB5D0635BB224EB448C445DD92D /* Pods_RnpKit_Example.framework */,
-				741C0365B5EAF1EE7CDD87A6D634EC3B /* Pods_RnpKit_Tests.framework */,
-				4344C6F9A745B6DF47C6CCD943D7D8EF /* RnpKit.framework */,
+				102FEBBF28D3DBE1D593CF9B40167082 /* RnpKit.modulemap */,
+				2F88D665728C890EA663369AB4E5A8DD /* RnpKit.xcconfig */,
+				DF1B1C325CD1D8301A00118CE817C989 /* RnpKit-dummy.m */,
+				42E4E37BCA0430C2EB2E688F8EBBAB62 /* RnpKit-Info.plist */,
+				368CBCEC72F0D378AE28159D9A2884A1 /* RnpKit-prefix.pch */,
+				87AB27CCCD6779DD74CED1A7A1F6237A /* RnpKit-umbrella.h */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		342DA166BB33C21CF26844079B1CCBD9 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				EC02FFF27CBEBC82B0D4E0C521287C97 /* LICENSE */,
-				3A8AAF7F1630864161269E83242886D8 /* README.md */,
-				6C8C3CAB406556BF01A1A6BE54B362EC /* RnpKit.podspec */,
-			);
-			name = Pod;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/RnpKit";
 			sourceTree = "<group>";
 		};
 		592099EEF5A2C100E91EF7A68754DA58 /* Targets Support Files */ = {
@@ -177,70 +360,261 @@
 			path = "Target Support Files/Pods-RnpKit_Tests";
 			sourceTree = "<group>";
 		};
-		A28655B9A9A4E0C3ACD7DE09FAB02273 /* RnpKit */ = {
+		641727D7EBF7D099C436C5885417E360 /* Masonry */ = {
 			isa = PBXGroup;
 			children = (
-				1238CD5971158A95A9F5359CBAA17448 /* MyView.h */,
-				B5DD96025392EDF729911CC3843E7625 /* MyView.m */,
-				342DA166BB33C21CF26844079B1CCBD9 /* Pod */,
-				03458FDA3388E06A314FBBCDE81609DB /* Support Files */,
+				4E5709CED54C3B8DC4B50B19520F6771 /* MASCompositeConstraint.h */,
+				B377289AFAE7DF9945B981F14B4AF95C /* MASCompositeConstraint.m */,
+				130F3B92BAB28630295F57E8AAC12EA1 /* MASConstraint.h */,
+				1F1BF5683BFFCF57BA0C385B36CC0BE2 /* MASConstraint.m */,
+				D100F47F5FECCA555C616F7D93D7CB4B /* MASConstraint+Private.h */,
+				3BCF93F338546FCB058B68A5B6F26B32 /* MASConstraintMaker.h */,
+				36D9333B00F315696855ADE85C3E6D15 /* MASConstraintMaker.m */,
+				115A4EA8F789344C790FEA5CDC507FB7 /* MASLayoutConstraint.h */,
+				5FADB5EBFADA2A419371CF5E6C927F1E /* MASLayoutConstraint.m */,
+				F05C6EDBC8E4591F89BD9F1E17FBFC97 /* Masonry.h */,
+				86DFFE3C8ABE515058DCF105EB608F37 /* MASUtilities.h */,
+				0F5718E89E4E5165AA49B980D89CBCF8 /* MASViewAttribute.h */,
+				ACB7B80D58CFA003C25B538A405A341D /* MASViewAttribute.m */,
+				B47E0CCE07C313DF7CE5A32C063379DF /* MASViewConstraint.h */,
+				A17EAC4713F6B85A6124DB11F111B072 /* MASViewConstraint.m */,
+				F20A7188ABF123273A3C22C4340688AC /* NSArray+MASAdditions.h */,
+				C6BB2E40FA7314FFFF244B2FD839A658 /* NSArray+MASAdditions.m */,
+				DF48D82622C6D1FFAC5752C7BB004472 /* NSArray+MASShorthandAdditions.h */,
+				9CD1AD2192C246BE568B6CFBA7EB9C68 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				62890C896C598E9650B511A4A9BA249A /* NSLayoutConstraint+MASDebugAdditions.m */,
+				896A4BCB5B3DBC78E1CF6EBF5AC2862F /* View+MASAdditions.h */,
+				FE7A0F064F168E6660B03C9639A19329 /* View+MASAdditions.m */,
+				9C783239D12541FA278CBEBA15780CE4 /* View+MASShorthandAdditions.h */,
+				1E780607D798BC01DDE3031621C51501 /* ViewController+MASAdditions.h */,
+				071ABA9DA4A53122DD0382E7C7F6CBEB /* ViewController+MASAdditions.m */,
+				BDFB34A12FABD70C59DCE49920774B47 /* Support Files */,
+			);
+			name = Masonry;
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		7529FD53BCE26816CCD46658378AAF1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				641727D7EBF7D099C436C5885417E360 /* Masonry */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AF6DDD3B363B88E1620858D9B7672099 /* RnpKit */ = {
+			isa = PBXGroup;
+			children = (
+				871EFA7A901DEF816DA4E97BCD3C0687 /* RnpKit.h */,
+				07A92D3927B037A5E279782D0BB2D8A1 /* Layout */,
+				E8D69B02F5DB8931A82B042D7052F674 /* Pod */,
+				2C4AEE7F9C5A7D148716ACA89ACC5EB9 /* Support Files */,
+				FE2A1BEDA2171C7DBCBAB33243B1E99B /* View */,
 			);
 			name = RnpKit;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		B8E2C472EF7E7FDC3762375EC6A7F033 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				28147EF640D73DD5BE8B797CFD199606 /* Foundation.framework */,
+				EFF909907D9794E4C781DAC1693A7018 /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		BDFB34A12FABD70C59DCE49920774B47 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				870570EFE09B8657023DC7C42C33BE4B /* Masonry.modulemap */,
+				002BF3DDD89C177475702379D618BDA2 /* Masonry.xcconfig */,
+				E476E5DC364B11085C84F8770A12FD3B /* Masonry-dummy.m */,
+				025EB543E67AF6218FBFEFBEC406E598 /* Masonry-Info.plist */,
+				E6225045F2DF7AF603D15E0A59933930 /* Masonry-prefix.pch */,
+				8D4CA7B92265A15B80B1666634FF46C0 /* Masonry-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		CC24DE0EBF5073144586263E8D010B88 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF6DDD3B363B88E1620858D9B7672099 /* RnpKit */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				E9F966A88C9D6984DDBA54298E2F39F2 /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				2CA53AA8F53DC6ACDB242A4948797A6A /* Products */,
+				CC24DE0EBF5073144586263E8D010B88 /* Development Pods */,
+				DF275781DF9628A2D5BF35F5D74F7BC1 /* Frameworks */,
+				7529FD53BCE26816CCD46658378AAF1B /* Pods */,
+				F3A7F1BAB16F78333A0394A280DB1A78 /* Products */,
 				592099EEF5A2C100E91EF7A68754DA58 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		DF275781DF9628A2D5BF35F5D74F7BC1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				6B28864E3F11E1DDE7AEF55AFFD8B0FE /* Masonry.framework */,
+				B8E2C472EF7E7FDC3762375EC6A7F033 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E9F966A88C9D6984DDBA54298E2F39F2 /* Development Pods */ = {
+		E8D69B02F5DB8931A82B042D7052F674 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				A28655B9A9A4E0C3ACD7DE09FAB02273 /* RnpKit */,
+				C505C144AA141401C06136D41389EF53 /* LICENSE */,
+				DD5B01B1A459189B002A442EC4367A25 /* README.md */,
+				35A5E46D1CA96F1696D99E9C73F46588 /* RnpKit.podspec */,
 			);
-			name = "Development Pods";
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		F3A7F1BAB16F78333A0394A280DB1A78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FFED36A657123030ABB700256D73F15 /* Masonry.framework */,
+				A9756FB5D0635BB224EB448C445DD92D /* Pods_RnpKit_Example.framework */,
+				741C0365B5EAF1EE7CDD87A6D634EC3B /* Pods_RnpKit_Tests.framework */,
+				4344C6F9A745B6DF47C6CCD943D7D8EF /* RnpKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE2A1BEDA2171C7DBCBAB33243B1E99B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				97E428D5EC48FC6C328599E8B9A43652 /* DnpUIPickerViewChain.h */,
+				7607767756DA1623157EE9CE12F1716D /* DnpUIPickerViewChain.m */,
+				C52D07A67A033760E12CB81DC8F6BBE1 /* DnpUIProgressViewChain.h */,
+				2CC04A0E426FE93069B73BB7E2BCA887 /* DnpUIProgressViewChain.m */,
+				C48E7F4BD4CA7913E4811ABC8D12B394 /* DnpUISliderChain.h */,
+				E32B9B40B2C0A2D2D21EB49BD46BFD14 /* DnpUISliderChain.m */,
+				44FAC0505F6EC71EA18B036D6DD6C952 /* DnpUISwitchChain.h */,
+				A76239630D654AF197C4B8259F375DB3 /* DnpUISwitchChain.m */,
+				9E179D739CF38EDE978DC40AE062CBBC /* RnpBaseControlChain.h */,
+				AD487F54D2AD3DC7E49350FF1ADCCD40 /* RnpBaseControlChain.m */,
+				F9D56C6B9336DD1B803FB1FAFB77FDB1 /* RnpBaseScrollViewChain.h */,
+				9FD0303E6BA288EE4BC0225682137819 /* RnpBaseScrollViewChain.m */,
+				7B1976161A941E65B938705B0C3D547A /* RnpBaseViewChain.h */,
+				63A2CC98DA57D88EDF0A3AD35D860F90 /* RnpBaseViewChain.m */,
+				E9F3DB02F34E7E18BC5CB64484AC0357 /* RnpChainDefine.h */,
+				E0B97F5318C082AC3A37F317AE24F2CB /* RnpKitHeader.h */,
+				5DA809062B7523A9A9356932DB3C4F19 /* RnpUIActivityIndicatorViewChain.h */,
+				651C1C8341EBF82409948E4C299016BF /* RnpUIActivityIndicatorViewChain.m */,
+				C12ADAE5BE88872B541D16AA5ED7FC74 /* RnpUIButtonChain.h */,
+				A430D1BCF8BF224871CB1F26CAD094C9 /* RnpUIButtonChain.m */,
+				938D7E1A81939CE160F7225F4CDA9557 /* RnpUICollectionViewCellChain.h */,
+				FA65366841DCC604376004E983E61D22 /* RnpUICollectionViewCellChain.m */,
+				ACBA4479FBE9BC09B0E4D7B88C50C661 /* RnpUICollectionViewChain.h */,
+				AD0CC01CF53ABADCE39C82CCBE21DD7C /* RnpUICollectionViewChain.m */,
+				6CE28BE04EF3CE573DEB91A8C4822E8E /* RnpUIControlChain.h */,
+				5A9A1F0560B670C9AE8D460A3A000C50 /* RnpUIControlChain.m */,
+				8C5CC95528CF8AE7F99D64ADC829C358 /* RnpUIDatePickerChain.h */,
+				A5EB8F514E9DCA29F6E33B8B466DA756 /* RnpUIDatePickerChain.m */,
+				286D730BD819C21961BDE571C64677DE /* RnpUIImageViewChain.h */,
+				45C214632D46B5B45778ECE049743528 /* RnpUIImageViewChain.m */,
+				66AC713C69C3C7ECFEC6C1774FD90D31 /* RnpUILabelChain.h */,
+				D7B70A7D423EED420651679684697079 /* RnpUILabelChain.m */,
+				2CCF29356508242807262EED92436433 /* RnpUIScrollViewChain.h */,
+				4D2F281388D2449614BE87E05FEF68AD /* RnpUIScrollViewChain.m */,
+				1189DBB8EFC69624C3C8747016B7189F /* RnpUISegmentedControlChain.h */,
+				5193C0896FA95A026DEFCBEEA02C5FF5 /* RnpUISegmentedControlChain.m */,
+				81041D2CE04D459C786019124781ACDC /* RnpUITableViewCellChain.h */,
+				87D62F8BEC4A38B45F1DE5F5C99F1116 /* RnpUITableViewCellChain.m */,
+				865911E91B3B44DE381D8D9EE01BB2A0 /* RnpUITableViewChain.h */,
+				DFE09995B5E51F5A1507565C474392C0 /* RnpUITableViewChain.m */,
+				84810A0287482975D6E3C662D9683467 /* RnpUITextFieldChain.h */,
+				16BD064346CDC4FD1149E1F9208718A1 /* RnpUITextFieldChain.m */,
+				4E53FC14A94B9A44213EA73193EE8F41 /* RnpUITextViewChain.h */,
+				DDC81F880E6BA2AF022F4146E894614B /* RnpUITextViewChain.m */,
+				2C06F5BD94DD0C68B47551615E904A9A /* RnpUIViewChain.h */,
+				23B5F85940BCDBC889BA65F0A71670BD /* RnpUIViewChain.m */,
+				7B3AA61C17143B979823EF4A5629750B /* RnpWKWebViewChain.h */,
+				FC684FAF75B756DCAB3190B0400A5453 /* RnpWKWebViewChain.m */,
+				CE14E8914098CF9C9BE32E929D589651 /* UIView+RnpCategory.h */,
+				F3FEAF429FE7E3493D0F2B88A4484CED /* UIView+RnpCategory.m */,
+				6C200F170919F6AC4DBE2670C6A7BDD6 /* UIView+RnpChain.h */,
+				039D30022B4037879CE9724C5018CBE8 /* UIView+RnpChain.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3237EB83EF102E22CDA80476958AAA88 /* Headers */ = {
+		79C3E848AABAD1925DCAEDC7EFFD8887 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B9441F65B4B6F8CE8C298D42445A182 /* MyView.h in Headers */,
-				EFA55C7C6CCED695FEC386161618D88B /* RnpKit-umbrella.h in Headers */,
+				DC12671DACDED02C6D3BD9588FF81039 /* DnpUIPickerViewChain.h in Headers */,
+				80D075D8F6F9FAB2B23B6562313C0429 /* DnpUIProgressViewChain.h in Headers */,
+				FC043DCEB02BE68C9296358080B127A0 /* DnpUISliderChain.h in Headers */,
+				33B26ACB3CCE4F99E0BD0750A1B6E47C /* DnpUISwitchChain.h in Headers */,
+				A656E832527F0145929A76639FF628BC /* RnpBaseControlChain.h in Headers */,
+				126DA964C1D5AEDD6E7DB32CE4D4CC47 /* RnpBaseScrollViewChain.h in Headers */,
+				E009ABE0253425BB96F2FD4D663C8C8C /* RnpBaseViewChain+Layout.h in Headers */,
+				8D44B14AA4FBAED72A461D0802204948 /* RnpBaseViewChain.h in Headers */,
+				6CD4F6A877BAC4B8A25FA29E941374F1 /* RnpChainDefine.h in Headers */,
+				EE5651E77C57EC6C7D70CD981F1AEA49 /* RnpKit-umbrella.h in Headers */,
+				A1E3CAC9CCF86D3030327F1538ED6E4E /* RnpKit.h in Headers */,
+				1556C470B623FC4A0BC93D4E2E1EDC21 /* RnpKitHeader.h in Headers */,
+				B6645B93F7AD1E8B1ECBDC6E0D576456 /* RnpUIActivityIndicatorViewChain.h in Headers */,
+				9DD4623FE9F0F59C4C4060DCD3C8DBB0 /* RnpUIButtonChain.h in Headers */,
+				A4FAB137922F3A6D1672FD809C9D0C00 /* RnpUICollectionViewCellChain.h in Headers */,
+				66A7B64F239E0C7F659770FAB482B462 /* RnpUICollectionViewChain.h in Headers */,
+				801FEFE831F34DBBD9918C7E6166953A /* RnpUIControlChain.h in Headers */,
+				8F2F7A9FFD78CB7AA91E64A793F1E9B9 /* RnpUIDatePickerChain.h in Headers */,
+				0BBA285BAC53DC1E63933B37F567B245 /* RnpUIImageViewChain.h in Headers */,
+				C3616DA8F76B81B7D30E21F8798DDB02 /* RnpUILabelChain.h in Headers */,
+				4B8AC374DF7117122D11A33B3781DA14 /* RnpUIScrollViewChain.h in Headers */,
+				47147DA8AEE69C7E1460A0D3A7E3D423 /* RnpUISegmentedControlChain.h in Headers */,
+				45590EB0C7043412090AE8C8A9673E7B /* RnpUITableViewCellChain.h in Headers */,
+				9229CC579CAA85333AF80AE5D0770E10 /* RnpUITableViewChain.h in Headers */,
+				A3CC9DFF34111F7815273272B1999BF4 /* RnpUITextFieldChain.h in Headers */,
+				94B9EC3A6F0699871277BB913802FBC8 /* RnpUITextViewChain.h in Headers */,
+				71184DB7E97113C80BD24D4E3DA76D34 /* RnpUIViewChain.h in Headers */,
+				1F23F00A3AD968B77E26FEA7FE46E14D /* RnpWKWebViewChain.h in Headers */,
+				047819587EBF14DEDEDABE4BD3781F64 /* UIView+RnpCategory.h in Headers */,
+				11DA7C68AD572B605DBEDA450C6BDF63 /* UIView+RnpChain.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92D8A5E85F146BCDBEC54E1A2FBE24B4 /* Headers */ = {
+		7B04ACBA4522760CA66A5D4AFA498F81 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE0BB01FEC564B9CA01CD43B72F64AA8 /* Pods-RnpKit_Example-umbrella.h in Headers */,
+				8D65CE579E516BDD5FB36CAA21D693F6 /* MASCompositeConstraint.h in Headers */,
+				9D546E1168C04B0B2EAE005D9275D18B /* MASConstraint+Private.h in Headers */,
+				941955A19C40899D275604E6E9C21A6D /* MASConstraint.h in Headers */,
+				FAFBFA90F7BC3E7CF50F8A5CF0A8B264 /* MASConstraintMaker.h in Headers */,
+				8D4D1F6E4709EBB13974E95DC1059DDC /* MASLayoutConstraint.h in Headers */,
+				6A6AD3A5BBDBFD0B4AF936BD518EC0B1 /* Masonry-umbrella.h in Headers */,
+				346080C0D1CA23399ADD739D722D7CEF /* Masonry.h in Headers */,
+				280D36330BAC5715615FF4A8B42D60D6 /* MASUtilities.h in Headers */,
+				3DA5F1D8E51CDD102A871C2F37770C7B /* MASViewAttribute.h in Headers */,
+				EAE8B0895956885A752B173683A0D889 /* MASViewConstraint.h in Headers */,
+				05EA1447EEA0EB669F8DEE73964A7C60 /* NSArray+MASAdditions.h in Headers */,
+				05A040F35BF1C88F869404E1A940B493 /* NSArray+MASShorthandAdditions.h in Headers */,
+				0AF1AD35706D90B1A91F291B899EF8C0 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				4B0981F9AC628CF5100C50FF4A163A4A /* View+MASAdditions.h in Headers */,
+				E7CA20228B3583F41927813EE904CAD3 /* View+MASShorthandAdditions.h in Headers */,
+				8B92011C9373001132C8148BFC8F50B3 /* ViewController+MASAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC89F55E4E33871D79E8510D172AA8ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB53514337DF4A3A96E6B069B5D2D882 /* Pods-RnpKit_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,35 +631,55 @@
 /* Begin PBXNativeTarget section */
 		5037E74BBF0BA8773E6108792B6B4CFD /* RnpKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7EA135E8C813D50CEFBE4EA1D8D1C0E2 /* Build configuration list for PBXNativeTarget "RnpKit" */;
+			buildConfigurationList = 7BB393BA896182748C960900DFE4235F /* Build configuration list for PBXNativeTarget "RnpKit" */;
 			buildPhases = (
-				3237EB83EF102E22CDA80476958AAA88 /* Headers */,
-				7C930E80F336835E7C0CA16AD16C0584 /* Sources */,
-				70501495AAD0DBDE96BFECE2D78F2707 /* Frameworks */,
-				5BD196CBB19AF0FDDA52D2409A9A6BE5 /* Resources */,
+				79C3E848AABAD1925DCAEDC7EFFD8887 /* Headers */,
+				FF2AE9BB304DD2900D510A894834D0AA /* Sources */,
+				5F2096E732B77EB5E317E67803A11D98 /* Frameworks */,
+				854B32853F2608D4700775F216E3F086 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CF7AD203D65E4DA116729CA3D711702C /* PBXTargetDependency */,
 			);
 			name = RnpKit;
 			productName = RnpKit;
 			productReference = 4344C6F9A745B6DF47C6CCD943D7D8EF /* RnpKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8AC5583DB2DD78470A2D02976D52C344 /* Pods-RnpKit_Example */ = {
+		55AF53E6C77A10ED4985E04D74A8878E /* Masonry */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 05D39EBC8951DB07DD87A9343A042BDE /* Build configuration list for PBXNativeTarget "Pods-RnpKit_Example" */;
+			buildConfigurationList = 87FD40BD683E3BD044AA4D1B5CA58652 /* Build configuration list for PBXNativeTarget "Masonry" */;
 			buildPhases = (
-				92D8A5E85F146BCDBEC54E1A2FBE24B4 /* Headers */,
-				FDB2BDFA7DA096202294F01F7A170A78 /* Sources */,
-				14104CB062B3C8360E2C986A5908C348 /* Frameworks */,
-				2326EBE5FEE15603E08D36D28F27A3FB /* Resources */,
+				7B04ACBA4522760CA66A5D4AFA498F81 /* Headers */,
+				038B428AD06C5A47FAF2BEFE16C6DC16 /* Sources */,
+				5E047F76604659BF1B2099B2C412AC93 /* Frameworks */,
+				895ED1B8779C1D82DF681CBFF67AC570 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				421CEB101DDFF6FBB2412F7AAF95A339 /* PBXTargetDependency */,
+			);
+			name = Masonry;
+			productName = Masonry;
+			productReference = 1FFED36A657123030ABB700256D73F15 /* Masonry.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8AC5583DB2DD78470A2D02976D52C344 /* Pods-RnpKit_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AEDC25FD5E37ED628ADE8776BA06E57 /* Build configuration list for PBXNativeTarget "Pods-RnpKit_Example" */;
+			buildPhases = (
+				BC89F55E4E33871D79E8510D172AA8ED /* Headers */,
+				F6E5D77DDD797495D39BE36896C64DF1 /* Sources */,
+				F01C7F925F66D9A754D8B6423DAA5180 /* Frameworks */,
+				A5AC880B1453A7B423DC81A05724C532 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03150ACDEF737DBE938E8497CE6C7B1D /* PBXTargetDependency */,
+				5D282779899E9F41422FF5A115CB497E /* PBXTargetDependency */,
 			);
 			name = "Pods-RnpKit_Example";
 			productName = "Pods-RnpKit_Example";
@@ -328,10 +722,11 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 2CA53AA8F53DC6ACDB242A4948797A6A /* Products */;
+			productRefGroup = F3A7F1BAB16F78333A0394A280DB1A78 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				55AF53E6C77A10ED4985E04D74A8878E /* Masonry */,
 				8AC5583DB2DD78470A2D02976D52C344 /* Pods-RnpKit_Example */,
 				8BCFF031FA95BA250C275CEBAF3B6133 /* Pods-RnpKit_Tests */,
 				5037E74BBF0BA8773E6108792B6B4CFD /* RnpKit */,
@@ -347,14 +742,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2326EBE5FEE15603E08D36D28F27A3FB /* Resources */ = {
+		854B32853F2608D4700775F216E3F086 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5BD196CBB19AF0FDDA52D2409A9A6BE5 /* Resources */ = {
+		895ED1B8779C1D82DF681CBFF67AC570 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5AC880B1453A7B423DC81A05724C532 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -364,12 +766,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7C930E80F336835E7C0CA16AD16C0584 /* Sources */ = {
+		038B428AD06C5A47FAF2BEFE16C6DC16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E19B3C82ADF33352FD48E2CBFB71160 /* MyView.m in Sources */,
-				A99E8E6FDBCDB57748099BC739076D4E /* RnpKit-dummy.m in Sources */,
+				7BFF65958F014760B6AC4742824892EB /* MASCompositeConstraint.m in Sources */,
+				E8DD5D1D406150E1C80AD015271B6848 /* MASConstraint.m in Sources */,
+				78B2727EE5D693F58D019DB098005101 /* MASConstraintMaker.m in Sources */,
+				8539B851E01A58467BE49CA3FA77223C /* MASLayoutConstraint.m in Sources */,
+				1972E85F0FCD0F3EAF28ED7CD036286E /* Masonry-dummy.m in Sources */,
+				297A3627CF2F032CBFDC61D1A3786E63 /* MASViewAttribute.m in Sources */,
+				B7D645EC004610E8A581E532D28771EC /* MASViewConstraint.m in Sources */,
+				098630ECDB64ED7B89F5F687C82B4AC3 /* NSArray+MASAdditions.m in Sources */,
+				C0861ADB4C5FA30F4F9E051F7638A264 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				A35FBEEC7D088AEC05297E8292A32C77 /* View+MASAdditions.m in Sources */,
+				0967598607D521318F69D7D39D517B20 /* ViewController+MASAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,28 +792,74 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDB2BDFA7DA096202294F01F7A170A78 /* Sources */ = {
+		F6E5D77DDD797495D39BE36896C64DF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				916D242F22832EAEC6FC066605E0A927 /* Pods-RnpKit_Example-dummy.m in Sources */,
+				3A13E89CEADB9E0016683E8579646A71 /* Pods-RnpKit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF2AE9BB304DD2900D510A894834D0AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15290AD0E91680F9E7E33B50DDB77D2B /* DnpUIPickerViewChain.m in Sources */,
+				0C04CDDEE6176F93AC6ABDE948B5E749 /* DnpUIProgressViewChain.m in Sources */,
+				D42EB1DA47748FA6C8EE1A24A6BA15F7 /* DnpUISliderChain.m in Sources */,
+				1A9E84751254E2C8D0BE96E7EE89A429 /* DnpUISwitchChain.m in Sources */,
+				BAE62D35B5E7DA144EA16D70AF4B1394 /* RnpBaseControlChain.m in Sources */,
+				273CCC511555B49BFDD32E4B82987383 /* RnpBaseScrollViewChain.m in Sources */,
+				CB135FC1733CEBED30488F57431092F0 /* RnpBaseViewChain+Layout.m in Sources */,
+				F4A0C4200D73FCCF71899BAF239D8E66 /* RnpBaseViewChain.m in Sources */,
+				65F7A6034EB48EE68F0550A017EE03BE /* RnpKit-dummy.m in Sources */,
+				E05620797868448E3962C0D15206B570 /* RnpUIActivityIndicatorViewChain.m in Sources */,
+				69D68274022FFCB14EEBD210FF05C1FA /* RnpUIButtonChain.m in Sources */,
+				DCAE0D89660927EC6D821AD632D8D887 /* RnpUICollectionViewCellChain.m in Sources */,
+				34937C8DD71532F7F9C9DB3800C2B6CB /* RnpUICollectionViewChain.m in Sources */,
+				50FA308C56C70293B6F3D6811F13CDAD /* RnpUIControlChain.m in Sources */,
+				D02AD12D144C65C64DACCE30FA095E96 /* RnpUIDatePickerChain.m in Sources */,
+				EFAADF7DA256E71380FEFFEAAF405678 /* RnpUIImageViewChain.m in Sources */,
+				4CD4329FB8D44B1DEB141A467A7579A5 /* RnpUILabelChain.m in Sources */,
+				B4F0DE25BBA803C33C04DCCE34B1180E /* RnpUIScrollViewChain.m in Sources */,
+				D118A21BE1A55717649F3D7405EFA455 /* RnpUISegmentedControlChain.m in Sources */,
+				7D68884E3F15497CFCC31DED80D2375E /* RnpUITableViewCellChain.m in Sources */,
+				F3AD9F721F9AF2C41E35366D24A1E781 /* RnpUITableViewChain.m in Sources */,
+				0B6916B401052B246ACB07E0CC8850CB /* RnpUITextFieldChain.m in Sources */,
+				7AF7ADB4BA88A3A1BDE48135A07EE825 /* RnpUITextViewChain.m in Sources */,
+				7F55954E85474DC40044EE9EA276EE4B /* RnpUIViewChain.m in Sources */,
+				C572FD3458B2582358429F00506DD936 /* RnpWKWebViewChain.m in Sources */,
+				852A65A6B75357A55A98A1AE0D4E57EE /* UIView+RnpCategory.m in Sources */,
+				A4B1EEDEE7410538C9BCEE1D4B69128C /* UIView+RnpChain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		421CEB101DDFF6FBB2412F7AAF95A339 /* PBXTargetDependency */ = {
+		03150ACDEF737DBE938E8497CE6C7B1D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = RnpKit;
-			target = 5037E74BBF0BA8773E6108792B6B4CFD /* RnpKit */;
-			targetProxy = 337657F820DF734ED0A023E14EADC179 /* PBXContainerItemProxy */;
+			name = Masonry;
+			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
+			targetProxy = 38E03F45F1D15C9C9ABA9BD5EE8676A2 /* PBXContainerItemProxy */;
 		};
 		42CE30ABE7941D889D16A4C459EF86D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-RnpKit_Example";
 			target = 8AC5583DB2DD78470A2D02976D52C344 /* Pods-RnpKit_Example */;
 			targetProxy = F88D8F8BB7CC4F85469AF73242F15E6B /* PBXContainerItemProxy */;
+		};
+		5D282779899E9F41422FF5A115CB497E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RnpKit;
+			target = 5037E74BBF0BA8773E6108792B6B4CFD /* RnpKit */;
+			targetProxy = 3B30EA708A081459C19616373CFB0496 /* PBXContainerItemProxy */;
+		};
+		CF7AD203D65E4DA116729CA3D711702C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
+			targetProxy = 4CE6ED96816AB2BA452CAA6AD4602E29 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -427,6 +884,73 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RnpKit_Tests/Pods-RnpKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		11AD8DDFA0708588184558F65D3D02D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 176A9ACAF23D9A6DBFB760BDED919C15 /* Pods-RnpKit_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RnpKit_Example/Pods-RnpKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RnpKit_Example/Pods-RnpKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1B40141837DF34B7E5C19A0AF5E5F0B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB8C2F0BF8ABB92F44023B0E1B447ACF /* Pods-RnpKit_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RnpKit_Example/Pods-RnpKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RnpKit_Example/Pods-RnpKit_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -501,9 +1025,41 @@
 			};
 			name = Release;
 		};
-		533F06C788F4AD80295C6ABF4461137A /* Release */ = {
+		527D6664223B803E9C7307F58E3CA12A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB385E99D615EAADB492C0F0C3F8FB5F /* RnpKit.xcconfig */;
+			baseConfigurationReference = 002BF3DDD89C177475702379D618BDA2 /* Masonry.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7A70466A41D8014D8BE65FCC0EA363D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F88D665728C890EA663369AB4E5A8DD /* RnpKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -526,40 +1082,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5C25AD477AFE789F0E3257C178F22623 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 176A9ACAF23D9A6DBFB760BDED919C15 /* Pods-RnpKit_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-RnpKit_Example/Pods-RnpKit_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RnpKit_Example/Pods-RnpKit_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -630,9 +1152,40 @@
 			};
 			name = Debug;
 		};
-		8C2E492C0B1A53E858B2D9B5DF70DE57 /* Debug */ = {
+		8C65F7CC9708EE0690525E4800598E8E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB385E99D615EAADB492C0F0C3F8FB5F /* RnpKit.xcconfig */;
+			baseConfigurationReference = 002BF3DDD89C177475702379D618BDA2 /* Masonry.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A97CF45E179748E004109CED85983D0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F88D665728C890EA663369AB4E5A8DD /* RnpKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -656,10 +1209,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		ACA70FB944A2BD05821EDF18E4AE1E06 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -694,52 +1248,9 @@
 			};
 			name = Debug;
 		};
-		CB6D673A015F8F91937F351EB578E99F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB8C2F0BF8ABB92F44023B0E1B447ACF /* Pods-RnpKit_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-RnpKit_Example/Pods-RnpKit_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RnpKit_Example/Pods-RnpKit_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		05D39EBC8951DB07DD87A9343A042BDE /* Build configuration list for PBXNativeTarget "Pods-RnpKit_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5C25AD477AFE789F0E3257C178F22623 /* Debug */,
-				CB6D673A015F8F91937F351EB578E99F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -749,11 +1260,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7EA135E8C813D50CEFBE4EA1D8D1C0E2 /* Build configuration list for PBXNativeTarget "RnpKit" */ = {
+		7BB393BA896182748C960900DFE4235F /* Build configuration list for PBXNativeTarget "RnpKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8C2E492C0B1A53E858B2D9B5DF70DE57 /* Debug */,
-				533F06C788F4AD80295C6ABF4461137A /* Release */,
+				7A70466A41D8014D8BE65FCC0EA363D1 /* Debug */,
+				A97CF45E179748E004109CED85983D0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87FD40BD683E3BD044AA4D1B5CA58652 /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C65F7CC9708EE0690525E4800598E8E /* Debug */,
+				527D6664223B803E9C7307F58E3CA12A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AEDC25FD5E37ED628ADE8776BA06E57 /* Build configuration list for PBXNativeTarget "Pods-RnpKit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11AD8DDFA0708588184558F65D3D02D5 /* Debug */,
+				1B40141837DF34B7E5C19A0AF5E5F0B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -22,7 +22,7 @@ pod 'RnpKit'
 
 ## Author
 
-songchaofeng6@hotmail.com, songchaofeng6@hotmail.com
+Zomfice
 
 ## License
 

@@ -1,15 +1,28 @@
 PODS:
-  - RnpKit (0.1.0)
+  - Masonry (1.1.0)
+  - RnpKit (1.0.0):
+    - RnpKit/Layout (= 1.0.0)
+    - RnpKit/View (= 1.0.0)
+  - RnpKit/Layout (1.0.0):
+    - Masonry
+    - RnpKit/View
+  - RnpKit/View (1.0.0):
+    - Masonry
 
 DEPENDENCIES:
   - RnpKit (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
 
 EXTERNAL SOURCES:
   RnpKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RnpKit: 9d0ee2ee2484bdc4684881dc3a20cab49b85c4e6
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  RnpKit: 301294f022abd4661e622ba9b624b057f36ed7fa
 
 PODFILE CHECKSUM: 790318de3d72b894d268f04914846dfbda6032dc
 
