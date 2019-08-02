@@ -8,9 +8,10 @@
 #import "RnpBaseScrollViewChain.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
-@interface RnpUIScrollViewChain : RnpBaseScrollViewChain
+@class RnpUIScrollViewChain;
+@interface RnpUIScrollViewChain : RnpBaseScrollViewChain<RnpUIScrollViewChain*>
 
 @end
-
+RPCreate(UIScrollView)
+RPCATEGORY_EXINTERFACE(UIScrollView, RnpUIScrollViewChain)
 NS_ASSUME_NONNULL_END

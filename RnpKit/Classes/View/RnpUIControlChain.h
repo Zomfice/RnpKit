@@ -8,9 +8,10 @@
 #import "RnpBaseControlChain.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
-@interface RnpUIControlChain : RnpBaseControlChain
+@class RnpUIControlChain;
+@interface RnpUIControlChain : RnpBaseControlChain<RnpUIControlChain*>
 
 @end
-
+RPCreate(UIControl)
+RPCATEGORY_EXINTERFACE(UIControl, RnpUIControlChain)
 NS_ASSUME_NONNULL_END

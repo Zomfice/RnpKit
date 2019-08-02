@@ -1,27 +1,27 @@
 //
-//  RnpKitHeader.h
-//  Pods
+//  RnpKitView.h
+//  RnpKit
 //
-//  Created by Zomfice on 2019/7/31.
+//  Created by Zomfice on 2019/8/2.
 //
 
-#ifndef RnpKitHeader_h
-#define RnpKitHeader_h
+#ifndef RnpKitView_h
+#define RnpKitView_h
 
 #import "RnpUIViewChain.h"
 #import "RnpUILabelChain.h"
 #import "RnpUIButtonChain.h"
 #import "RnpUIDatePickerChain.h"
 #import "RnpUIControlChain.h"
-#import "DnpUISwitchChain.h"
-#import "DnpUIProgressViewChain.h"
-#import "DnpUISliderChain.h"
+#import "RnpUISwitchChain.h"
+#import "RnpUIProgressViewChain.h"
+#import "RnpUISliderChain.h"
 #import "RnpUITextViewChain.h"
 #import "RnpUISegmentedControlChain.h"
 #import "RnpUIScrollViewChain.h"
 #import "RnpUIImageViewChain.h"
 #import "RnpUIActivityIndicatorViewChain.h"
-#import "DnpUIPickerViewChain.h"
+#import "RnpUIPickerViewChain.h"
 #import "RnpUITextFieldChain.h"
 #import "RnpUITableViewChain.h"
 #import "RnpUICollectionViewChain.h"
@@ -29,4 +29,4 @@
 #import "RnpUICollectionViewCellChain.h"
 #import "RnpWKWebViewChain.h"
 
-#endif /* RnpKitHeader_h */
+#endif /* RnpKitView_h */

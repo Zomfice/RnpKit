@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RnpKit'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'A short description of RnpKit.'
 
 
@@ -26,7 +26,16 @@ TODO: Add long description of the pod here.
   
   s.subspec 'View' do |spec|
       spec.source_files = 'RnpKit/Classes/View/**/*'
-      spec.dependency 'Masonry'
+  end
+  
+  s.subspec 'Layer' do |spec|
+      spec.source_files = 'RnpKit/Classes/Layer/**/*'
+      spec.dependency 'RnpKit/View'
+  end
+  
+  s.subspec 'Gesture' do |spec|
+      spec.source_files = 'RnpKit/Classes/Gesture/**/*'
+      spec.dependency 'RnpKit/View'
   end
   
   s.subspec 'Layout' do |spec|

@@ -8,9 +8,16 @@
 #import "RnpBaseViewChain.h"
 
 NS_ASSUME_NONNULL_BEGIN
+@class RnpUIActivityIndicatorViewChain;
+@interface RnpUIActivityIndicatorViewChain : RnpBaseViewChain<RnpUIActivityIndicatorViewChain*>
 
-@interface RnpUIActivityIndicatorViewChain : RnpBaseViewChain
+RPCATEGORY_CHAIN_PROPERTY RnpUIActivityIndicatorViewChain * (^ activityIndicatorViewStyle) (UIActivityIndicatorViewStyle activityIndicatorViewStyle);
+RPCATEGORY_CHAIN_PROPERTY RnpUIActivityIndicatorViewChain * (^ hidesWhenStopped) (BOOL hidesWhenStopped);
+RPCATEGORY_CHAIN_PROPERTY RnpUIActivityIndicatorViewChain * (^ color) (UIColor * color);
+RPCATEGORY_CHAIN_PROPERTY RnpUIActivityIndicatorViewChain * (^ startAnimating) (void);
+RPCATEGORY_CHAIN_PROPERTY RnpUIActivityIndicatorViewChain * (^ stopAnimating) (void);
 
 @end
-
+RPCreate(UIActivityIndicatorView)
+RPCATEGORY_EXINTERFACE(UIActivityIndicatorView, RnpUIActivityIndicatorViewChain)
 NS_ASSUME_NONNULL_END

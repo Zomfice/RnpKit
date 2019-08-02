@@ -10,3 +10,4 @@
 @implementation RnpUIControlChain
 
 @end
+RPCATEGORY_VIEW_IMPLEMENTATION(UIControl, RnpUIControlChain)

@@ -1,6 +1,6 @@
 {
   "name": "RnpKit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "summary": "A short description of RnpKit.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Zomfice/RnpKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Zomfice/RnpKit.git",
-    "tag": "1.0.0"
+    "tag": "1.0.1"
   },
   "platforms": {
     "ios": "8.0"
@@ -22,9 +22,22 @@
   "subspecs": [
     {
       "name": "View",
-      "source_files": "RnpKit/Classes/View/**/*",
+      "source_files": "RnpKit/Classes/View/**/*"
+    },
+    {
+      "name": "Layer",
+      "source_files": "RnpKit/Classes/Layer/**/*",
       "dependencies": {
-        "Masonry": [
+        "RnpKit/View": [
+
+        ]
+      }
+    },
+    {
+      "name": "Gesture",
+      "source_files": "RnpKit/Classes/Gesture/**/*",
+      "dependencies": {
+        "RnpKit/View": [
 
         ]
       }

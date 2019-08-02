@@ -10,3 +10,4 @@
 @implementation RnpUIScrollViewChain
 
 @end
+RPCATEGORY_VIEW_IMPLEMENTATION(UIScrollView, RnpUIScrollViewChain)
