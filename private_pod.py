@@ -118,7 +118,7 @@ for op, value in opts:
   elif op == "-t":
       tag_str = value
   elif op == "-a":
-      commit_str = 'yty add code for '+value
+      commit_str = value
       tag_str = value
   elif op == "--push":
       commit_str = value
