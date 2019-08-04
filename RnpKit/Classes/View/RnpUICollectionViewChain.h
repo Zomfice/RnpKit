@@ -30,6 +30,8 @@ RPCATEGORY_CHAIN_PROPERTY RnpUICollectionViewChain * (^ adJustedContentIOS11)(vo
 RPCATEGORY_CHAIN_PROPERTY RnpUICollectionViewChain * (^ reloadData)(void);
 
 @end
+
+RPCreateFrame(UICollectionView)
 RPCreate(UICollectionView)
 static inline UICollectionView *UICollectionViewCreateWithLayout(UICollectionViewFlowLayout *layout){
     return [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];

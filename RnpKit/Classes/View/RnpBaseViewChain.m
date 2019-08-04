@@ -341,7 +341,7 @@ RPCATEGORY_CHAIN_LAYER_IMPLEMENTATION(shadowPath, CGPathRef);
     };
 }
 
-- (id  _Nonnull (^)(NSInteger))makeTag{
+- (id  _Nonnull (^)(NSInteger))setTag{
     return ^ (NSInteger tag){
         self.view.tag = tag;
         self.tag = tag;

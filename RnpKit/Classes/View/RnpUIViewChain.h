@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+RPCreateFrame(UIView)
 RPCreate(UIView)
 RPCATEGORY_EXINTERFACE(UIView, RnpUIViewChain)
 

@@ -62,6 +62,8 @@ RPCATEGORY_CHAIN_PROPERTY RnpUITextFieldChain *(^ enablesReturnKeyAutomatically)
 RPCATEGORY_CHAIN_PROPERTY RnpUITextFieldChain *(^ secureTextEntry)(BOOL secureTextEntry);
 RPCATEGORY_CHAIN_PROPERTY RnpUITextFieldChain *(^ textContentType)(UITextContentType textContentType);
 @end
+
+RPCreateFrame(UITextField)
 RPCreate(UITextField)
 RPCATEGORY_EXINTERFACE(UITextField, RnpUITextFieldChain)
 NS_ASSUME_NONNULL_END

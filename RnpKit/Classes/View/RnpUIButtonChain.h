@@ -46,6 +46,7 @@ RPCATEGORY_CHAIN_PROPERTY RnpUIButtonChain *(^ baselineAdjustment)(UIBaselineAdj
 
 @end
 
+RPCreateFrame(UIButton)
 RPCreate(UIButton)
 static inline UIButton *UIButtonNewWithType(UIButtonType buttonType){
     return [UIButton buttonWithType:buttonType];

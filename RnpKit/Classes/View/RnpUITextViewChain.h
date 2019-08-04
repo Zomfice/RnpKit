@@ -42,6 +42,8 @@ RPCATEGORY_CHAIN_PROPERTY RnpUITextViewChain *(^ enablesReturnKeyAutomatically)(
 RPCATEGORY_CHAIN_PROPERTY RnpUITextViewChain *(^ secureTextEntry)(BOOL secureTextEntry);
 RPCATEGORY_CHAIN_PROPERTY RnpUITextViewChain *(^ textContentType)(UITextContentType textContentType);
 @end
+
+RPCreateFrame(UITextView)
 RPCreate(UITextView)
 RPCATEGORY_EXINTERFACE(UITextView, RnpUITextViewChain)
 NS_ASSUME_NONNULL_END

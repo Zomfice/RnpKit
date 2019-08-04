@@ -21,6 +21,8 @@ RPCATEGORY_CHAIN_PROPERTY RnpUITableViewCellChain * (^ userInteractionEnabledWhi
 
 @end
 
+
+RPCreateFrame(UITableViewCell)
 RPCreate(UITableViewCell)
 static inline UITableViewCell * UITableViewCellCreateWithStyleAndIndentify(UITableViewCellStyle style, NSString *identifier){
     return [[UITableViewCell alloc] initWithStyle:style reuseIdentifier:identifier];

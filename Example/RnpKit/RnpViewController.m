@@ -57,6 +57,10 @@
         make.centerY.mas_equalTo(40);
     });
     
+    
+    UIViewFrame(CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height)).rnp
+    .backgroundColor([UIColor redColor]);
+    
 }
 
 - (void)didReceiveMemoryWarning

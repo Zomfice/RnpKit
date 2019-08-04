@@ -48,6 +48,8 @@ RPCATEGORY_CHAIN_PROPERTY RnpUITableViewChain *(^ registerViewNib)(UINib * viewN
 
 @end
 
+
+RPCreateFrame(UITableView)
 RPCreate(UITableView)
 static inline UITableView * UITableViewCreateWithStyle(UITableViewStyle style){
     return [[UITableView alloc]initWithFrame:CGRectZero style:style];

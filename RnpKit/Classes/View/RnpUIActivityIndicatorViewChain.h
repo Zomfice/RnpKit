@@ -18,6 +18,8 @@ RPCATEGORY_CHAIN_PROPERTY RnpUIActivityIndicatorViewChain * (^ startAnimating) (
 RPCATEGORY_CHAIN_PROPERTY RnpUIActivityIndicatorViewChain * (^ stopAnimating) (void);
 
 @end
+
+RPCreateFrame(UIActivityIndicatorView)
 RPCreate(UIActivityIndicatorView)
 RPCATEGORY_EXINTERFACE(UIActivityIndicatorView, RnpUIActivityIndicatorViewChain)
 NS_ASSUME_NONNULL_END
