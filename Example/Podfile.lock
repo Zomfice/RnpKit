@@ -1,18 +1,18 @@
 PODS:
   - Masonry (1.1.0)
-  - RnpKit (1.0.1):
-    - RnpKit/Gesture (= 1.0.1)
-    - RnpKit/Layer (= 1.0.1)
-    - RnpKit/Layout (= 1.0.1)
-    - RnpKit/View (= 1.0.1)
-  - RnpKit/Gesture (1.0.1):
+  - RnpKit (1.0.2):
+    - RnpKit/Gesture (= 1.0.2)
+    - RnpKit/Layer (= 1.0.2)
+    - RnpKit/Layout (= 1.0.2)
+    - RnpKit/View (= 1.0.2)
+  - RnpKit/Gesture (1.0.2):
     - RnpKit/View
-  - RnpKit/Layer (1.0.1):
+  - RnpKit/Layer (1.0.2):
     - RnpKit/View
-  - RnpKit/Layout (1.0.1):
+  - RnpKit/Layout (1.0.2):
     - Masonry
     - RnpKit/View
-  - RnpKit/View (1.0.1)
+  - RnpKit/View (1.0.2)
 
 DEPENDENCIES:
   - RnpKit (from `../`)
@@ -27,7 +27,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  RnpKit: ff572d81679c1306b2b88e92953cb8fec06fec1e
+  RnpKit: 5a76c41a4427d07311ecefcb805af0d79ff417c7
 
 PODFILE CHECKSUM: 790318de3d72b894d268f04914846dfbda6032dc
 

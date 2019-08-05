@@ -29,6 +29,16 @@ RPCATEGORY_CHAIN_PROPERTY RnpUICollectionViewChain *(^ registerViewNib)(UINib * 
 RPCATEGORY_CHAIN_PROPERTY RnpUICollectionViewChain * (^ adJustedContentIOS11)(void);
 RPCATEGORY_CHAIN_PROPERTY RnpUICollectionViewChain * (^ reloadData)(void);
 
+//注册Cell
+RPCATEGORY_CHAIN_PROPERTY RnpUICollectionViewChain *(^ registerNib)(Class viewClass);
+RPCATEGORY_CHAIN_PROPERTY RnpUICollectionViewChain *(^ registerClass)(Class viewClass);
+RPCATEGORY_CHAIN_PROPERTY RnpUICollectionViewChain *(^ registerClassforSupplementaryView)(Class viewClass,NSString * kind);
+RPCATEGORY_CHAIN_PROPERTY RnpUICollectionViewChain *(^ registerNibforSupplementaryView)(Class viewClass,NSString * kind);
+// 复用Cell
+
+RPCATEGORY_CHAIN_PROPERTY __kindof UICollectionViewCell *(^ dequeueReusableCell)(Class viewClass, NSIndexPath * indexPath);
+RPCATEGORY_CHAIN_PROPERTY __kindof UICollectionReusableView *(^ dequeueReusableCellSupplementaryView)(Class viewClass,NSString * kind,NSIndexPath *indexPath);
+
 @end
 
 RPCreateFrame(UICollectionView)

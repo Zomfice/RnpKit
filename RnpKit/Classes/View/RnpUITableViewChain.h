@@ -33,7 +33,7 @@ RPCATEGORY_CHAIN_PROPERTY RnpUITableViewChain *(^ separatorStyle)(UITableViewCel
 RPCATEGORY_CHAIN_PROPERTY RnpUITableViewChain *(^ separatorColor)(UIColor *separatorColor);
 
 RPCATEGORY_CHAIN_PROPERTY RnpUITableViewChain *(^ tableHeaderView)(UIView * tableHeaderView);
-RPCATEGORY_CHAIN_PROPERTY RnpUITableViewChain *(^ tableFooterView)(UIView * tableFooterView);
+RPCATEGORY_CHAIN_PROPERTY RnpUITableViewChain *(^ tableFooterView)(UIView * _Nullable tableFooterView);
 
 RPCATEGORY_CHAIN_PROPERTY RnpUITableViewChain *(^ sectionIndexBackgroundColor)(UIColor *sectionIndexBackgroundColor);
 RPCATEGORY_CHAIN_PROPERTY RnpUITableViewChain *(^ sectionIndexColor)(UIColor *sectionIndexColor);
@@ -45,6 +45,16 @@ RPCATEGORY_CHAIN_PROPERTY RnpUITableViewChain *(^ registerCellNib)(UINib * nib, 
 RPCATEGORY_CHAIN_PROPERTY RnpUITableViewChain *(^ registerViewClass)(Class viewClass, NSString *identifier);
 
 RPCATEGORY_CHAIN_PROPERTY RnpUITableViewChain *(^ registerViewNib)(UINib * viewNib, NSString *identifier);
+
+//注册Cell
+RPCATEGORY_CHAIN_PROPERTY RnpUITableViewChain *(^ registerNib)(Class viewClass);
+RPCATEGORY_CHAIN_PROPERTY RnpUITableViewChain *(^ registerClass)(Class viewClass);
+RPCATEGORY_CHAIN_PROPERTY RnpUITableViewChain *(^ registerNibForHeaderFooterView)(Class viewClass);
+RPCATEGORY_CHAIN_PROPERTY RnpUITableViewChain *(^ registerClassForHeaderFooterView)(Class viewClass);
+// 复用Cell
+RPCATEGORY_CHAIN_PROPERTY __kindof UITableViewCell *(^ dequeueReusableCellWithClass)(Class viewClass);
+RPCATEGORY_CHAIN_PROPERTY __kindof UITableViewCell *(^ dequeueReusableCell)(Class viewClass, NSIndexPath * indexPath);
+RPCATEGORY_CHAIN_PROPERTY __kindof UITableViewHeaderFooterView *(^ dequeueReusableHeaderFooterViewWithIdentifier)(Class viewClass);
 
 @end
 

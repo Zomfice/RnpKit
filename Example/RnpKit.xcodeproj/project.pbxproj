@@ -24,6 +24,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		A997E5D6C5566A982FD359A3 /* Pods_RnpKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9682C2C60760CE75B0698E /* Pods_RnpKit_Example.framework */; };
+		EFAD605722F80082000FEEB7 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAD605522F80082000FEEB7 /* TableViewCell.m */; };
+		EFAD605822F80082000FEEB7 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFAD605622F80082000FEEB7 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,9 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A16D9449739D8251B204C701 /* Pods-RnpKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnpKit_Example.release.xcconfig"; path = "Target Support Files/Pods-RnpKit_Example/Pods-RnpKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EDBBE37CB07A0D625967EB3B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EFAD605422F80082000FEEB7 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		EFAD605522F80082000FEEB7 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		EFAD605622F80082000FEEB7 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		F82CF5D2D2F05D8D04DC96C3 /* RnpKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RnpKit.podspec; path = ../RnpKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
@@ -137,6 +142,9 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* RnpViewController.h */,
 				6003F5A6195388D20070C39A /* RnpViewController.m */,
+				EFAD605422F80082000FEEB7 /* TableViewCell.h */,
+				EFAD605522F80082000FEEB7 /* TableViewCell.m */,
+				EFAD605622F80082000FEEB7 /* TableViewCell.xib */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -278,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				EFAD605822F80082000FEEB7 /* TableViewCell.xib in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -367,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* RnpAppDelegate.m in Sources */,
+				EFAD605722F80082000FEEB7 /* TableViewCell.m in Sources */,
 				6003F5A7195388D20070C39A /* RnpViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

@@ -19,6 +19,7 @@
 #import "RnpUIRotationGestureRecognizerChain.h"
 #import "RnpUISwipeGestureRecognizerChain.h"
 #import "RnpUITapGestureRecognizerChain.h"
+#import "CALayer+RnpChain.h"
 #import "RnpBaseLayerChain.h"
 #import "RnpCAEmitterLayerChain.h"
 #import "RnpCAGradientLayerChain.h"

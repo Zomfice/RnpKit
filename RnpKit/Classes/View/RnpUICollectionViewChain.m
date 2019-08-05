@@ -65,6 +65,48 @@ RPCATEGORY_CHAIN_COLLECTIONVIEW_IMPLEMENTATION(allowsMultipleSelection, BOOL)
     };
 }
 
+/// 注册Cell
+- (RnpUICollectionViewChain * _Nonnull (^)(Class  _Nonnull __unsafe_unretained))registerNib{
+    return ^ (Class class){
+        [(UICollectionView *)self.view registerNib:[UINib nibWithNibName:NSStringFromClass(class) bundle:nil] forCellWithReuseIdentifier:NSStringFromClass(class)];
+        return self;
+    };
+}
+
+
+- (RnpUICollectionViewChain * _Nonnull (^)(Class  _Nonnull __unsafe_unretained))registerClass{
+    return ^ (Class class){
+        [(UICollectionView *)self.view registerClass:class forCellWithReuseIdentifier:NSStringFromClass(class)];
+        return self;
+    };
+}
+
+- (RnpUICollectionViewChain * _Nonnull (^)(Class  _Nonnull __unsafe_unretained,NSString * _Nonnull))registerClassforSupplementaryView{
+    return ^ (Class class,NSString * kind){
+        [(UICollectionView *)self.view registerClass:class forSupplementaryViewOfKind:kind withReuseIdentifier:NSStringFromClass(class)];
+        return self;
+    };
+}
+
+- (RnpUICollectionViewChain * _Nonnull (^)(Class  _Nonnull __unsafe_unretained,NSString * _Nonnull))registerNibforSupplementaryView{
+    return ^ (Class class,NSString * kind){
+        [(UICollectionView *)self.view registerNib:[UINib nibWithNibName:NSStringFromClass(class) bundle:nil] forSupplementaryViewOfKind:kind withReuseIdentifier:NSStringFromClass(class)];
+        return self;
+    };
+}
+// Cell复用
+- (__kindof UICollectionViewCell * _Nullable (^)(Class  _Nonnull __unsafe_unretained, NSIndexPath * _Nonnull))dequeueReusableCell{
+    return ^ (Class class, NSIndexPath * indexPath){
+        return [(UICollectionView *)self.view dequeueReusableCellWithReuseIdentifier:NSStringFromClass(class) forIndexPath:indexPath];
+    };
+}
+
+- (__kindof UICollectionReusableView * _Nullable (^)(Class  _Nonnull __unsafe_unretained,NSString * _Nonnull, NSIndexPath * _Nonnull))dequeueReusableCellSupplementaryView{
+    return ^ (Class class,NSString * kind, NSIndexPath * indexPath){
+        return [(UICollectionView *)self.view dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:NSStringFromClass(class) forIndexPath:indexPath];
+    };
+}
+
 @end
 RPCATEGORY_VIEW_IMPLEMENTATION(UICollectionView, RnpUICollectionViewChain)
 #undef RPCATEGORY_CHAIN_COLLECTIONVIEW_IMPLEMENTATION
