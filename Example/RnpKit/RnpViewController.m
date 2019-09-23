@@ -34,9 +34,9 @@
     .mas_makeConstraints(^(MASConstraintMaker * _Nonnull make) {
         make.centerX.centerY.mas_equalTo(0);
         make.width.height.mas_equalTo(100);
-    });
+    }).makeTag(10);
 
-    UILabelNew().rnp
+    UILabelNew().rnp    
     .text(@"Hello The Dog")
     .textColor(UIColor.redColor)
     .font([UIFont systemFontOfSize:17])
@@ -55,6 +55,19 @@
     .mas_makeConstraints(^(MASConstraintMaker * _Nonnull make) {
         make.right.mas_equalTo(-15);
         make.centerY.mas_equalTo(40);
+    });
+    
+    UITextFieldNew().rnp
+    .addToSuperView(self.view)
+    .backgroundColor(UIColor.redColor)
+    .placeholderFont([UIFont systemFontOfSize:30])
+    .placeholderColor(UIColor.blackColor)
+    .placeholder(@"placeholder")
+    .mas_makeConstraints(^(MASConstraintMaker * _Nonnull make) {
+        make.left.mas_equalTo(15);
+        make.bottom.mas_equalTo(-100);
+        make.height.mas_equalTo(30.f);
+        make.width.mas_equalTo(100.f);
     });
     
 }

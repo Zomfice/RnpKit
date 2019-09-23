@@ -20,7 +20,7 @@ RPCATEGORY_CHAIN_TEXTFIELD_IMPLEMENTATION(borderStyle, UITextBorderStyle);
 
 RPCATEGORY_CHAIN_TEXTFIELD_IMPLEMENTATION(defaultTextAttributes, NSDictionary *);
 
-RPCATEGORY_CHAIN_TEXTFIELD_IMPLEMENTATION(placeholder, NSString *);
+//RPCATEGORY_CHAIN_TEXTFIELD_IMPLEMENTATION(placeholder, NSString *);
 RPCATEGORY_CHAIN_TEXTFIELD_IMPLEMENTATION(attributedPlaceholder, NSAttributedString *);
 
 RPCATEGORY_CHAIN_TEXTFIELD_IMPLEMENTATION(keyboardType, UIKeyboardType);
@@ -57,21 +57,52 @@ RPCATEGORY_CHAIN_TEXTFIELD_IMPLEMENTATION(enablesReturnKeyAutomatically, BOOL);
 RPCATEGORY_CHAIN_TEXTFIELD_IMPLEMENTATION(secureTextEntry, BOOL);
 RPCATEGORY_CHAIN_TEXTFIELD_IMPLEMENTATION(textContentType, UITextContentType);
 
+- (RnpUITextFieldChain * _Nonnull (^)(NSString * _Nonnull))placeholder
+{
+    return ^(NSString * string){
+       NSMutableAttributedString * att_str = [[self.view valueForKey:@"attributedPlaceholder"] mutableCopy];
+        if (att_str == nil) {
+            [self.view setValue:string forKeyPath:@"placeholder"];
+        }else{
+            [att_str replaceCharactersInRange:NSMakeRange(0, att_str.string.length) withString:string.length == 0 ? @"" : string];
+            [self.view setValue:att_str forKeyPath:@"attributedPlaceholder"];
+        }
+        return self;
+    };
+}
 
 - (RnpUITextFieldChain * _Nonnull (^)(UIFont * _Nonnull))placeholderFont{
     return ^(UIFont *font){
-        [self.view setValue:font forKeyPath:@"_placeholderLabel.font"];
+        if (font == nil) {
+            return self;
+        }
+        NSMutableAttributedString * att_str = [self _attributedPlaceholder];
+        [att_str addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, att_str.length)];
+        [self.view setValue:att_str forKeyPath:@"attributedPlaceholder"];
         return self;
     };
 }
 
 - (RnpUITextFieldChain * _Nonnull (^)(UIColor * _Nonnull))placeholderColor{
     return ^(UIColor *color){
-        [self.view setValue:color forKeyPath:@"_placeholderLabel.textColor"];
+        if (color == nil) {
+            return self;
+        }
+           NSMutableAttributedString * att_str = [self _attributedPlaceholder];
+             [att_str addAttribute:NSForegroundColorAttributeName value:color range:NSMakeRange(0, att_str.length)];
+             [self.view setValue:att_str forKeyPath:@"attributedPlaceholder"];
         return self;
     };
 }
 
+- (NSMutableAttributedString *)_attributedPlaceholder{
+    NSMutableAttributedString * att_str = [[self.view valueForKey:@"attributedPlaceholder"] mutableCopy];
+     NSString * placeholder = [self.view valueForKey:@"placeholder"];
+     if (att_str == nil) {
+         att_str = [[NSMutableAttributedString alloc] initWithString:placeholder.length == 0 ? @" " : placeholder];
+     }
+    return att_str;
+}
 
 @end
 RPCATEGORY_VIEW_IMPLEMENTATION(UITextField, RnpUITextFieldChain)

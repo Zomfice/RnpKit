@@ -20,6 +20,12 @@ static inline ViewClass *ViewClass##New(void){\
 return [ViewClass layer];\
 }
 
+#define RPCreateLayer(ViewClass)\
+static inline ViewClass *ViewClass##New(void){\
+return [ViewClass layer];\
+}
+
+
 #define RPTansactionDisableActions(...)\
 [CATransaction begin];\
 [CATransaction setDisableActions:YES];\
