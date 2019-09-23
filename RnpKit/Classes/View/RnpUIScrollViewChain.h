@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface RnpUIScrollViewChain : RnpBaseScrollViewChain<RnpUIScrollViewChain*>
 
 @end
+
+RPCreateFrame(UIScrollView)
 RPCreate(UIScrollView)
 RPCATEGORY_EXINTERFACE(UIScrollView, RnpUIScrollViewChain)
 NS_ASSUME_NONNULL_END

@@ -69,6 +69,58 @@ RPCATEGORY_CHAIN_TABLEVIEW_IMPLEMENTATION(sectionIndexColor, UIColor *)
 }
 
 
+
+
+
+// Cell注册
+- (RnpUITableViewChain * _Nonnull (^)(Class  _Nonnull __unsafe_unretained))registerNib{
+    return ^ (Class class){
+        [(UITableView *)self.view registerNib:[UINib nibWithNibName:NSStringFromClass(class) bundle:nil] forCellReuseIdentifier:NSStringFromClass(class)];
+        return self;
+    };
+}
+
+- (RnpUITableViewChain * _Nonnull (^)(Class  _Nonnull __unsafe_unretained))registerClass{
+    return ^ (Class class){
+        [(UITableView *)self.view registerClass:class forCellReuseIdentifier:NSStringFromClass(class)];
+        return self;
+    };
+}
+
+- (RnpUITableViewChain * _Nonnull (^)(Class  _Nonnull __unsafe_unretained))registerNibForHeaderFooterView{
+    return ^ (Class class){
+        [(UITableView *)self.view registerNib:[UINib nibWithNibName:NSStringFromClass(class) bundle:nil] forHeaderFooterViewReuseIdentifier:NSStringFromClass(class)];
+        return self;
+    };
+}
+
+- (RnpUITableViewChain * _Nonnull (^)(Class  _Nonnull __unsafe_unretained))registerClassForHeaderFooterView{
+    return ^ (Class class){
+        [(UITableView *)self.view registerClass:class forHeaderFooterViewReuseIdentifier:NSStringFromClass(class)];
+        return self;
+    };
+}
+
+
+// Cell复用
+- (__kindof UITableViewCell * _Nullable (^)(Class  _Nonnull __unsafe_unretained))dequeueReusableCellWithClass{
+    return ^ (Class class){
+        return [(UITableView *)self.view dequeueReusableCellWithIdentifier:NSStringFromClass(class)];
+    };
+}
+
+- (__kindof UITableViewCell * _Nullable (^)(Class  _Nonnull __unsafe_unretained, NSIndexPath * _Nonnull))dequeueReusableCell{
+    return ^ (Class class, NSIndexPath * indexPath){
+        return [(UITableView *)self.view dequeueReusableCellWithIdentifier:NSStringFromClass(class) forIndexPath:indexPath];
+    };
+}
+
+- (__kindof UITableViewHeaderFooterView * _Nullable (^)(Class  _Nonnull __unsafe_unretained))dequeueReusableHeaderFooterViewWithIdentifier{
+    return ^ (Class class){
+        return [(UITableView *)self.view dequeueReusableHeaderFooterViewWithIdentifier:NSStringFromClass(class)];
+    };
+}
+
 @end
 RPCATEGORY_VIEW_IMPLEMENTATION(UITableView, RnpUITableViewChain)
 #undef RPCATEGORY_CHAIN_TABLEVIEW_IMPLEMENTATION

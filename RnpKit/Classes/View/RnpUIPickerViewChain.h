@@ -23,6 +23,8 @@ RPCATEGORY_CHAIN_PROPERTY RnpUIPickerViewChain * (^ selectRowInComponent) (NSInt
 RPCATEGORY_CHAIN_PROPERTY NSInteger (^ selectedRowInComponent) (NSInteger component);
 
 @end
+
+
 RPCreate(UIPickerView)
 RPCATEGORY_EXINTERFACE(UIPickerView, RnpUIPickerViewChain)
 NS_ASSUME_NONNULL_END

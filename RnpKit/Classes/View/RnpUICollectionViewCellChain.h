@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 RPCATEGORY_CHAIN_PROPERTY RnpUICollectionViewCellChain * (^ backgroundView)(UIView* backgroundView);
 RPCATEGORY_CHAIN_PROPERTY RnpUICollectionViewCellChain * (^ selectedBackgroundView)(UIView* selectedBackgroundView);
 @end
+
+RPCreateFrame(UICollectionViewCell)
 RPCreate(UICollectionViewCell)
 RPCATEGORY_EXINTERFACE(UICollectionViewCell, RnpUICollectionViewCellChain)
 NS_ASSUME_NONNULL_END

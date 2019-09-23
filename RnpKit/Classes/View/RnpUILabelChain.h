@@ -30,6 +30,7 @@ RPCATEGORY_CHAIN_PROPERTY CGSize (^ sizeWithOutLimitSize) (void);
 
 @end
 
+RPCreateFrame(UILabel)
 RPCreate(UILabel)
 RPCATEGORY_EXINTERFACE(UILabel, RnpUILabelChain)
 

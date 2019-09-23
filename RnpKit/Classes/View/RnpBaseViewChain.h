@@ -100,8 +100,7 @@ RPCATEGORY_CHAIN_PROPERTY ObjectType (^ autoresizingMask) (UIViewAutoresizing au
 
 RPCATEGORY_CHAIN_PROPERTY ObjectType (^ autoresizesSubviews) (BOOL autoresizesSubviews);
 
-RPCATEGORY_CHAIN_PROPERTY ObjectType (^ makeTag) (NSInteger tag);
-
+RPCATEGORY_CHAIN_PROPERTY ObjectType (^ setTag) (NSInteger tag);
 
 
 RPCATEGORY_CHAIN_PROPERTY ObjectType (^ addToSuperView) (UIView *superView);

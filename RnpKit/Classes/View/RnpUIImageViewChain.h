@@ -30,6 +30,8 @@ RPCATEGORY_CHAIN_PROPERTY RnpUIImageViewChain *(^ animationRepeatCount)(NSIntege
 RPCATEGORY_CHAIN_PROPERTY RnpUIImageViewChain *(^ animationDuration)(NSTimeInterval animationDuration);
 
 @end
+
+RPCreateFrame(UIImageView)
 RPCreate(UIImageView)
 RPCATEGORY_EXINTERFACE(UIImageView, RnpUIImageViewChain)
 NS_ASSUME_NONNULL_END
