@@ -1,0 +1,34 @@
+PODS:
+  - Masonry (1.1.0)
+  - RnpKit (1.0.4):
+    - RnpKit/Gesture (= 1.0.4)
+    - RnpKit/Layer (= 1.0.4)
+    - RnpKit/Layout (= 1.0.4)
+    - RnpKit/View (= 1.0.4)
+  - RnpKit/Gesture (1.0.4):
+    - RnpKit/View
+  - RnpKit/Layer (1.0.4):
+    - RnpKit/View
+  - RnpKit/Layout (1.0.4):
+    - Masonry
+    - RnpKit/View
+  - RnpKit/View (1.0.4)
+
+DEPENDENCIES:
+  - RnpKit (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Masonry
+
+EXTERNAL SOURCES:
+  RnpKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  RnpKit: f53f40455a5a24a8604f0b8253d50af3b2ce5980
+
+PODFILE CHECKSUM: 790318de3d72b894d268f04914846dfbda6032dc
+
+COCOAPODS: 1.8.0.beta.2

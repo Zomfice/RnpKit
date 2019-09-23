@@ -20,20 +20,17 @@ static inline ViewClass *ViewClass##New(void){\
 return [ViewClass layer];\
 }
 
-<<<<<<< HEAD
 #define RPCreateLayer(ViewClass)\
 static inline ViewClass *ViewClass##New(void){\
 return [ViewClass layer];\
 }
 
 
-=======
 #define RPCreateFrame(ViewClass)\
 static inline ViewClass *ViewClass##Frame(CGRect frame){\
 return [[ViewClass alloc] initWithFrame:frame];\
 }
 
->>>>>>> 136654a55547f6c410b9b37ccbc995306fcb398f
 #define RPTansactionDisableActions(...)\
 [CATransaction begin];\
 [CATransaction setDisableActions:YES];\

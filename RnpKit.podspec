@@ -1,11 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RnpKit'
-<<<<<<< HEAD
-  s.version          = '1.0.2'
-=======
-  s.version          = '1.0.3'
->>>>>>> 136654a55547f6c410b9b37ccbc995306fcb398f
+  s.version          = '1.0.4'
   s.summary          = 'A short description of RnpKit.'
 
 

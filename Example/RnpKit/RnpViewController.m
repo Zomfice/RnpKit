@@ -73,10 +73,9 @@
     .tableFooterView(nil)
     .addToSuperView(self.view)
     .mas_makeConstraints(^(MASConstraintMaker * _Nonnull make) {
-<<<<<<< HEAD
         make.centerX.centerY.mas_equalTo(0);
         make.width.height.mas_equalTo(100);
-    }).makeTag(10);
+    });
 
     UILabelNew().rnp    
     .text(@"Hello The Dog")
@@ -87,9 +86,7 @@
     .mas_makeConstraints(^(MASConstraintMaker * _Nonnull make) {
         make.right.mas_equalTo(-15);
         make.centerY.mas_equalTo(0);
-=======
         make.edges.mas_equalTo(0);
->>>>>>> 136654a55547f6c410b9b37ccbc995306fcb398f
     });
     
 }
