@@ -6,6 +6,7 @@
 //
 
 #import "RnpCATransformLayerChain.h"
+#import <objc/runtime.h>
 #define RPCATEGORY_CHAIN_TRANSFORMLAYER_IMPLEMENTATION(RPMethod,RPParaType) RPCATEGORY_CHAIN_LAYERCLASS_IMPLEMENTATION(RPMethod,RPParaType, RnpCATransformLayerChain *, CATransformLayer)
 
 @implementation RnpCATransformLayerChain

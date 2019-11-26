@@ -10,6 +10,7 @@
 
 #import "RnpKitView.h"
 #import "RnpKitLayer.h"
+#import "RnpBezierPathChain.h"
 #import "RnpKitGesture.h"
 #import "RnpBaseViewChain+Layout.h"
 

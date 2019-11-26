@@ -6,6 +6,8 @@
 //
 
 #import "RnpUITextViewChain.h"
+#import <objc/runtime.h>
+
 #define RPCATEGORY_CHAIN_TEXT_IMPLEMENTATION(RPMethod,RPParaType) RPCATEGORY_CHAIN_VIEWCLASS_IMPLEMENTATION(RPMethod,RPParaType, RnpUITextViewChain *,UITextView)
 @implementation RnpUITextViewChain
 RPCATEGORY_CHAIN_TEXT_IMPLEMENTATION(delegate, id<UITextViewDelegate>);

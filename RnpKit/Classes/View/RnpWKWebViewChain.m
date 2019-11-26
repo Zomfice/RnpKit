@@ -6,6 +6,7 @@
 //
 
 #import "RnpWKWebViewChain.h"
+#import <objc/runtime.h>
 #define RPCATEGORY_CHAIN_WEBVIEW_IMPLEMENTATION(RPMethod,RPParaType) RPCATEGORY_CHAIN_VIEWCLASS_IMPLEMENTATION(RPMethod,RPParaType, RnpWKWebViewChain *,WKWebView)
 @implementation RnpWKWebViewChain
 

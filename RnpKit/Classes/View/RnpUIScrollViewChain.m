@@ -6,6 +6,7 @@
 //
 
 #import "RnpUIScrollViewChain.h"
+#import <objc/runtime.h>
 
 @implementation RnpUIScrollViewChain
 

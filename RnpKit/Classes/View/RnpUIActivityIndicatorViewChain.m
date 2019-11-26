@@ -6,6 +6,7 @@
 //
 
 #import "RnpUIActivityIndicatorViewChain.h"
+#import <objc/runtime.h>
 #define RPCATEGORY_CHAIN_ACTIVITY_IMPLEMENTATION(RPMethod,RPParaType) RPCATEGORY_CHAIN_VIEWCLASS_IMPLEMENTATION(RPMethod,RPParaType, RnpUIActivityIndicatorViewChain *,UIActivityIndicatorView)
 @implementation RnpUIActivityIndicatorViewChain
 

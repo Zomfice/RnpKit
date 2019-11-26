@@ -6,6 +6,7 @@
 //
 
 #import "RnpCATiledLayerChain.h"
+#import <objc/runtime.h>
 #define RPCATEGORY_CHAIN_TILEDLAYER_IMPLEMENTATION(RPMethod,RPParaType) RPCATEGORY_CHAIN_LAYERCLASS_IMPLEMENTATION(RPMethod,RPParaType, RnpCATiledLayerChain *, CATiledLayer)
 
 @implementation RnpCATiledLayerChain

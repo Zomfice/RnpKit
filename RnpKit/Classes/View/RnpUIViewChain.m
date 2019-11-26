@@ -6,7 +6,7 @@
 //
 
 #import "RnpUIViewChain.h"
-
+#import <objc/runtime.h>
 @implementation RnpUIViewChain
 
 @end

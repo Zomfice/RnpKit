@@ -11,6 +11,7 @@
 #endif
 
 #import "RnpKit.h"
+#import "RnpBezierPathChain.h"
 #import "RnpBaseGestureChain.h"
 #import "RnpKitGesture.h"
 #import "RnpUILongPressGestureRecognizerChain.h"

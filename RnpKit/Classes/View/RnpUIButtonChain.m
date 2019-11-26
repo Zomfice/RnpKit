@@ -6,6 +6,7 @@
 //
 
 #import "RnpUIButtonChain.h"
+#import <objc/runtime.h>
 
 #define RPCATEGORY_CHAIN_BUTTON_IMPLEMENTATION(RPMethod,RPParaType) RPCATEGORY_CHAIN_VIEWCLASS_IMPLEMENTATION(RPMethod,RPParaType, RnpUIButtonChain *,UIButton)
 

@@ -6,6 +6,8 @@
 //
 
 #import "RnpUITextFieldChain.h"
+#import <objc/runtime.h>
+
 #define RPCATEGORY_CHAIN_TEXTFIELD_IMPLEMENTATION(RPMethod,RPParaType) RPCATEGORY_CHAIN_VIEWCLASS_IMPLEMENTATION(RPMethod,RPParaType, RnpUITextFieldChain *,UITextField)
 @implementation RnpUITextFieldChain
 

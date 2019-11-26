@@ -6,6 +6,7 @@
 //
 
 #import "RnpUIDatePickerChain.h"
+#import <objc/runtime.h>
 #define RPCATEGORY_CHAIN_DATEPICKER_IMPLEMENTATION(RPMethod,RPParaType) RPCATEGORY_CHAIN_VIEWCLASS_IMPLEMENTATION(RPMethod,RPParaType, RnpUIDatePickerChain *,UIDatePicker)
 @implementation RnpUIDatePickerChain
 RPCATEGORY_CHAIN_DATEPICKER_IMPLEMENTATION(datePickerMode, UIDatePickerMode)

@@ -6,6 +6,7 @@
 //
 
 #import "RnpUISegmentedControlChain.h"
+#import <objc/runtime.h>
 
 #define RPCATEGORY_CHAIN_SEGMENT_IMPLEMENTATION(RPMethod,RPParaType) RPCATEGORY_CHAIN_VIEWCLASS_IMPLEMENTATION(RPMethod,RPParaType, RnpUISegmentedControlChain *,UISegmentedControl)
 

@@ -53,6 +53,10 @@
 
         ]
       }
+    },
+    {
+      "name": "BezierPath",
+      "source_files": "RnpKit/Classes/Bezier/**/*"
     }
   ]
 }

@@ -6,14 +6,21 @@
 //
 
 #import "RnpChainDefine.h"
-
 #define RPCATEGORY_CHAIN_VIEWCLASS_IMPLEMENTATION(RPMethod,RPParaType, RPModelType, RPPropertyClass) RPCATEGORY_CHAIN_IMPLEMENTATION(RPMethod,RPParaType, view, RPModelType, RPPropertyClass)
 
 #define RPCATEGORY_VIEW_IMPLEMENTATION(RPClass, modelType)\
 @implementation RPClass (EXT)\
 - (modelType *)rnp{\
-return [[modelType alloc] initWithTag:self.tag andView:self];\
+id __rnp = objc_getAssociatedObject(self, "rnp"); \
+if(!__rnp){\
+__rnp = [[modelType alloc] initWithTag:self.tag andView:self];\
+objc_setAssociatedObject (self, "rnp", __rnp, OBJC_ASSOCIATION_RETAIN_NONATOMIC );\
 }\
+return __rnp;\
+}\
+- (void)setRnp:(modelType *)rnp{\
+objc_setAssociatedObject (self, "rnp", rnp, OBJC_ASSOCIATION_RETAIN_NONATOMIC );\
+} \
 @end
 
 NS_ASSUME_NONNULL_BEGIN
@@ -25,7 +32,7 @@ typedef void(^RPAssignViewLoad)(__kindof UIView *view);
 
 @property (nonatomic, assign, readonly) NSInteger tag;
 
-@property (nonatomic, strong, readonly) __kindof UIView *view;
+@property (nonatomic, weak, readonly) __kindof UIView *view;
 
 @property (nonatomic, assign, readonly) Class viewClass;
 

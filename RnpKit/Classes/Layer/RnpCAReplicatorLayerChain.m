@@ -6,6 +6,7 @@
 //
 
 #import "RnpCAReplicatorLayerChain.h"
+#import <objc/runtime.h>
 #define RPCATEGORY_CHAIN_REPLICATORLAYER_IMPLEMENTATION(RPMethod,RPParaType) RPCATEGORY_CHAIN_LAYERCLASS_IMPLEMENTATION(RPMethod,RPParaType, RnpCAReplicatorLayerChain *, CAReplicatorLayer)
 
 @implementation RnpCAReplicatorLayerChain

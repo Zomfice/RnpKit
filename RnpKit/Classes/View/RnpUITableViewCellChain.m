@@ -6,7 +6,7 @@
 //
 
 #import "RnpUITableViewCellChain.h"
-
+#import <objc/runtime.h>
 #define RPCATEGORY_CHAIN_TABLEVIEWCELL_IMPLEMENTATION(RPMethod,RPParaType) RPCATEGORY_CHAIN_VIEWCLASS_IMPLEMENTATION(RPMethod,RPParaType, RnpUITableViewCellChain *,UITableViewCell)
 
 @implementation RnpUITableViewCellChain

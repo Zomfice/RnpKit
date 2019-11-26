@@ -6,6 +6,7 @@
 //
 
 #import "RnpUISliderChain.h"
+#import <objc/runtime.h>
 #define RPCATEGORY_CHAIN_SLIDER_IMPLEMENTATION(RPMethod,RPParaType) RPCATEGORY_CHAIN_VIEWCLASS_IMPLEMENTATION(RPMethod,RPParaType, RnpUISliderChain *,UISlider)
 
 #define RPCATEGORY_CHAIN_SLIDER_METHOND_IMPLEMENTATION(MehodName)\

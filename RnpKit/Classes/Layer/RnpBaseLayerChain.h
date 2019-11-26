@@ -6,14 +6,23 @@
 //
 
 #import "RnpChainDefine.h"
+#import <objc/runtime.h>
 
 #define RPCATEGORY_CHAIN_LAYERCLASS_IMPLEMENTATION(RPMethod,RPParaType, RPModelType, RPPropertyClass) RPCATEGORY_CHAIN_IMPLEMENTATION(RPMethod,RPParaType, layer, RPModelType, RPPropertyClass)
 
 #define RPCATEGORY_LAYER_IMPLEMENTATION(RPClass, modelType)\
 @implementation RPClass (EXT)\
 - (modelType *)rnp{\
-return [[modelType alloc] initWithLayer:self];\
+id __rnp = objc_getAssociatedObject(self, "rnp"); \
+if(!__rnp){\
+__rnp = [[modelType alloc] initWithLayer:self];\
+objc_setAssociatedObject (self, "rnp", __rnp, OBJC_ASSOCIATION_RETAIN_NONATOMIC );\
 }\
+return __rnp;\
+}\
+- (void)setRnp:(modelType *)rnp{\
+objc_setAssociatedObject (self, "rnp", rnp, OBJC_ASSOCIATION_RETAIN_NONATOMIC );\
+} \
 @end
 
 NS_ASSUME_NONNULL_BEGIN
@@ -21,7 +30,7 @@ typedef void(^RPAssignLayerLoad)(__kindof CALayer *layer);
 @interface RnpBaseLayerChain <__covariant  ObjectType> : NSObject
 - (instancetype)initWithLayer:(CALayer *)layer;
 
-@property (nonatomic, strong, readonly) __kindof CALayer * layer;
+@property (nonatomic, weak, readonly) __kindof CALayer * layer;
 
 @property (nonatomic, assign, readonly) Class  layerClass;
 
