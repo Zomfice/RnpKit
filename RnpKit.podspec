@@ -46,8 +46,10 @@ TODO: Add long description of the pod here.
 
   s.subspec 'BezierPath' do |spec|
     spec.source_files = 'RnpKit/Classes/Bezier/**/*'
-end
-
+  end
+  s.subspec 'AttributedString' do |spec|
+    spec.source_files = 'RnpKit/Classes/AttributedString/**/*'
+  end
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'

@@ -88,15 +88,6 @@
     //        make.centerY.mas_equalTo(0);
     //        make.edges.mas_equalTo(0);
     //    });
-    {
-        //       CAShapeLayerNew();
-        //        layer.rnp.backgroundColor(UIColor.clearColor.CGColor);
-    }
-    //    NSLog(@"==");
-    {
-        //        UIView * view = UIViewNew().rnp.view;
-        //        view.backgroundColor = UIColor.whiteColor;
-    }
      CAShapeLayerNew().rnp
     .path(
           BezierPathNew().rnp
@@ -111,6 +102,25 @@
     .backgroundColor(UIColor.clearColor.CGColor)
     .addToSuperLayer(self.view.layer)
     ;
+
+    NSLog(@"%@",
+          NSMutableAttributedStringWithStringNew(@"123").rnp
+          .addAttribute_value_range(NSFontAttributeName, [UIFont systemFontOfSize:10], NSMakeRange(0, 1))
+          .addAttribute_value_range(NSForegroundColorAttributeName, UIColor.redColor, NSMakeRange(0, 2))
+          .appendAttributedString(
+                                  NSAttributedStringWithStringAndAttributesNew(@"bcd", @{
+                                      NSFontAttributeName : [UIFont systemFontOfSize:10]
+                                  }).rnp.attributedString
+                                  )
+          .addAttribute_value_range(NSParagraphStyleAttributeName,
+                                    NSMutableParagraphStyleNew().rnp
+                                    .lineSpacing(10)
+                                    .lineBreakMode(NSLineBreakByCharWrapping)
+                                    .alignment(NSTextAlignmentCenter)
+                                    .style,
+                                    NSMakeRange(0, 1))
+          .attributedString);
+
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -135,14 +145,6 @@
 //        make.width.mas_equalTo(100.f);
 //    });
     
-}
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    
-    
-
-    //            [self.view.layer addSublayer:shape];
 }
 
 - (void)didReceiveMemoryWarning

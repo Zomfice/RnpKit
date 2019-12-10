@@ -11,6 +11,12 @@
 #endif
 
 #import "RnpKit.h"
+#import "RnpAttributedDefine.h"
+#import "RnpAttributedStringChain.h"
+#import "RnpBaseAttributedStringChain.h"
+#import "RnpKitAttributedString.h"
+#import "RnpMutableAttributedStringChain.h"
+#import "RnpMutableParagraphStyleChain.h"
 #import "RnpBezierPathChain.h"
 #import "RnpBaseGestureChain.h"
 #import "RnpKitGesture.h"

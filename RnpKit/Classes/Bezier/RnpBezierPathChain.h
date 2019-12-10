@@ -5,7 +5,7 @@
 //  Created by user on 2019/11/25.
 //
 
-#import "RnpBaseLayerChain.h"
+#import "RnpChainDefine.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

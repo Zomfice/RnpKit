@@ -57,6 +57,10 @@
     {
       "name": "BezierPath",
       "source_files": "RnpKit/Classes/Bezier/**/*"
+    },
+    {
+      "name": "AttributedString",
+      "source_files": "RnpKit/Classes/AttributedString/**/*"
     }
   ]
 }

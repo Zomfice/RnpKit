@@ -1,11 +1,13 @@
 PODS:
   - Masonry (1.1.0)
   - RnpKit (1.0.4):
+    - RnpKit/AttributedString (= 1.0.4)
     - RnpKit/BezierPath (= 1.0.4)
     - RnpKit/Gesture (= 1.0.4)
     - RnpKit/Layer (= 1.0.4)
     - RnpKit/Layout (= 1.0.4)
     - RnpKit/View (= 1.0.4)
+  - RnpKit/AttributedString (1.0.4)
   - RnpKit/BezierPath (1.0.4)
   - RnpKit/Gesture (1.0.4):
     - RnpKit/View
@@ -29,8 +31,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  RnpKit: 601dc870b416f8b488cea65a53c7cfc3c62d3fc9
+  RnpKit: 6c390cab6e9cd81f2b075aec3a6e07c7fdd5b005
 
 PODFILE CHECKSUM: 790318de3d72b894d268f04914846dfbda6032dc
 
-COCOAPODS: 1.8.1
+COCOAPODS: 1.8.4
