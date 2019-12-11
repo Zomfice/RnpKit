@@ -46,9 +46,11 @@ TODO: Add long description of the pod here.
 
   s.subspec 'BezierPath' do |spec|
     spec.source_files = 'RnpKit/Classes/Bezier/**/*'
+    spec.dependency 'RnpKit/View'
   end
   s.subspec 'AttributedString' do |spec|
     spec.source_files = 'RnpKit/Classes/AttributedString/**/*'
+    spec.dependency 'RnpKit/View'
   end
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
