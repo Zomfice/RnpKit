@@ -51,11 +51,7 @@ RPCATEGORY_CHAIN_PROPERTY ObjectType (^ removeTarget) (id target, SEL action);
 
 RPCATEGORY_CHAIN_PROPERTY ObjectType (^ addTargetBlock) (void (^) (id gesture));
 
-RPCATEGORY_CHAIN_PROPERTY ObjectType (^ addTargetBlockWithTag) (void (^) (id gesture), NSString *tag);
-
-RPCATEGORY_CHAIN_PROPERTY ObjectType (^ removeTargetBlockWithTag) (NSString *tag);
-
-RPCATEGORY_CHAIN_PROPERTY ObjectType (^ removeAllTargetBlock)(void);
+RPCATEGORY_CHAIN_PROPERTY ObjectType (^ removeTargetBlock)(void);
 
 RPCATEGORY_CHAIN_PROPERTY ObjectType (^ addToSuperView) (UIView *view);
 

@@ -6,9 +6,22 @@
 //
 
 #import "RnpBaseGestureChain.h"
+#import <objc/runtime.h>
 
 #define RPCATEGORY_CHAIN_GESTURE_IMPLEMENTATION(RPMethod,RPParaType) RPCATEGORY_CHAIN_GESTURECLASS_IMPLEMENTATION(RPMethod,RPParaType, id, UIGestureRecognizer)
+@interface UIGestureRecognizer(RNP)
 
+@property (nonatomic, copy) void(^gestureBlock)(id gesture);
+
+- (void)gestureAct:(id)gesture;
+
+@end
+
+@interface RnpBaseGestureChain ()
+
+@property (nonatomic, copy) void(^gestureBlock)(id gesture);
+
+@end
 @implementation RnpBaseGestureChain
 
 - (instancetype)initWithGesture:(UIGestureRecognizer *)gesture{
@@ -63,6 +76,43 @@ RPCATEGORY_CHAIN_GESTURE_IMPLEMENTATION(name, NSString *)
         }
         return self;
     };
+}
+
+- (id  _Nonnull (^)(void (^ _Nonnull)(id _Nonnull)))addTargetBlock
+{
+    return ^(void (^ _Nonnull block)(id _Nonnull)){
+        self.gesture.gestureBlock = block;
+        [self.gesture addTarget:self.gesture action:@selector(gestureAct:)];
+        return self;
+    };
+}
+
+- (id  _Nonnull (^)(void))removeTargetBlock
+{
+    return ^{
+        self.gesture.gestureBlock = nil;
+        [self.gesture removeTarget:self.gesture action:@selector(gestureAct:)];
+        return self;
+    };
+}
+
+@end
+
+
+@implementation UIGestureRecognizer(RNP)
+
+- (void)gestureAct:(id)gesture{
+    if (self.gestureBlock) {
+        self.gestureBlock(gesture);
+    }
+}
+- (void)setGestureBlock:(void (^)(id))gestureBlock
+{
+    objc_setAssociatedObject (self, "gestureBlock", gestureBlock, OBJC_ASSOCIATION_RETAIN_NONATOMIC );
+}
+- (void (^)(id))gestureBlock
+{
+   return objc_getAssociatedObject(self, "gestureBlock");
 }
 
 @end
