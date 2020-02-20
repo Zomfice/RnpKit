@@ -139,7 +139,7 @@
 }
 
 - (BOOL)checkOutOfBoundsWithRange:(NSRange)range{
-    BOOL b = (self.attString.string.length > (range.location + range.length));
+    BOOL b = (self.attString.string.length >= (range.location + range.length));
     NSAssert(b, @"%@ range -- %@ 越界", self.attString,[NSValue valueWithRange:range]);
     return b;
 }

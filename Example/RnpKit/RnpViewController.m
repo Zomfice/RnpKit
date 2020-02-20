@@ -103,10 +103,13 @@
     .addToSuperLayer(self.view.layer)
     ;
     
+    NSMutableAttributedString * att_str = [[NSMutableAttributedString alloc] initWithString:@"00:00 / 19:09"];
+    [att_str addAttribute:NSForegroundColorAttributeName value:UIColor.redColor range:NSMakeRange(8, 5)];
+    
     NSLog(@"%@",
           NSMutableAttributedStringWithStringNew(@"123").rnp
           .addAttribute_value_range(NSFontAttributeName, [UIFont systemFontOfSize:10], NSMakeRange(0, 1))
-          .addAttribute_value_range(NSForegroundColorAttributeName, UIColor.redColor, NSMakeRange(0, 2))
+          .addAttribute_value_range(NSForegroundColorAttributeName, UIColor.redColor, NSMakeRange(0, 3))
           .appendAttributedString(
                                   NSAttributedStringWithStringAndAttributesNew(@"bcd", @{
                                       NSFontAttributeName : [UIFont systemFontOfSize:10]

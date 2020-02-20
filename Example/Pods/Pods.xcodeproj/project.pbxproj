@@ -541,6 +541,7 @@
 			isa = PBXGroup;
 			children = (
 				3BD357940E74C32C62E4CE3910BA106C /* RnpKit.h */,
+				CE61DD6323A49C1A004D609A /* CoreAnimation */,
 				625A04251D279AD44F8A484CA407CC91 /* AttributedString */,
 				01B8041F56518A739EF533ABCA88C97E /* BezierPath */,
 				5188887A13B312D4B4CB1118F2F607ED /* Gesture */,
@@ -694,6 +695,14 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		CE61DD6323A49C1A004D609A /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CoreAnimation;
+			path = RnpKit/Classes/CoreAnimation;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {

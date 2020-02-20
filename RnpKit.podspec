@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RnpKit'
-  s.version          = '1.0.5'
+  s.version          = '1.0.6'
   s.summary          = 'A short description of RnpKit.'
 
 
