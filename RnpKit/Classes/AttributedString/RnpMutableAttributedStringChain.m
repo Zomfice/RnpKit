@@ -138,6 +138,37 @@
     };
 }
 
+- (RnpMutableAttributedStringChain * _Nonnull (^)(NSString * _Nonnull))appendString{
+    return ^ RnpMutableAttributedStringChain *(NSString * string){
+        if(string.length > 0 ){
+            [self.attString appendAttributedString:NSMutableAttributedStringWithStringNew(string)];
+        }
+        return self;
+    };
+}
+
+- (RnpMutableAttributedStringChain * _Nonnull (^)(NSDictionary<NSAttributedStringKey,id> * _Nullable))addAttributes{
+    return ^ RnpMutableAttributedStringChain *(NSDictionary<NSAttributedStringKey,id> * _Nullable dictionary){
+        if(dictionary.count > 0){
+            self.addAttributes_range(dictionary, NSMakeRange(0, self.attributedString.length));
+        }
+        return self;
+    };
+}
+
+- (RnpMutableAttributedStringChain * _Nonnull (^)(NSAttributedStringKey _Nonnull, id _Nonnull))addAttribute_value{
+    return ^ RnpMutableAttributedStringChain *(NSAttributedStringKey name,id value){
+        if(name && value){
+            self.addAttribute_value_range(name, value, NSMakeRange(0, self.attributedString.length));
+        }
+        return self;
+    };
+}
+
+/*
+ RPCATEGORY_CHAIN_PROPERTY RnpMutableAttributedStringChain * (^ addAttribute_value)(NSAttributedStringKey name,id value);
+ */
+
 - (BOOL)checkOutOfBoundsWithRange:(NSRange)range{
     BOOL b = (self.attString.string.length >= (range.location + range.length));
     NSAssert(b, @"%@ range -- %@ 越界", self.attString,[NSValue valueWithRange:range]);

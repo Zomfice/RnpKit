@@ -1,6 +1,6 @@
 {
   "name": "RnpKit",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "summary": "A short description of RnpKit.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Zomfice/RnpKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Zomfice/RnpKit.git",
-    "tag": "1.0.4"
+    "tag": "1.0.6"
   },
   "platforms": {
     "ios": "8.0"
@@ -56,11 +56,21 @@
     },
     {
       "name": "BezierPath",
-      "source_files": "RnpKit/Classes/Bezier/**/*"
+      "source_files": "RnpKit/Classes/Bezier/**/*",
+      "dependencies": {
+        "RnpKit/View": [
+
+        ]
+      }
     },
     {
       "name": "AttributedString",
-      "source_files": "RnpKit/Classes/AttributedString/**/*"
+      "source_files": "RnpKit/Classes/AttributedString/**/*",
+      "dependencies": {
+        "RnpKit/View": [
+
+        ]
+      }
     }
   ]
 }

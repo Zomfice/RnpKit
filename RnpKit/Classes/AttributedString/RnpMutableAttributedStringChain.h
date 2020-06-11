@@ -36,6 +36,12 @@ RPCATEGORY_CHAIN_PROPERTY  RnpMutableAttributedStringChain * (^ beginEditing)(vo
 
 RPCATEGORY_CHAIN_PROPERTY  RnpMutableAttributedStringChain * (^ endEditing)(void);
 
+RPCATEGORY_CHAIN_PROPERTY RnpMutableAttributedStringChain * (^ appendString)(NSString *string);
+
+RPCATEGORY_CHAIN_PROPERTY RnpMutableAttributedStringChain * (^ addAttributes)(NSDictionary<NSAttributedStringKey, id> * _Nullable attrs);
+
+RPCATEGORY_CHAIN_PROPERTY RnpMutableAttributedStringChain * (^ addAttribute_value)(NSAttributedStringKey name,id value);
+
 @end
 static inline NSMutableAttributedString * NSMutableAttributedStringNew(){
     return [NSMutableAttributedString new];

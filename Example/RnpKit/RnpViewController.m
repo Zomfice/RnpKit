@@ -124,6 +124,19 @@
                                     NSMakeRange(0, 1))
           .attributedString);
     
+    
+    UILabelNew().rnp
+   .textAlignment(NSTextAlignmentCenter)
+    .numberOfLines(0).attributedText(NSMutableAttributedStringWithStringNew(@"dsadsadsadsdasdas\ndsdsadsadsadas\ndsadsadsadsada\n").rnp
+            .appendString(@"老张开车去东北")
+            .addAttribute_value(NSForegroundColorAttributeName,UIColor.redColor)
+            .addAttributes(@{NSFontAttributeName:[UIFont systemFontOfSize:20]})
+            .attributedString)
+    .addToSuperView(self.view)
+    .mas_makeConstraints(^(MASConstraintMaker * _Nonnull make) {
+        make.bottom.mas_equalTo(0);
+    });
+    
     self.view.rnp
     .addGesture(UITapGestureRecognizerNew().rnp
                 .addTargetBlock(^(id g){
