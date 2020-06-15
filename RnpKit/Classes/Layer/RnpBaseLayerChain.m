@@ -73,7 +73,7 @@ RPCATEGORY_CHAIN_BASELAYER_IMPLEMENTATION(style, NSDictionary *)
         }
         [self.layer addSublayer:layer];
         return self;
-    }
+    };
 }
 
 - (id  _Nonnull (^)( NSDictionary<NSString *,id<CAAction>>  * _Nonnull))actions{
