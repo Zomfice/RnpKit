@@ -22,7 +22,7 @@ pod 'RnpKit'
 
 ## Author
 
-Zomfice
+Zomfice YangTianyan
 
 ## License
 
