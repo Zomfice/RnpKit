@@ -100,6 +100,14 @@ RPCATEGORY_CHAIN_VIEW_IMPLEMENTATION(multipleTouchEnabled, BOOL)
 RPCATEGORY_CHAIN_VIEW_IMPLEMENTATION(contentMode, UIViewContentMode)
 RPCATEGORY_CHAIN_VIEW_IMPLEMENTATION(transform, CGAffineTransform)
 
+- (id  _Nonnull (^)(CALayer * _Nonnull))addSubLayer{
+    return ^(CALayer * layer){
+        if(layer == nil) return self;
+        [self.view.layer addSublayer:layer];
+        return self;
+    };
+}
+
 - (id  _Nonnull (^)(BOOL))endEditing{
     return ^(BOOL end){
         [self.view endEditing:end];

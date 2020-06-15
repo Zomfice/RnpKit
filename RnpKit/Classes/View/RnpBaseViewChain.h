@@ -36,6 +36,7 @@ typedef void(^RPAssignViewLoad)(__kindof UIView *view);
 
 @property (nonatomic, assign, readonly) Class viewClass;
 
+RPCATEGORY_CHAIN_PROPERTY ObjectType (^ addSubLayer) (CALayer * layer);
 
 RPCATEGORY_CHAIN_PROPERTY ObjectType (^ bounds) (CGRect frame);
 

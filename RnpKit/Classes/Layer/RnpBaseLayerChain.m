@@ -66,6 +66,16 @@ RPCATEGORY_CHAIN_BASELAYER_IMPLEMENTATION(name, NSString *)
 RPCATEGORY_CHAIN_BASELAYER_IMPLEMENTATION(delegate, id <CALayerDelegate>)
 RPCATEGORY_CHAIN_BASELAYER_IMPLEMENTATION(style, NSDictionary *)
 
+- (id  _Nonnull (^)(CALayer *))addSubLayer{
+    return ^(CALayer * layer){
+        if (layer == nil) {
+            return self;
+        }
+        [self.layer addSublayer:layer];
+        return self;
+    }
+}
+
 - (id  _Nonnull (^)( NSDictionary<NSString *,id<CAAction>>  * _Nonnull))actions{
     return ^ (NSDictionary<NSString *,id<CAAction>> * dic){
         self.layer.actions = dic;

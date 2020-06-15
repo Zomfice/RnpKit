@@ -34,6 +34,7 @@ typedef void(^RPAssignLayerLoad)(__kindof CALayer *layer);
 
 @property (nonatomic, assign, readonly) Class  layerClass;
 
+RPCATEGORY_CHAIN_PROPERTY ObjectType (^ addSubLayer) (CALayer layer);
 RPCATEGORY_CHAIN_PROPERTY ObjectType (^ bounds) (CGRect bounds);
 RPCATEGORY_CHAIN_PROPERTY ObjectType (^ position) (CGPoint position);
 RPCATEGORY_CHAIN_PROPERTY ObjectType (^ zPosition) (CGFloat zPosition);
