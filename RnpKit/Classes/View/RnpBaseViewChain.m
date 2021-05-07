@@ -43,6 +43,7 @@ return self;    \
     }
     return self;
 }
+RPCATEGORY_CHAIN_VIEW_IMPLEMENTATION(translatesAutoresizingMaskIntoConstraints, BOOL);
 
 #pragma mark - frame -
 RPCATEGORY_CHAIN_VIEW_IMPLEMENTATION(bounds, CGRect)
@@ -99,6 +100,7 @@ RPCATEGORY_CHAIN_VIEW_IMPLEMENTATION(multipleTouchEnabled, BOOL)
 
 RPCATEGORY_CHAIN_VIEW_IMPLEMENTATION(contentMode, UIViewContentMode)
 RPCATEGORY_CHAIN_VIEW_IMPLEMENTATION(transform, CGAffineTransform)
+
 
 - (id  _Nonnull (^)(CALayer * _Nonnull))addSubLayer{
     return ^(CALayer * layer){
@@ -310,7 +312,6 @@ RPCATEGORY_CHAIN_LAYER_IMPLEMENTATION(anchorPoint, CGPoint);
 RPCATEGORY_CHAIN_LAYER_IMPLEMENTATION(shouldRasterize, BOOL);
 RPCATEGORY_CHAIN_LAYER_IMPLEMENTATION(rasterizationScale, CGFloat);
 RPCATEGORY_CHAIN_LAYER_IMPLEMENTATION(shadowPath, CGPathRef);
-
 
 - (id  _Nonnull (^)(CATransform3D))layerTransform{
     return ^ (CATransform3D ta){

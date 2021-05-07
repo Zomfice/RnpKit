@@ -19,6 +19,11 @@ return self;    \
 };\
 }
 
+@interface UIButton (RNP)
+@property (nonatomic, copy) void (^clickBlock)(id);
+- (void)clickAct:(id)btn;
+@end
+
 @implementation RnpUIButtonChain
 
 RPCATEGORY_CHAIN_BUTTON_IMPLEMENTATION(contentEdgeInsets, UIEdgeInsets)
@@ -90,8 +95,45 @@ RPCATEGORY_CHAIN_BUTTONLABEL_IMPLEMENTATION(baselineAdjustment, UIBaselineAdjust
     };
 }
 
+- (RnpUIButtonChain * _Nonnull (^)(void (^ _Nonnull)(id _Nonnull)))addClickBlock
+{
+    return ^(void (^ _Nonnull block)(id _Nonnull)){
+        UIButton * btn = self.view;
+        btn.clickBlock = block;
+        [btn addTarget:btn action:@selector(clickAct:) forControlEvents:UIControlEventTouchUpInside];
+        return self;
+    };
+}
+- (RnpUIButtonChain * _Nonnull (^)(void))removeClickBlock
+{
+    return ^{
+        UIButton * btn = self.view;
+        btn.clickBlock = nil;
+        [btn removeTarget:btn action:@selector(clickAct:) forControlEvents:UIControlEventTouchUpInside];
+        return self;
+    };
+}
+
 @end
 
 RPCATEGORY_VIEW_IMPLEMENTATION(UIButton, RnpUIButtonChain)
 #undef RPCATEGORY_CHAIN_BUTTON_IMPLEMENTATION
 #undef RPCATEGORY_CHAIN_BUTTONLABEL_IMPLEMENTATION
+
+@implementation UIButton(RNP)
+
+- (void)clickAct:(id)btn{
+    if (self.clickBlock) {
+        self.clickBlock(btn);
+    }
+}
+- (void)setClickBlock:(void (^)(id))clickBlock
+{
+    objc_setAssociatedObject (self, "clickBlock", clickBlock, OBJC_ASSOCIATION_RETAIN_NONATOMIC );
+}
+- (void (^)(id))clickBlock
+{
+   return objc_getAssociatedObject(self, "clickBlock");
+}
+
+@end

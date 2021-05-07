@@ -44,7 +44,11 @@ RPCATEGORY_CHAIN_PROPERTY RnpUIButtonChain *(^ lineBreakMode)(NSLineBreakMode li
 RPCATEGORY_CHAIN_PROPERTY RnpUIButtonChain *(^ adjustsFontSizeToFitWidth)(BOOL adjustsFontSizeToFitWidth);
 RPCATEGORY_CHAIN_PROPERTY RnpUIButtonChain *(^ baselineAdjustment)(UIBaselineAdjustment baselineAdjustment);
 
+RPCATEGORY_CHAIN_PROPERTY RnpUIButtonChain *(^ addClickBlock) (void (^) (id btn));
+
+RPCATEGORY_CHAIN_PROPERTY RnpUIButtonChain *(^ removeClickBlock)(void);
 @end
+
 
 RPCreateFrame(UIButton)
 RPCreate(UIButton)

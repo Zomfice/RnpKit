@@ -63,6 +63,21 @@
     UIViewFrame(CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height)).rnp
     .backgroundColor([UIColor redColor]);
     
+    UIButtonNew().rnp
+    .translatesAutoresizingMaskIntoConstraints(NO)
+    .addClickBlock(^(id  _Nonnull btn) {
+        NSLog(@"sdadasdsadasd");
+    })
+    .addToSuperView(self.view)
+    .frame(CGRectMake(100, 500, 100, 100))
+    .mas_makeConstraints(^(MASConstraintMaker * _Nonnull make) {
+        make.left.mas_equalTo(300.f);
+        make.top.mas_equalTo(200);
+        make.width.height.mas_equalTo(100);
+    })
+    .removeClickBlock()
+    .backgroundColor(UIColor.greenColor);
+    
     
 //    UITableViewFrame(CGRectZero).rnp
 //    .dataSource(self)
