@@ -22,10 +22,30 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    UIViewNew().rnp
+   UIView * v = UIViewNew().rnp
     .frame(CGRectMake(50, 100, 100, 100))
     .addToSuperView(self.view)
-    .backgroundColor([UIColor redColor]);
+    .backgroundColor([UIColor redColor]).view;
+    
+  UIView *b =  UIViewNew().rnp
+    .backgroundColor([UIColor brownColor])
+    .addToSuperView(v)
+    .frame(CGRectMake(20, 0, 10, 10))
+    .bringToFront().view;
+    
+    UIViewNew().rnp
+    .backgroundColor([UIColor blackColor])
+    .addToSuperView(v)
+    .frame(CGRectMake(0, 0, 50, 20));
+    
+
+    
+    UIViewNew().rnp
+    .backgroundColor(UIColor.blueColor)
+    .addToSuperView(v)
+    .frame(CGRectMake(0, 10, 100, 40))
+    .sendToBack();
+    b.rnp.bringToFront();
     
     UILabelNew().rnp.frame(CGRectMake(50, 250, 100, 100)).addToSuperView(self.view).backgroundColor(UIColor.cyanColor);
     

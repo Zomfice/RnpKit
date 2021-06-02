@@ -384,6 +384,29 @@ RPCATEGORY_CHAIN_LAYER_IMPLEMENTATION(shadowPath, CGPathRef);
     };
 }
 
+- (id  _Nonnull (^)(void))sendToBack{
+    return ^ (){
+        if (self.view.superview) {
+            [self.view.superview sendSubviewToBack:self.view];
+        }
+        return self;
+    };
+}
+- (id  _Nonnull (^)(void))bringToFront
+{
+    return ^ (){
+        if (self.view.superview) {
+            [self.view.superview bringSubviewToFront:self.view];
+        }
+        return self;
+    };
+}
+
+/*
+ RPCATEGORY_CHAIN_PROPERTY ObjectType (^ sendToBack) (void);
+ RPCATEGORY_CHAIN_PROPERTY ObjectType (^ bringToFront) (void);
+ */
+
 @end
 #undef RPCATEGORY_CHAIN_MASONRY_IMPLEMENTATION
 

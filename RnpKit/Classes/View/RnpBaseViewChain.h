@@ -189,6 +189,8 @@ RPCATEGORY_CHAIN_PROPERTY ObjectType (^ setNeedsLayout) (void);
 RPCATEGORY_CHAIN_PROPERTY ObjectType (^ setNeedsDisplay) (void);
 RPCATEGORY_CHAIN_PROPERTY ObjectType (^ setNeedsDisplayRect) (CGRect rect);
 RPCATEGORY_CHAIN_PROPERTY ObjectType (^ translatesAutoresizingMaskIntoConstraints) (BOOL b);
+RPCATEGORY_CHAIN_PROPERTY ObjectType (^ sendToBack) (void);
+RPCATEGORY_CHAIN_PROPERTY ObjectType (^ bringToFront) (void);
 
 @end
 
