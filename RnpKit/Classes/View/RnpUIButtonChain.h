@@ -39,14 +39,21 @@ RPCATEGORY_CHAIN_PROPERTY RnpUIButtonChain *(^ titleShadow) (UIColor *color, UIC
 RPCATEGORY_CHAIN_PROPERTY RnpUIButtonChain *(^ font) (UIFont *font);
 
 RPCATEGORY_CHAIN_PROPERTY RnpUIButtonChain *(^ textAlignment)(NSTextAlignment textAlignment);
+
 RPCATEGORY_CHAIN_PROPERTY RnpUIButtonChain *(^ numberOfLines)(NSInteger numberOfLines);
+
 RPCATEGORY_CHAIN_PROPERTY RnpUIButtonChain *(^ lineBreakMode)(NSLineBreakMode lineBreakMode);
-RPCATEGORY_CHAIN_PROPERTY RnpUIButtonChain *(^ adjustsFontSizeToFitWidth)(BOOL adjustsFontSizeToFitWidth);
-RPCATEGORY_CHAIN_PROPERTY RnpUIButtonChain *(^ baselineAdjustment)(UIBaselineAdjustment baselineAdjustment);
+
+RPCATEGORY_CHAIN_PROPERTY RnpUIButtonChain *(^ adjustsFontSizeToFitWidth)(BOOL);
+
+RPCATEGORY_CHAIN_PROPERTY RnpUIButtonChain *(^ baselineAdjustment)(UIBaselineAdjustment);
 
 RPCATEGORY_CHAIN_PROPERTY RnpUIButtonChain *(^ addClickBlock) (void (^) (id btn));
 
 RPCATEGORY_CHAIN_PROPERTY RnpUIButtonChain *(^ removeClickBlock)(void);
+
+RPCATEGORY_CHAIN_PROPERTY RnpUIButtonChain *(^ semanticContentAttribute) (UISemanticContentAttribute);
+
 @end
 
 

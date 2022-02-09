@@ -402,6 +402,24 @@ RPCATEGORY_CHAIN_LAYER_IMPLEMENTATION(shadowPath, CGPathRef);
     };
 }
 
+- (id  _Nonnull (^)(UIStackView * _Nonnull))addToStackView
+{
+    return ^ (UIStackView * stackView){
+        [stackView addArrangedSubview:self.view];
+        return self;
+    };
+}
+- (id  _Nonnull (^)(void))removeToStackView
+{
+    return ^ (){
+        if ([self.view.superview isKindOfClass:UIStackView.class]) {
+            [(UIStackView *)self.view.superview removeArrangedSubview:self.view];
+        }
+        return self;
+    };
+
+}
+
 /*
  RPCATEGORY_CHAIN_PROPERTY ObjectType (^ sendToBack) (void);
  RPCATEGORY_CHAIN_PROPERTY ObjectType (^ bringToFront) (void);

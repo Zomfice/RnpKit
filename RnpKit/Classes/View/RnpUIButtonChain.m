@@ -41,10 +41,16 @@ RPCATEGORY_CHAIN_BUTTON_IMPLEMENTATION(adjustsImageWhenDisabled, BOOL)
 RPCATEGORY_CHAIN_BUTTON_IMPLEMENTATION(reversesTitleShadowWhenHighlighted, BOOL)
 
 RPCATEGORY_CHAIN_BUTTONLABEL_IMPLEMENTATION(textAlignment, NSTextAlignment)
+
 RPCATEGORY_CHAIN_BUTTONLABEL_IMPLEMENTATION(numberOfLines, NSInteger)
+
 RPCATEGORY_CHAIN_BUTTONLABEL_IMPLEMENTATION(lineBreakMode, NSLineBreakMode)
+
 RPCATEGORY_CHAIN_BUTTONLABEL_IMPLEMENTATION(adjustsFontSizeToFitWidth, BOOL)
+
 RPCATEGORY_CHAIN_BUTTONLABEL_IMPLEMENTATION(baselineAdjustment, UIBaselineAdjustment)
+
+RPCATEGORY_CHAIN_BUTTONLABEL_IMPLEMENTATION(semanticContentAttribute, UISemanticContentAttribute)
 
 - (RnpUIButtonChain * _Nonnull (^)(UIImage * _Nonnull, UIControlState))image{
     return ^ (UIImage *image, UIControlState state){

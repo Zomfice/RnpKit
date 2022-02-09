@@ -22,6 +22,46 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    
+  UIStackView * stackView = UIStackViewNew().rnp
+    .addToSuperView(self.view)
+    .spacing(10.f)
+    .alignment(UIStackViewAlignmentCenter)
+    .axis(UILayoutConstraintAxisHorizontal)
+    .distribution(UIStackViewDistributionFill)
+    .mas_makeConstraints(^(MASConstraintMaker * _Nonnull make) {
+        make.center.mas_equalTo(0);
+        make.width.mas_lessThanOrEqualTo(300);
+    })
+    .view;
+    UIView * one1 =  UIViewNew().rnp
+    .addToStackView(stackView)
+    .backgroundColor(UIColor.redColor)
+    .mas_makeConstraints(^(MASConstraintMaker * _Nonnull make) {
+        make.top.mas_equalTo(0);
+        make.width.mas_equalTo(30);
+        make.height.mas_equalTo(50);
+    }).view
+    ;
+    UILabel * label = UILabelNew().rnp
+    .text(@"来的来的")
+    .addToStackView(stackView)
+    .view;
+    
+    UIButtonNew().rnp
+    .backgroundColor(UIColor.blackColor)
+    .text(@"点击", UIControlStateNormal)
+    .addToSuperView(self.view)
+    .mas_makeConstraints(^(MASConstraintMaker * _Nonnull make) {
+        make.centerX.mas_equalTo(0);
+        make.width.height.mas_equalTo(50);
+        make.top.mas_equalTo(35);
+    })
+    .addClickBlock(^(id btn){
+        label.hidden = true;
+    });
+    
+    
    UIView * v = UIViewNew().rnp
     .frame(CGRectMake(50, 100, 100, 100))
     .addToSuperView(self.view)
@@ -50,16 +90,8 @@
     UILabelNew().rnp.frame(CGRectMake(50, 250, 100, 100)).addToSuperView(self.view).backgroundColor(UIColor.cyanColor);
     
     
-    UIViewNew().rnp
-    .backgroundColor(UIColor.magentaColor)
-    .addToSuperView(self.view)
-    .mas_makeConstraints(^(MASConstraintMaker * _Nonnull make) {
-        make.centerX.centerY.mas_equalTo(0);
-        make.width.height.mas_equalTo(100);
-    });
-    
     UILabelNew().rnp
-    .text(@"Hello The Dog")
+    .text(@"Hello The")
     .textColor(UIColor.redColor)
     .font([UIFont systemFontOfSize:17])
     .textAlignment(NSTextAlignmentLeft)
@@ -68,21 +100,8 @@
         make.right.mas_equalTo(-15);
         make.centerY.mas_equalTo(0);
     });
-    
-    UIButtonNew().rnp
-    .text(@"name", UIControlStateNormal)
-    .font([UIFont systemFontOfSize:16])
-    .backgroundColor(UIColor.brownColor)
-    .addToSuperView(self.view)
-    .mas_makeConstraints(^(MASConstraintMaker * _Nonnull make) {
-        make.right.mas_equalTo(-15);
-        make.centerY.mas_equalTo(40);
-    });
-    
-    
-    UIViewFrame(CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height)).rnp
-    .backgroundColor([UIColor redColor]);
-    
+        
+        
     UIButtonNew().rnp
     .translatesAutoresizingMaskIntoConstraints(NO)
     .addClickBlock(^(id  _Nonnull btn) {
@@ -112,17 +131,6 @@
 //        make.width.height.mas_equalTo(100);
 //    });
     
-    UILabelNew().rnp
-    .text(@"Hello The Dog")
-    .textColor(UIColor.redColor)
-    .font([UIFont systemFontOfSize:17])
-    .textAlignment(NSTextAlignmentLeft)
-    .addToSuperView(self.view)
-    .mas_makeConstraints(^(MASConstraintMaker * _Nonnull make) {
-        make.right.mas_equalTo(-15);
-        make.centerY.mas_equalTo(0);
-        make.edges.mas_equalTo(0);
-    });
     CAShapeLayerNew().rnp
     .path(
           BezierPathNew().rnp
@@ -162,14 +170,14 @@
     
     UILabelNew().rnp
    .textAlignment(NSTextAlignmentCenter)
-    .numberOfLines(0).attributedText(NSMutableAttributedStringWithStringNew(@"dsadsadsadsdasdas\ndsdsadsadsadas\ndsadsadsadsada\n").rnp
-            .appendString(@"老张开车去东北")
+    .numberOfLines(0).attributedText(NSMutableAttributedStringWithStringNew(@"这是一段文本\n你这是一段文本\n").rnp
+            .appendString(@"这是新增的文本")
             .addAttribute_value(NSForegroundColorAttributeName,UIColor.redColor)
             .addAttributes(@{NSFontAttributeName:[UIFont systemFontOfSize:20]})
             .attributedString)
     .addToSuperView(self.view)
     .mas_makeConstraints(^(MASConstraintMaker * _Nonnull make) {
-        make.bottom.mas_equalTo(0);
+        make.bottom.mas_equalTo(50);
     });
     
     self.view.rnp
@@ -177,6 +185,7 @@
                 .addTargetBlock(^(id g){
         NSLog(@"123");
     }).gesture);
+
     
 }
 
