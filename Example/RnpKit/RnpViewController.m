@@ -182,7 +182,6 @@
                 .addTargetBlock(^(id g){
         NSLog(@"123");
     }).gesture);
-
     
 }
 

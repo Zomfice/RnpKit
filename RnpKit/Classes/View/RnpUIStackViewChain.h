@@ -5,7 +5,7 @@
 //  Created by user on 2022/2/9.
 //
 
-#import <RnpKit/RnpKit.h>
+#import "RnpBaseViewChain.h"
 
 NS_ASSUME_NONNULL_BEGIN
 @class RnpUIStackViewChain;
