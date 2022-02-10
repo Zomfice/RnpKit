@@ -1,24 +1,24 @@
 PODS:
   - Masonry (1.1.0)
-  - RnpKit (1.1.0):
-    - RnpKit/AttributedString (= 1.1.0)
-    - RnpKit/BezierPath (= 1.1.0)
-    - RnpKit/Gesture (= 1.1.0)
-    - RnpKit/Layer (= 1.1.0)
-    - RnpKit/Layout (= 1.1.0)
-    - RnpKit/View (= 1.1.0)
-  - RnpKit/AttributedString (1.1.0):
+  - RnpKit (1.2.0):
+    - RnpKit/AttributedString (= 1.2.0)
+    - RnpKit/BezierPath (= 1.2.0)
+    - RnpKit/Gesture (= 1.2.0)
+    - RnpKit/Layer (= 1.2.0)
+    - RnpKit/Layout (= 1.2.0)
+    - RnpKit/View (= 1.2.0)
+  - RnpKit/AttributedString (1.2.0):
     - RnpKit/View
-  - RnpKit/BezierPath (1.1.0):
+  - RnpKit/BezierPath (1.2.0):
     - RnpKit/View
-  - RnpKit/Gesture (1.1.0):
+  - RnpKit/Gesture (1.2.0):
     - RnpKit/View
-  - RnpKit/Layer (1.1.0):
+  - RnpKit/Layer (1.2.0):
     - RnpKit/View
-  - RnpKit/Layout (1.1.0):
+  - RnpKit/Layout (1.2.0):
     - Masonry
     - RnpKit/View
-  - RnpKit/View (1.1.0)
+  - RnpKit/View (1.2.0)
 
 DEPENDENCIES:
   - RnpKit (from `../`)
@@ -33,7 +33,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  RnpKit: bfe54bd849c7b5595428cf7af4953afaaf8dc3b8
+  RnpKit: c289210813fd78178f28d1b5bde98aa27d9ca632
 
 PODFILE CHECKSUM: 821daf1dfb14b6e52792507af2e68bac5b770426
 
