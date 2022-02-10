@@ -28,6 +28,5 @@
 #import "RnpUITableViewCellChain.h"
 #import "RnpUICollectionViewCellChain.h"
 #import "RnpWKWebViewChain.h"
-#import "RnpUIStackViewChain.h"
 
 #endif /* RnpKitView_h */

@@ -57,7 +57,6 @@
 #import "RnpUIScrollViewChain.h"
 #import "RnpUISegmentedControlChain.h"
 #import "RnpUISliderChain.h"
-#import "RnpUIStackViewChain.h"
 #import "RnpUISwitchChain.h"
 #import "RnpUITableViewCellChain.h"
 #import "RnpUITableViewChain.h"

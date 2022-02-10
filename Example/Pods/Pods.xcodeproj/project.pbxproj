@@ -77,7 +77,6 @@
 		7DE0A5D6F0926116BB641747099297EB /* RnpUISliderChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD2FB7B7D52BAE0F73D30FDB341B931 /* RnpUISliderChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		816E279ACA2F46E8849399C06E345906 /* RnpCATextLayerChain.m in Sources */ = {isa = PBXBuildFile; fileRef = B391C56889F64DC9058869B2A6D421AD /* RnpCATextLayerChain.m */; };
 		8171D105E2C5CD3C1357D544942B4446 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
-		817A35096E1B18569D3629C14D58697B /* RnpUIStackViewChain.h in Headers */ = {isa = PBXBuildFile; fileRef = FADA8347571F156E6047BCB9E3EBF16B /* RnpUIStackViewChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8449AF57BD491848AB76707285229718 /* RnpUICollectionViewChain.h in Headers */ = {isa = PBXBuildFile; fileRef = F3346337BE113C084EBFAFA2E8958A16 /* RnpUICollectionViewChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84DFA48DFB659731B78327FEE0704161 /* RnpUITapGestureRecognizerChain.m in Sources */ = {isa = PBXBuildFile; fileRef = D2963262FCF46374BF54F56391B3D8CD /* RnpUITapGestureRecognizerChain.m */; };
 		85DE0C13B036980AE25DB413EA0D2E7B /* Pods-RnpKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B26368FF2E7C7076EB9A67D040ECC4 /* Pods-RnpKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -142,7 +141,6 @@
 		E6418EA79773834BEF31D18583140FE0 /* RnpCAReplicatorLayerChain.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7438D427FB7046495DFA836386504C /* RnpCAReplicatorLayerChain.m */; };
 		E6A0F1288D5D8D032CDEBD2E1FCE802A /* RnpBaseScrollViewChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4AEA62DC69366FAF288B60BC382238 /* RnpBaseScrollViewChain.m */; };
 		E6FB269534400D40C1CE67D18EDD8A9A /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A95F8027E3EB86CB9AE2D7539201FE /* MASViewConstraint.m */; };
-		E9F99410611363314356D4927C907122 /* RnpUIStackViewChain.m in Sources */ = {isa = PBXBuildFile; fileRef = C70AD1599EE701125E919213FA5D6FD2 /* RnpUIStackViewChain.m */; };
 		EBFBA3DFA246565067EC2F1CB0E38C52 /* RnpCAEmitterLayerChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C507BFDE1CE7D1E5DF86325C835F1A /* RnpCAEmitterLayerChain.m */; };
 		EC93ECCE4FA14936E5518B83F3746D21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		ECDFDB8DBE7BA9B831699BE345DE7511 /* RnpUIRotationGestureRecognizerChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 37E87FA08C92203518BAE2B59E2F78B1 /* RnpUIRotationGestureRecognizerChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -253,7 +251,7 @@
 		5FA26904E156D9DE0C3BEF4B4D0B061C /* RnpCAScrollLayerChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpCAScrollLayerChain.h; path = RnpKit/Classes/Layer/RnpCAScrollLayerChain.h; sourceTree = "<group>"; };
 		607937A372913475EE7EAE532760ACD4 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
 		61E60BE90C73BADC1F850B7DDECA1B6A /* RnpUITableViewChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpUITableViewChain.h; path = RnpKit/Classes/View/RnpUITableViewChain.h; sourceTree = "<group>"; };
-		663B5E36CD9BCA50AD7301B6D3F4DC00 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		663B5E36CD9BCA50AD7301B6D3F4DC00 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		673E709E7C3B54C2BC5C65B1F05245F7 /* RnpCAShapeLayerChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpCAShapeLayerChain.m; path = RnpKit/Classes/Layer/RnpCAShapeLayerChain.m; sourceTree = "<group>"; };
 		69B4F692F67343131A2638A928411DE7 /* RnpKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RnpKit-dummy.m"; sourceTree = "<group>"; };
 		6ACF458DFA296D6C175C34C209390146 /* RnpKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RnpKit.modulemap; sourceTree = "<group>"; };
@@ -284,7 +282,7 @@
 		97A6E041D2E3B5FDFA665ECFE5CC9A65 /* RnpUILongPressGestureRecognizerChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpUILongPressGestureRecognizerChain.m; path = RnpKit/Classes/Gesture/RnpUILongPressGestureRecognizerChain.m; sourceTree = "<group>"; };
 		991C6F6A1980A437DB114037F9CE571A /* Pods-RnpKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RnpKit_Tests-Info.plist"; sourceTree = "<group>"; };
 		9CAE0B1A587354DE1432C7CF00FB8870 /* RnpUIControlChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpUIControlChain.h; path = RnpKit/Classes/View/RnpUIControlChain.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E18BD531C377F4191DA991C83CFBBB4 /* RnpBaseLayerChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpBaseLayerChain.h; path = RnpKit/Classes/Layer/RnpBaseLayerChain.h; sourceTree = "<group>"; };
 		9F74817D0C9D230213D289A4896C4EF3 /* RnpCAGradientLayerChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpCAGradientLayerChain.h; path = RnpKit/Classes/Layer/RnpCAGradientLayerChain.h; sourceTree = "<group>"; };
 		A0E81E8024832819810E2151F5A29FC0 /* RnpBaseGestureChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpBaseGestureChain.m; path = RnpKit/Classes/Gesture/RnpBaseGestureChain.m; sourceTree = "<group>"; };
@@ -315,7 +313,6 @@
 		C4411DA44DC706B00B878D3999C6D769 /* RnpKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RnpKit.release.xcconfig; sourceTree = "<group>"; };
 		C4E05CF0265A9697F640BA372AB80E50 /* RnpUIImageViewChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpUIImageViewChain.m; path = RnpKit/Classes/View/RnpUIImageViewChain.m; sourceTree = "<group>"; };
 		C4FA443EB0043704B68895D5D6296FFD /* RnpKitGesture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpKitGesture.h; path = RnpKit/Classes/Gesture/RnpKitGesture.h; sourceTree = "<group>"; };
-		C70AD1599EE701125E919213FA5D6FD2 /* RnpUIStackViewChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpUIStackViewChain.m; path = RnpKit/Classes/View/RnpUIStackViewChain.m; sourceTree = "<group>"; };
 		C8FBD99D517CE024DD30ADB141D29F82 /* RnpUILabelChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpUILabelChain.m; path = RnpKit/Classes/View/RnpUILabelChain.m; sourceTree = "<group>"; };
 		CA7438D427FB7046495DFA836386504C /* RnpCAReplicatorLayerChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpCAReplicatorLayerChain.m; path = RnpKit/Classes/Layer/RnpCAReplicatorLayerChain.m; sourceTree = "<group>"; };
 		CB061C05823DEE952EE15160AEC0F76B /* RnpBaseScrollViewChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpBaseScrollViewChain.h; path = RnpKit/Classes/View/RnpBaseScrollViewChain.h; sourceTree = "<group>"; };
@@ -330,8 +327,8 @@
 		D4E07D6F24770DD5B42DE9BFAA93ED30 /* RnpKitView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpKitView.h; path = RnpKit/Classes/View/RnpKitView.h; sourceTree = "<group>"; };
 		D4F0AEC6A531CE896E931E16996A1548 /* RnpUITableViewCellChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpUITableViewCellChain.m; path = RnpKit/Classes/View/RnpUITableViewCellChain.m; sourceTree = "<group>"; };
 		D672D553110B6D540F758AC1B91A5A0C /* RnpUITextViewChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpUITextViewChain.h; path = RnpKit/Classes/View/RnpUITextViewChain.h; sourceTree = "<group>"; };
-		D95B2987332F9A2242D5B5B87D88B671 /* RnpKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = RnpKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		DC2C85979D4B293C5F2011CFE8F28E09 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D95B2987332F9A2242D5B5B87D88B671 /* RnpKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = RnpKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DC2C85979D4B293C5F2011CFE8F28E09 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DC775AB5CD8A118FFEC4EC4A7124BF9F /* RnpUIControlChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpUIControlChain.m; path = RnpKit/Classes/View/RnpUIControlChain.m; sourceTree = "<group>"; };
 		DCA905D8F43856B4C4B0EFEEECAA9B9E /* RnpUISwipeGestureRecognizerChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpUISwipeGestureRecognizerChain.m; path = RnpKit/Classes/Gesture/RnpUISwipeGestureRecognizerChain.m; sourceTree = "<group>"; };
 		DEFA34BC0D26D017BB3F22DF9BC575CC /* RnpKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RnpKit-Info.plist"; sourceTree = "<group>"; };
@@ -354,7 +351,6 @@
 		F6140EF91C6BC48C945F683135C03187 /* RnpUIPinchGestureRecognizerChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpUIPinchGestureRecognizerChain.h; path = RnpKit/Classes/Gesture/RnpUIPinchGestureRecognizerChain.h; sourceTree = "<group>"; };
 		F69934D30C78A0B3886795147D62DA57 /* RnpBaseAttributedStringChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpBaseAttributedStringChain.h; path = RnpKit/Classes/AttributedString/RnpBaseAttributedStringChain.h; sourceTree = "<group>"; };
 		F95BFEFB9302772F3BF92770B5D06A7B /* RnpUIPanGestureRecognizerChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpUIPanGestureRecognizerChain.h; path = RnpKit/Classes/Gesture/RnpUIPanGestureRecognizerChain.h; sourceTree = "<group>"; };
-		FADA8347571F156E6047BCB9E3EBF16B /* RnpUIStackViewChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RnpUIStackViewChain.h; path = RnpKit/Classes/View/RnpUIStackViewChain.h; sourceTree = "<group>"; };
 		FB345149192F79990C2FC4702771DF93 /* RnpUICollectionViewCellChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpUICollectionViewCellChain.m; path = RnpKit/Classes/View/RnpUICollectionViewCellChain.m; sourceTree = "<group>"; };
 		FC4423C3571B42BB35608A27DBE799B0 /* RnpKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RnpKit-umbrella.h"; sourceTree = "<group>"; };
 		FE3C235C2AF3B63687450DF65F2B28BD /* RnpUIProgressViewChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RnpUIProgressViewChain.m; path = RnpKit/Classes/View/RnpUIProgressViewChain.m; sourceTree = "<group>"; };
@@ -428,7 +424,6 @@
 				342C4D9B5E1E36390E7AF01E35444998 /* ViewController+MASAdditions.m */,
 				C84A449C2DE4F91F0620A5147DD42E0F /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -690,8 +685,6 @@
 				A7883007F9A3D8FFFB2FCD90848601C0 /* RnpUISegmentedControlChain.m */,
 				4BD2FB7B7D52BAE0F73D30FDB341B931 /* RnpUISliderChain.h */,
 				21FA5AC304ED6B800A58BD2943E536EC /* RnpUISliderChain.m */,
-				FADA8347571F156E6047BCB9E3EBF16B /* RnpUIStackViewChain.h */,
-				C70AD1599EE701125E919213FA5D6FD2 /* RnpUIStackViewChain.m */,
 				AC0B3E57EB05A117266B65135645C8BE /* RnpUISwitchChain.h */,
 				B778195CAEDC4929D5304C542928C25D /* RnpUISwitchChain.m */,
 				169932CC7F42724FEB94502B69906A89 /* RnpUITableViewCellChain.h */,
@@ -819,7 +812,6 @@
 				614BFFFADB4DB8CFA53738D25F951FF4 /* RnpUIScrollViewChain.h in Headers */,
 				24EA19507C2D38B8752AFB2E32DEA380 /* RnpUISegmentedControlChain.h in Headers */,
 				7DE0A5D6F0926116BB641747099297EB /* RnpUISliderChain.h in Headers */,
-				817A35096E1B18569D3629C14D58697B /* RnpUIStackViewChain.h in Headers */,
 				D1F81B5439E08DEDFFF0D1578225517D /* RnpUISwipeGestureRecognizerChain.h in Headers */,
 				F028B09E3F36A1A7593A754920BEFDB9 /* RnpUISwitchChain.h in Headers */,
 				D0E3807BE96703591D1045B352473215 /* RnpUITableViewCellChain.h in Headers */,
@@ -1060,7 +1052,6 @@
 				557E934711D9B62F29EA35044378AE0F /* RnpUIScrollViewChain.m in Sources */,
 				CB81046543AAC81F2BABCD12982B15B0 /* RnpUISegmentedControlChain.m in Sources */,
 				C577A532C4E0E78FAE22CAC9A5B2ED6E /* RnpUISliderChain.m in Sources */,
-				E9F99410611363314356D4927C907122 /* RnpUIStackViewChain.m in Sources */,
 				DF36597B63DFAD816A79EB1E754B836E /* RnpUISwipeGestureRecognizerChain.m in Sources */,
 				FBE9FD85BD629A5D3733139124C0C50D /* RnpUISwitchChain.m in Sources */,
 				730403335B78A85CB5F905F884409935 /* RnpUITableViewCellChain.m in Sources */,
@@ -1446,8 +1437,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
