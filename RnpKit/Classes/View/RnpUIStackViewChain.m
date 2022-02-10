@@ -6,9 +6,9 @@
 //
 
 #import "RnpUIStackViewChain.h"
-#import <objc/runtime.h>
+//#import <objc/runtime.h>
 
-#define RPCATEGORY_CHAIN_STACKVIEW_IMPLEMENTATION(RPMethod,RPParaType) RPCATEGORY_CHAIN_VIEWCLASS_IMPLEMENTATION(RPMethod,RPParaType, RnpUIStackViewChain *,UIStackView)
+//#define RPCATEGORY_CHAIN_STACKVIEW_IMPLEMENTATION(RPMethod,RPParaType) RPCATEGORY_CHAIN_VIEWCLASS_IMPLEMENTATION(RPMethod,RPParaType, RnpUIStackViewChain *,UIStackView)
 
 @implementation RnpUIStackViewChain
 //RPCATEGORY_CHAIN_STACKVIEW_IMPLEMENTATION(axis, UILayoutConstraintAxis);
@@ -73,4 +73,4 @@
 
 @end
 RPCATEGORY_VIEW_IMPLEMENTATION(UIStackView, RnpUIStackViewChain)
-#undef RPCATEGORY_CHAIN_STACKVIEW_IMPLEMENTATION
+//#undef RPCATEGORY_CHAIN_STACKVIEW_IMPLEMENTATION
