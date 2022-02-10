@@ -255,6 +255,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "songchaofeng6@hotmail.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = VNCJ876S2A;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -506,6 +509,7 @@
 			baseConfigurationReference = 05CA758149845F278CCBD68D /* Pods-RnpKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VNCJ876S2A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RnpKit/RnpKit-Prefix.pch";
 				INFOPLIST_FILE = "RnpKit/RnpKit-Info.plist";
@@ -523,6 +527,7 @@
 			baseConfigurationReference = A16D9449739D8251B204C701 /* Pods-RnpKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VNCJ876S2A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RnpKit/RnpKit-Prefix.pch";
 				INFOPLIST_FILE = "RnpKit/RnpKit-Info.plist";
