@@ -64,7 +64,9 @@ RPCATEGORY_CHAIN_STACKVIEW_IMPLEMENTATION(layoutMarginsRelativeArrangement, BOOL
 
 - (RnpUIStackViewChain * _Nonnull (^)(CGFloat spacing, UIView * _Nonnull afterView))setCustomSpacing{
     return ^(CGFloat spacing, UIView * afterView){
-        [(UIStackView *)self.view setCustomSpacing:spacing afterView:afterView];
+        if (@available(iOS 11.0, *)){
+            [(UIStackView *)self.view setCustomSpacing:spacing afterView:afterView];
+        }
         return self;
     };
 }
