@@ -8,6 +8,8 @@
 #import "RnpChainDefine.h"
 #define RPCATEGORY_CHAIN_VIEWCLASS_IMPLEMENTATION(RPMethod,RPParaType, RPModelType, RPPropertyClass) RPCATEGORY_CHAIN_IMPLEMENTATION(RPMethod,RPParaType, view, RPModelType, RPPropertyClass)
 
+#define RPCATEGORY_CHAIN_VIEWCLASS_IMPLEMENTATION_VERSION(RPMethod,RPParaType, RPModelType, RPPropertyClass,VETRSION) RPCATEGORY_CHAIN_IMPLEMENTATION_VERSION(RPMethod,RPParaType, view, RPModelType, RPPropertyClass, VETRSION)
+
 #define RPCATEGORY_VIEW_IMPLEMENTATION(RPClass, modelType)\
 @implementation RPClass (EXT)\
 - (modelType *)rnp{\

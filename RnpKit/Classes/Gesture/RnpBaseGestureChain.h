@@ -8,6 +8,7 @@
 #import "RnpChainDefine.h"
 
 #define RPCATEGORY_CHAIN_GESTURECLASS_IMPLEMENTATION(RPMethod,RPParaType, RPModelType, RPPropertyClass) RPCATEGORY_CHAIN_IMPLEMENTATION(RPMethod,RPParaType, gesture, RPModelType, RPPropertyClass)
+#define RPCATEGORY_CHAIN_GESTURECLASS_IMPLEMENTATION_VERSION(RPMethod,RPParaType, RPModelType, RPPropertyClass,VETRSION) RPCATEGORY_CHAIN_IMPLEMENTATION_VERSION(RPMethod,RPParaType, gesture, RPModelType, RPPropertyClass, VETRSION)
 
 #define RPCATEGORY_GESTURE_IMPLEMENTATION(RPClass, modelType)\
 @implementation RPClass (EXT)\
@@ -39,9 +40,9 @@ RPCATEGORY_CHAIN_PROPERTY ObjectType (^ allowedTouchTypes) (NSArray<NSNumber *> 
 
 RPCATEGORY_CHAIN_PROPERTY ObjectType (^ allowedPressTypes) (NSArray<NSNumber *> *alloweRPressTypes);
 
-RPCATEGORY_CHAIN_PROPERTY ObjectType (^ requiresExclusiveTouchType) (BOOL requiresExclusiveTouchType);
+RPCATEGORY_CHAIN_PROPERTY ObjectType (^ requiresExclusiveTouchType) (BOOL requiresExclusiveTouchType) API_AVAILABLE(ios(9.2));
 
-RPCATEGORY_CHAIN_PROPERTY ObjectType (^ name) (NSString * name);
+RPCATEGORY_CHAIN_PROPERTY ObjectType (^ name) (NSString * name) API_AVAILABLE(ios(11.0));
 
 RPCATEGORY_CHAIN_PROPERTY ObjectType (^ requireGestureRecognizerToFail) (UIGestureRecognizer * requireGestureRecognizerToFail);
 

@@ -78,8 +78,6 @@
     .addToSuperView(v)
     .frame(CGRectMake(0, 0, 50, 20));
     
-
-    
     UIViewNew().rnp
     .backgroundColor(UIColor.blueColor)
     .addToSuperView(v)
@@ -88,7 +86,6 @@
     b.rnp.bringToFront();
     
     UILabelNew().rnp.frame(CGRectMake(50, 250, 100, 100)).addToSuperView(self.view).backgroundColor(UIColor.cyanColor);
-    
     
     UILabelNew().rnp
     .text(@"Hello The")

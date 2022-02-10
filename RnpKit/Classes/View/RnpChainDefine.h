@@ -48,6 +48,15 @@ return ^ (RPParaType RPMethod){\
 return self;\
 };\
 }
+#define RPCATEGORY_CHAIN_IMPLEMENTATION_VERSION(RPMethod,RPParaType, RPProperty, RPModelType, RPPropertyClass, VERSION)\
+- (RPModelType  _Nonnull (^)(RPParaType))RPMethod{\
+return ^ (RPParaType RPMethod){\
+if (@available(iOS VERSION, *)) {\
+((RPPropertyClass *)self.RPProperty).RPMethod = RPMethod;\
+}\
+return self;\
+};\
+}
 
 #define RPCATEGORY_EXINTERFACE(RPClass, modelType)\
 @interface RPClass(EXT)\

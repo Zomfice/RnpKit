@@ -60,7 +60,7 @@ RPCATEGORY_CHAIN_PROPERTY RnpUITextFieldChain *(^ keyboardAppearance)(UIKeyboard
 RPCATEGORY_CHAIN_PROPERTY RnpUITextFieldChain *(^ returnKeyType)(UIReturnKeyType returnKeyType);
 RPCATEGORY_CHAIN_PROPERTY RnpUITextFieldChain *(^ enablesReturnKeyAutomatically)(BOOL enablesReturnKeyAutomatically);
 RPCATEGORY_CHAIN_PROPERTY RnpUITextFieldChain *(^ secureTextEntry)(BOOL secureTextEntry);
-RPCATEGORY_CHAIN_PROPERTY RnpUITextFieldChain *(^ textContentType)(UITextContentType textContentType) API_AVAILABLE(ios(9.0));
+RPCATEGORY_CHAIN_PROPERTY RnpUITextFieldChain *(^ textContentType)(UITextContentType textContentType) API_AVAILABLE(ios(10.0));
 @end
 
 RPCreateFrame(UITextField)

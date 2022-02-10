@@ -17,7 +17,7 @@ RPCATEGORY_CHAIN_PROPERTY RnpUITableViewCellChain * (^ separatorInset) (UIEdgeIn
 RPCATEGORY_CHAIN_PROPERTY RnpUITableViewCellChain * (^ editing) (BOOL editing);
 RPCATEGORY_CHAIN_PROPERTY RnpUITableViewCellChain * (^ editingWithAnimated) (BOOL editing, BOOL animated);
 RPCATEGORY_CHAIN_PROPERTY RnpUITableViewCellChain * (^ focusStyle)(UITableViewCellFocusStyle focusStyle);
-RPCATEGORY_CHAIN_PROPERTY RnpUITableViewCellChain * (^ userInteractionEnabledWhileDragging)(BOOL userInteractionEnabledWhileDragging);
+RPCATEGORY_CHAIN_PROPERTY RnpUITableViewCellChain * (^ userInteractionEnabledWhileDragging)(BOOL userInteractionEnabledWhileDragging) API_AVAILABLE(ios(11.0));
 
 @end
 
