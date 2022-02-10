@@ -7,7 +7,6 @@
 
 #import "RnpBaseViewChain.h"
 
-
 NS_ASSUME_NONNULL_BEGIN
 @class RnpUIStackViewChain;
 API_AVAILABLE(ios(9.0))
