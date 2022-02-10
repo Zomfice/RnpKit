@@ -23,43 +23,43 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     
-  UIStackView * stackView = UIStackViewNew().rnp
-    .addToSuperView(self.view)
-    .spacing(10.f)
-    .alignment(UIStackViewAlignmentCenter)
-    .axis(UILayoutConstraintAxisHorizontal)
-    .distribution(UIStackViewDistributionFill)
-    .mas_makeConstraints(^(MASConstraintMaker * _Nonnull make) {
-        make.center.mas_equalTo(0);
-        make.width.mas_lessThanOrEqualTo(300);
-    })
-    .view;
-    UIView * one1 =  UIViewNew().rnp
-    .addToStackView(stackView)
-    .backgroundColor(UIColor.redColor)
-    .mas_makeConstraints(^(MASConstraintMaker * _Nonnull make) {
-        make.top.mas_equalTo(0);
-        make.width.mas_equalTo(30);
-        make.height.mas_equalTo(50);
-    }).view
-    ;
-    UILabel * label = UILabelNew().rnp
-    .text(@"来的来的")
-    .addToStackView(stackView)
-    .view;
-    
-    UIButtonNew().rnp
-    .backgroundColor(UIColor.blackColor)
-    .text(@"点击", UIControlStateNormal)
-    .addToSuperView(self.view)
-    .mas_makeConstraints(^(MASConstraintMaker * _Nonnull make) {
-        make.centerX.mas_equalTo(0);
-        make.width.height.mas_equalTo(50);
-        make.top.mas_equalTo(35);
-    })
-    .addClickBlock(^(id btn){
-        label.hidden = true;
-    });
+//  UIStackView * stackView = UIStackViewNew().rnp
+//    .addToSuperView(self.view)
+//    .spacing(10.f)
+//    .alignment(UIStackViewAlignmentCenter)
+//    .axis(UILayoutConstraintAxisHorizontal)
+//    .distribution(UIStackViewDistributionFill)
+//    .mas_makeConstraints(^(MASConstraintMaker * _Nonnull make) {
+//        make.center.mas_equalTo(0);
+//        make.width.mas_lessThanOrEqualTo(300);
+//    })
+//    .view;
+//    UIView * one1 =  UIViewNew().rnp
+//    .addToStackView(stackView)
+//    .backgroundColor(UIColor.redColor)
+//    .mas_makeConstraints(^(MASConstraintMaker * _Nonnull make) {
+//        make.top.mas_equalTo(0);
+//        make.width.mas_equalTo(30);
+//        make.height.mas_equalTo(50);
+//    }).view
+//    ;
+//    UILabel * label = UILabelNew().rnp
+//    .text(@"来的来的")
+//    .addToStackView(stackView)
+//    .view;
+//    
+//    UIButtonNew().rnp
+//    .backgroundColor(UIColor.blackColor)
+//    .text(@"点击", UIControlStateNormal)
+//    .addToSuperView(self.view)
+//    .mas_makeConstraints(^(MASConstraintMaker * _Nonnull make) {
+//        make.centerX.mas_equalTo(0);
+//        make.width.height.mas_equalTo(50);
+//        make.top.mas_equalTo(35);
+//    })
+//    .addClickBlock(^(id btn){
+//        label.hidden = true;
+//    });
     
     
    UIView * v = UIViewNew().rnp
