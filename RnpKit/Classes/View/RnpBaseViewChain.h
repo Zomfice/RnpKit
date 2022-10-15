@@ -195,7 +195,8 @@ RPCATEGORY_CHAIN_PROPERTY ObjectType (^ sendToBack) (void);
 RPCATEGORY_CHAIN_PROPERTY ObjectType (^ bringToFront) (void);
 RPCATEGORY_CHAIN_PROPERTY ObjectType (^ addToStackView) (UIStackView *stackView) API_AVAILABLE(ios(9.0));
 RPCATEGORY_CHAIN_PROPERTY ObjectType (^ removeToStackView) (void) API_AVAILABLE(ios(9.0));
-
+RPCATEGORY_CHAIN_PROPERTY ObjectType (^ setupToVar)(UIView  *_Nonnull* _Nonnull  var);
+RPCATEGORY_CHAIN_PROPERTY ObjectType (^ addToSuperViewAndVar) (UIView *superView, UIView  *_Nonnull* _Nonnull  var);
 
 @end
 

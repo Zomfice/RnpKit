@@ -98,20 +98,22 @@
         make.centerY.mas_equalTo(0);
     });
         
-        
+
+    UIButton * btn;
     UIButtonNew().rnp
+    .addToSuperViewAndVar(self.view, &btn)
     .translatesAutoresizingMaskIntoConstraints(NO)
     .addClickBlock(^(id  _Nonnull btn) {
+        NSLog(@"btn ===> %@", btn);
         NSLog(@"sdadasdsadasd");
     })
-    .addToSuperView(self.view)
     .frame(CGRectMake(100, 500, 100, 100))
     .mas_makeConstraints(^(MASConstraintMaker * _Nonnull make) {
         make.left.mas_equalTo(300.f);
         make.top.mas_equalTo(200);
         make.width.height.mas_equalTo(100);
     })
-    .removeClickBlock()
+//    .removeClickBlock()
     .backgroundColor(UIColor.greenColor);
     
     
@@ -140,7 +142,7 @@
     .frame(CGRectMake(100, 100, 100, 100))
     .fillColor(UIColor.blackColor.CGColor)
     .backgroundColor(UIColor.clearColor.CGColor)
-    .addToSuperLayer(self.view.layer)
+    .addToSuperView(self.view)
     ;
     
     NSMutableAttributedString * att_str = [[NSMutableAttributedString alloc] initWithString:@"00:00 / 19:09"];

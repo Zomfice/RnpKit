@@ -166,5 +166,36 @@ RPCATEGORY_CHAIN_BASELAYER_IMPLEMENTATION(style, NSDictionary *)
         return self;
     };
 }
+- (id  _Nonnull (^)(CALayer * _Nonnull __autoreleasing * _Nonnull))setupToVar
+{
+    return ^(CALayer  **var){
+        if (var != nil) {
+            *var = self.layer;
+        }
+        return self;
+    };;
+}
+- (id  _Nonnull (^)(CALayer * _Nonnull, CALayer * _Nonnull __autoreleasing * _Nonnull))addToSuperLayerAndVar
+{
+    return ^ (CALayer * _Nonnull superLayer, CALayer * _Nonnull __autoreleasing *var){
+        self.addToSuperLayer(superLayer);
+        self.setupToVar(var);
+        return self;
+    };
+}
+- (id  _Nonnull (^)(UIView * _Nonnull))addToSuperView
+{
+    return ^(UIView * _Nonnull superView){
+        [superView.layer addSublayer:self.layer];
+        return self;
+    };
+}
+- (id  _Nonnull (^)(UIView * _Nonnull, CALayer * _Nonnull __autoreleasing * _Nonnull))addToSuperViewAndVar{
+    return ^ (UIView * _Nonnull superView, CALayer * _Nonnull __autoreleasing *var){
+        self.addToSuperView(superView);
+        self.setupToVar(var);
+        return self;
+    };
+}
 @end
 #undef RPCATEGORY_CHAIN_BASELAYER_IMPLEMENTATION

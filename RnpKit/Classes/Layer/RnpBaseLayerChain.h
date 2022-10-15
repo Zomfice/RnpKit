@@ -97,6 +97,11 @@ RPCATEGORY_CHAIN_PROPERTY ObjectType (^ delegate) (id <CALayerDelegate> delegate
 RPCATEGORY_CHAIN_PROPERTY ObjectType (^ style) (NSDictionary * style);
 
 RPCATEGORY_CHAIN_PROPERTY ObjectType (^ assignTo) (RPAssignLayerLoad assignTo);
+RPCATEGORY_CHAIN_PROPERTY ObjectType (^ setupToVar)(CALayer  *_Nonnull* _Nonnull  var);
+RPCATEGORY_CHAIN_PROPERTY ObjectType (^ addToSuperLayerAndVar) (CALayer *superLayer, CALayer  *_Nonnull* _Nonnull  var);
+RPCATEGORY_CHAIN_PROPERTY ObjectType (^ addToSuperView) (UIView * superView);
+RPCATEGORY_CHAIN_PROPERTY ObjectType (^ addToSuperViewAndVar) (UIView *superView, CALayer  *_Nonnull* _Nonnull  var);
+
 @end
 
 NS_ASSUME_NONNULL_END

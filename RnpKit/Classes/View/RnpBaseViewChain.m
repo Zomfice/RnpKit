@@ -420,6 +420,24 @@ RPCATEGORY_CHAIN_LAYER_IMPLEMENTATION(shadowPath, CGPathRef);
 
 }
 
+- (id  _Nonnull (^)(UIView **))setupToVar
+{
+    return ^(UIView  **var){
+        if (var != nil) {
+            *var = self.view;
+        }
+        return self;
+    };
+}
+- (id  _Nonnull (^)(UIView * _Nonnull, UIView * _Nonnull __autoreleasing * _Nonnull))addToSuperViewAndVar
+{
+    return ^ (UIView * _Nonnull superView, UIView * _Nonnull __autoreleasing *var){
+        self.addToSuperView(superView);
+        self.setupToVar(var);
+        return self;
+    };
+}
+
 /*
  RPCATEGORY_CHAIN_PROPERTY ObjectType (^ sendToBack) (void);
  RPCATEGORY_CHAIN_PROPERTY ObjectType (^ bringToFront) (void);
