@@ -50,7 +50,7 @@ RPCATEGORY_CHAIN_BUTTONLABEL_IMPLEMENTATION(adjustsFontSizeToFitWidth, BOOL)
 
 RPCATEGORY_CHAIN_BUTTONLABEL_IMPLEMENTATION(baselineAdjustment, UIBaselineAdjustment)
 
-RPCATEGORY_CHAIN_BUTTONLABEL_IMPLEMENTATION(semanticContentAttribute, UISemanticContentAttribute)
+RPCATEGORY_CHAIN_BUTTON_IMPLEMENTATION(semanticContentAttribute, UISemanticContentAttribute)
 
 - (RnpUIButtonChain * _Nonnull (^)(UIImage * _Nonnull, UIControlState))image{
     return ^ (UIImage *image, UIControlState state){
