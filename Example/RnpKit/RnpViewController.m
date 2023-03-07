@@ -101,20 +101,36 @@
 
     UIButton * btn;
     UIButtonNew().rnp
+    .text(@"dddddd", UIControlStateNormal)
+    .text(@"selected", UIControlStateSelected)
+    .text(@"hight", UIControlStateHighlighted)
+    .text(@"disabled", UIControlStateDisabled)
+    .text(@"d|s", UIControlStateDisabled | UIControlStateSelected)
+    .text(@"d|s|h", UIControlStateDisabled | UIControlStateSelected | UIControlStateHighlighted)
     .addToSuperViewAndVar(self.view, &btn)
     .translatesAutoresizingMaskIntoConstraints(NO)
-    .addClickBlock(^(id  _Nonnull btn) {
-        NSLog(@"btn ===> %@", btn);
+    .addClickBlock(^(id  _Nonnull aa) {
         NSLog(@"sdadasdsadasd");
+        if (!btn.isSelected) {
+            btn.selected = true;
+        }else{
+//            btn.selected = false;
+            btn.enabled = false;
+        }
+        NSLog(@"btn ===> %@", btn);
     })
-    .frame(CGRectMake(100, 500, 100, 100))
     .mas_makeConstraints(^(MASConstraintMaker * _Nonnull make) {
         make.left.mas_equalTo(300.f);
         make.top.mas_equalTo(200);
         make.width.height.mas_equalTo(100);
     })
-//    .removeClickBlock()
-    .backgroundColor(UIColor.greenColor);
+    .rnp_backgroundColor(UIColor.greenColor, UIControlStateNormal)
+    .rnp_backgroundColor(UIColor.redColor, UIControlStateSelected)
+    .rnp_backgroundColor(UIColor.blueColor, UIControlStateDisabled)
+    .rnp_backgroundColor(UIColor.brownColor, UIControlStateHighlighted)
+    .rnp_backgroundColor(UIColor.grayColor, UIControlStateDisabled | UIControlStateSelected)
+    .rnp_backgroundColor(UIColor.magentaColor, UIControlStateDisabled | UIControlStateSelected | UIControlStateHighlighted)
+    ;
     
     
 //    UITableViewFrame(CGRectZero).rnp

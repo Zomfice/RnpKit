@@ -54,6 +54,8 @@ RPCATEGORY_CHAIN_PROPERTY RnpUIButtonChain *(^ removeClickBlock)(void);
 
 RPCATEGORY_CHAIN_PROPERTY RnpUIButtonChain *(^ semanticContentAttribute) (UISemanticContentAttribute);
 
+RPCATEGORY_CHAIN_PROPERTY RnpUIButtonChain *(^ rnp_backgroundColor) (UIColor *color, UIControlState state);
+
 @end
 
 

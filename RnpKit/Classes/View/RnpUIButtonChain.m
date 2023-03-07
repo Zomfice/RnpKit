@@ -6,6 +6,7 @@
 //
 
 #import "RnpUIButtonChain.h"
+#import "UIButton+RnpCategory.h"
 #import <objc/runtime.h>
 
 #define RPCATEGORY_CHAIN_BUTTON_IMPLEMENTATION(RPMethod,RPParaType) RPCATEGORY_CHAIN_VIEWCLASS_IMPLEMENTATION(RPMethod,RPParaType, RnpUIButtonChain *,UIButton)
@@ -116,6 +117,13 @@ RPCATEGORY_CHAIN_BUTTON_IMPLEMENTATION(semanticContentAttribute, UISemanticConte
         UIButton * btn = self.view;
         btn.clickBlock = nil;
         [btn removeTarget:btn action:@selector(clickAct:) forControlEvents:UIControlEventTouchUpInside];
+        return self;
+    };
+}
+
+- (RnpUIButtonChain * _Nonnull (^)(UIColor * _Nonnull, UIControlState))rnp_backgroundColor{
+    return ^ (UIColor *color, UIControlState state){
+        [(UIButton *)self.view rnp_setBackgroundColor:color forState:state];
         return self;
     };
 }
