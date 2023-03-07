@@ -20,14 +20,14 @@ RPCATEGORY_CHAIN_IMAGEVIEW_IMPLEMENTATION(animationRepeatCount, NSInteger)
 
 - (RnpUIImageViewChain * _Nonnull (^)(void))startAnimating{
     return ^ (){
-        [self startAnimating];
+        [self.view startAnimating];
         return self;
     };
 }
 
 - (RnpUIImageViewChain * _Nonnull (^)(void))stopAnimating{
     return ^ (){
-        [self stopAnimating];
+        [self.view stopAnimating];
         return self;
     };
 }
