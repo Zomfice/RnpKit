@@ -123,7 +123,7 @@ RPCATEGORY_CHAIN_PROPERTY ObjectType (^ removeGesture) (UIGestureRecognizer *ges
 
 RPCATEGORY_CHAIN_PROPERTY ObjectType (^ addGestureWithTag) (UIGestureRecognizer *gesture, NSString *tag);
 
-@property (nonatomic, strong, readonly) UIGestureRecognizer * (^ getGestureByTag) (NSString * tag);
+@property (nonatomic, strong, readonly) __kindof UIGestureRecognizer * (^ getGestureByTag) (NSString * tag);
 
 RPCATEGORY_CHAIN_PROPERTY ObjectType (^ removeGestureByTag) (NSString *tag);
 
