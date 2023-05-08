@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithAttributedString:(NSAttributedString *)attributedString;
 
-@property (nonatomic, strong, readonly) NSAttributedString * attributedString;
+@property (nonatomic, strong, readonly) __kindof NSAttributedString * attributedString;
 
 RPCATEGORY_CHAIN_PROPERTY NSDictionary<NSAttributedStringKey, id> * (^ attributesAtIndex)(NSUInteger location, NSRangePointer _Nullable range);
 
