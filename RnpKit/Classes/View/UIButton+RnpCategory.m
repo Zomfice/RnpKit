@@ -43,17 +43,17 @@ static NSString * kBGDisabled = @"RNP_BG_DISABLED";
 
 - (void)setRNPHighlighted:(BOOL)highlighted{
     [self setRNPHighlighted:highlighted];
-    [self setColor];
+    [self setRNPColor];
 }
 
 - (void)setRNPSelected:(BOOL)selected{
     [self setRNPSelected:selected];
-    [self setColor];
+    [self setRNPColor];
 }
 
 - (void)setRNPEnabled:(BOOL)enabled{
     [self setRNPEnabled:enabled];
-    [self setColor];
+    [self setRNPColor];
 }
 
 - (NSMutableDictionary*)rnpPropertys{
@@ -65,11 +65,11 @@ static NSString * kBGDisabled = @"RNP_BG_DISABLED";
     return _rnpPropertys;
 }
 
-- (void)setColor{
-    super.backgroundColor = [self getColor:self.state];
+- (void)setRNPColor{
+    super.backgroundColor = [self getRNPColor:self.state];
 }
 
-- (UIColor *)getColor:(UIControlState)state{
+- (UIColor *)getRNPColor:(UIControlState)state{
     UIColor *color = self.rnpPropertys[rnp_bg_state(state)];
     if (!color) {
         color = self.rnpPropertys[rnp_bg_state(UIControlStateNormal)];
@@ -84,6 +84,6 @@ static NSString * kBGDisabled = @"RNP_BG_DISABLED";
 #pragma mark -- Public
 - (void)rnp_setBackgroundColor:(UIColor *)color forState:(UIControlState)state{
     [self.rnpPropertys setObject:color forKey:rnp_bg_state(state)];
-    [self setColor];
+    [self setRNPColor];
 }
 @end
