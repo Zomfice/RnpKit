@@ -141,7 +141,11 @@ RPCATEGORY_CHAIN_PROPERTY ObjectType (^ insertSubViewAbove) (UIView* above, UIVi
 
 RPCATEGORY_CHAIN_PROPERTY ObjectType (^ insertSubViewIndex) (UIView* above, NSInteger index);
 
+RPCATEGORY_CHAIN_PROPERTY ObjectType (^ exchangeForSuperView) (UIView *otherView);
 
+RPCATEGORY_CHAIN_PROPERTY ObjectType (^ insertToSuperViewBelow) (UIView* superview, UIView * below);
+
+RPCATEGORY_CHAIN_PROPERTY ObjectType (^ insertToSuperViewAbove) (UIView* superview, UIView * above);
 
 RPCATEGORY_CHAIN_PROPERTY ObjectType (^ shouldRasterize)(BOOL shouldRasterize);
 

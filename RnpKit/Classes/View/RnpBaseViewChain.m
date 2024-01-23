@@ -171,7 +171,7 @@ RPCATEGORY_CHAIN_VIEW_IMPLEMENTATION(transform, CGAffineTransform)
     };
 }
 
-- (UIGestureRecognizer * (^)(NSString * ))getGestureByTag{
+- (__kindof UIGestureRecognizer * (^)(NSString * ))getGestureByTag{
     return ^(NSString *tag){
         UIGestureRecognizer *ges;
         if (!tag) {
@@ -261,6 +261,42 @@ RPCATEGORY_CHAIN_VIEW_IMPLEMENTATION(transform, CGAffineTransform)
     };
 }
 
+- (id  _Nonnull (^)(UIView * _Nonnull))exchangeForSuperView
+{
+    return ^(UIView * otherView){
+        if([self.view.superview isEqual:otherView.superview]){
+            NSArray *subs = self.view.subviews;
+            NSInteger index1 = [subs indexOfObject:self.view];
+            NSInteger index2 = [subs indexOfObject:otherView];
+            if (index1 != NSNotFound && index2 != NSNotFound) {
+                if (index2 != index1) {
+                    [self.view.superview exchangeSubviewAtIndex:index1 withSubviewAtIndex:index2];
+                }
+            }
+        }
+        return self;
+    };
+}
+
+- (id  _Nonnull (^)(UIView * _Nonnull, UIView * _Nonnull))insertToSuperViewBelow{
+    return ^(UIView *superview, UIView *below){
+        if (!superview) return self;
+        if (!below) return self;
+        [superview insertSubview:self.view belowSubview:below];
+        return self;
+    };
+}
+
+- (id  _Nonnull (^)(UIView * _Nonnull, UIView * _Nonnull))insertToSuperViewAbove
+{
+    return ^(UIView *superview, UIView *above){
+        if (!superview) return self;
+        if (!above) return self;
+        [superview insertSubview:self.view aboveSubview:above];
+        return self;
+    };
+}
+
 - (id (^)(CGFloat cornerRadius))cornerRadius
 {
     return ^__kindof RnpBaseViewChain *(CGFloat cornerRadius) {
@@ -295,6 +331,17 @@ RPCATEGORY_CHAIN_VIEW_IMPLEMENTATION(transform, CGAffineTransform)
 - (id  _Nonnull (^)(UIColor * _Nonnull))layerBackGroundColor{
     return ^ (UIColor *color){
         self.view.layer.backgroundColor = color.CGColor;
+        return self;
+    };
+}
+
+- (id  _Nonnull (^)(CGSize, CGFloat, UIColor * _Nonnull, CGFloat))shadow
+{
+    return ^ (CGSize shadowOffset, CGFloat shadowRadius, UIColor * _Nonnull shadowColor, CGFloat shadowOpacity){
+        [self.view.layer setShadowOffset:shadowOffset];
+        [self.view.layer setShadowRadius:shadowRadius];
+        [self.view.layer setShadowColor:shadowColor.CGColor];
+        [self.view.layer setShadowOpacity:shadowOpacity];
         return self;
     };
 }
