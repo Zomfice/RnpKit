@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RnpKit'
-  s.version          = '1.2.4'
+  s.version          = '1.2.5'
   s.summary          = 'A short description of RnpKit.'
 
 
@@ -19,25 +19,25 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'RnpKit/RnpKit.h'
-  
+
   # s.resource_bundles = {
   #   'RnpKit' => ['RnpKit/Assets/*.png']
   # }
-  
+
   s.subspec 'View' do |spec|
       spec.source_files = 'RnpKit/Classes/View/**/*'
   end
-  
+
   s.subspec 'Layer' do |spec|
       spec.source_files = 'RnpKit/Classes/Layer/**/*'
       spec.dependency 'RnpKit/View'
   end
-  
+
   s.subspec 'Gesture' do |spec|
       spec.source_files = 'RnpKit/Classes/Gesture/**/*'
       spec.dependency 'RnpKit/View'
   end
-  
+
   s.subspec 'Layout' do |spec|
       spec.source_files = 'RnpKit/Classes/Layout/**/*'
       spec.dependency 'RnpKit/View'
