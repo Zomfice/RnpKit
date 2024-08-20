@@ -74,8 +74,7 @@ static NSString * kBGDisabled = @"RNP_BG_DISABLED";
     if (!color) {
         color = self.rnpPropertys[rnp_bg_state(UIControlStateNormal)];
         if (!color) {
-            color = self.backgroundColor ? self.backgroundColor : [UIColor clearColor];
-            [self.rnpPropertys setObject:color forKey:rnp_bg_state(UIControlStateNormal)];
+            color = self.backgroundColor;
         }
     }
     return color;
